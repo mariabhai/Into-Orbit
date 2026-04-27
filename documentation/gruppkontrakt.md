@@ -26,7 +26,7 @@ Det är fritt att lägga till/ta bort, men det finns en extremt tydlig koppling 
 ### Mötestider
 
 - Daily standup: 
-```kl.9.00 om lektion ses vi direkt efter``
+```kl.9.00 om lektion ses vi direkt efter```
 - Tid för backlog refining varje vecka (cirka 1 h): 
 ```Måndagar helst morgonen (4maj efter möten)```
 - Tid för sprint planning varje vecka (cirka 1-2 h): 
@@ -77,6 +77,8 @@ Det är fritt att lägga till/ta bort, men det finns en extremt tydlig koppling 
     Jag hamnar ofta naturligt i en ledande roll, men också i rollen som planerare och idéspruta. Jag gillar när det finns riktning, tydlighet och framåtdriv i arbetet, och jag är gärna med och sätter struktur samtidigt som jag bidrar med idéer. Vid stress blir jag väldigt lösningsfokuserad och går upp i tempo. Då kan jag ibland bli kort och väldigt direkt i min skriftliga kommunikation, eftersom mitt fokus snabbt går till vad som behöver göras och hur vi tar oss framåt.
 
 #### Tilda: 
+    Jag ser mig själv som mer detaljfokuserad och analytisk än kreativ/idésprudlande. ÄLSKAR när det finns en stuktur att följa och arbetar bäst när jag blir tilldelad en tydlig uppgift med en deadline. Däremot tycker jag ibland att det kan vara jobbigt att ta större intiativ själv och känner mig mycket mer bekväm i att följa gruppens dynamik istället för att ta en ledande roll. Vid stress syns jag som mer bakåtlutad och tystlåten än vanligt. Oftast lägger jag 99% av mitt driv på att bli klar med den uppgiften jag är stressad av och börjar jobba stenhårt, så det kan bli svårare att faktiskt få kontakt med mig.
+
 #### Mohammed:
 #### Jennie: 
 
@@ -126,6 +128,8 @@ Vilken roll brukar varje gruppmedlem ta på sig i ett grupparbete? Vilken roll h
     Jag är bra på att paketera idéer, hitta den röda tråden och få saker att hända. Jag bidrar också gärna med design, struktur och framåtdriv i projekt. Samtidigt kan jag ibland bli lite för snabb och lösningsfokuserad, och jag hade kunnat bli bättre på att ta ett steg tillbaka och tänka ett varv till innan jag kör. I vissa lägen kan det nog uppfattas som att jag stressar. Rent tekniskt vill jag gärna träna mer på TypeScript och bli säkrare på den tekniska setupen i början av projekt, som Vite, Biome och liknande installationer.
 
 #### Tilda: 
+    Jag är bättre på att säkerställa detaljer och finslipa lösningar än att ta fram större kreativa koncept/idéer. Tycker dock att det är lättare att bolla idéer med andra istället för att försöka brainstorma själv. 
+
 #### Mohammed:
 #### Jennie: 
 
@@ -151,6 +155,9 @@ Om ni vill ta upp någonting utöver det fördefinierade. Skriv gärna en egen r
 Slutligen ska ni signera dokumentet med era underskrifter.
 
     Louise Sverkström
+
+    Tilda Egland
+
 
 ## Att jobba i grupp
 
