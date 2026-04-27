@@ -73,7 +73,9 @@ Det är fritt att lägga till/ta bort, men det finns en extremt tydlig koppling 
 ### Personlighetstyp
 > Det kan kännas obekvämt att diskutera följande, men det är en grund för ett bra samarbete att dels ha lite självinsikt, men också förståelse för hur ens gruppmedlemmar fungerar i olika situationer.
 
-#### Louise:
+#### Louise: 
+    Jag hamnar ofta naturligt i en ledande roll, men också i rollen som planerare och idéspruta. Jag gillar när det finns riktning, tydlighet och framåtdriv i arbetet, och jag är gärna med och sätter struktur samtidigt som jag bidrar med idéer. Vid stress blir jag väldigt lösningsfokuserad och går upp i tempo. Då kan jag ibland bli kort och väldigt direkt i min skriftliga kommunikation, eftersom mitt fokus snabbt går till vad som behöver göras och hur vi tar oss framåt.
+
 #### Tilda: 
 #### Mohammed:
 #### Jennie: 
@@ -121,6 +123,8 @@ Vilken roll brukar varje gruppmedlem ta på sig i ett grupparbete? Vilken roll h
 - Finns det något du rent tekniskt vill träna extra på? HTMl, CSS, git? Projektledning?
 
 #### Louise:
+    Jag är bra på att paketera idéer, hitta den röda tråden och få saker att hända. Jag bidrar också gärna med design, struktur och framåtdriv i projekt. Samtidigt kan jag ibland bli lite för snabb och lösningsfokuserad, och jag hade kunnat bli bättre på att ta ett steg tillbaka och tänka ett varv till innan jag kör. I vissa lägen kan det nog uppfattas som att jag stressar. Rent tekniskt vill jag gärna träna mer på TypeScript och bli säkrare på den tekniska setupen i början av projekt, som Vite, Biome och liknande installationer.
+
 #### Tilda: 
 #### Mohammed:
 #### Jennie: 
@@ -138,7 +142,7 @@ Om ni vill ta upp någonting utöver det fördefinierade. Skriv gärna en egen r
 - Hur indenterar vi vår kod?
 ```BIOME <3```
 - Vilket språk använder vi i vår kod, för t.ex. CSS-selektorer?
-```English```
+```English & camelCase```
 - Hur kommenterar vi vår kod?
 ```Enhetligt på engelska```
 - Ska vi använda några linters (ESLint, Prettier, Biome…?) och vilka konfigurationer ska vi göra för dessa? ```BIOME <3  köra npm run innan man gör en PR?```
@@ -146,6 +150,7 @@ Om ni vill ta upp någonting utöver det fördefinierade. Skriv gärna en egen r
 ### Underskrifter
 Slutligen ska ni signera dokumentet med era underskrifter.
 
+    Louise Sverkström
 
 ## Att jobba i grupp
 
