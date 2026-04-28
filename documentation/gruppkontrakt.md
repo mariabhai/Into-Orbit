@@ -81,6 +81,7 @@ Det är fritt att lägga till/ta bort, men det finns en extremt tydlig koppling 
 
 #### Mohammed:
 #### Jennie: 
+Jag är en kreativ idéspruta men som också tänker väldigt mycket strategiskt. Har ett väldigt bra konsekvenstänk, och det gör att jag ser helheten väldigt bra. Tex "gör vi såhär så påverkar det detta". Finns det ingen annan i gruppen som tar en ledande roll så tar jag oftast på mig den rollen, men uppskattar om någon annan tar den rollen som är bättre på att styra upp än en annan. Vid stress så ändrar jag oftast mitt mind-set från "nice to have " till "need to have" och går lätt in i ett prioriteringsmode. viktigaste är att leverera en bra produkt, men också att alla i gruppen ska må bra och att det ska vara roligt! 
 
 Hurdant reagerar varje gruppmedlem vid stress?
 - Flyr situationen, slutar delta, ignorerar situationen/grupparbetet
@@ -132,6 +133,7 @@ Vilken roll brukar varje gruppmedlem ta på sig i ett grupparbete? Vilken roll h
 
 #### Mohammed:
 #### Jennie: 
+Jag är bra på att komma på idéer och lösningar, men även att avgränsa. Vissa saker är hur roliga som helst att göra, men om det tar för mycket av ens välmående så är jag bra på att styra upp så vi fokuserar på det nödvändigaste - och om tid finns så kan man bygga något extra. Även fast man lärt sig massor sedan man började studera så känner man sig ändå väldigt rookie, så många delar känner mig sig sämre på, som tex Typescript. Det skulle jag vilja träna mer på, även Github i och med att göra projekt där man arbetar i bransches och merge conflicts. Är inte hundra bekväm med sådant ännu så det kommer bli nyttigt att träna på här. 
 
 ### Scrum master
 Utse gärna en scrum master som ansvarar för att _delegera_ uppgifter. Scrum mastern ska inte _göra allt_, utan se till att alla har att göra och att ingen sitter fast. Vill ni rotera rollen, så gör det, men det går också bra om en person är bekväm med att ta på sig rollen. Om ingen vill vara scrum master så bör ni komma överens om vem som styr skutan på annat sätt.
@@ -157,6 +159,8 @@ Slutligen ska ni signera dokumentet med era underskrifter.
     Louise Sverkström
 
     Tilda Egland
+
+    Jennie Modd
 
 
 ## Att jobba i grupp
