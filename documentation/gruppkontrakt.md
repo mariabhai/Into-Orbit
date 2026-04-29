@@ -80,10 +80,10 @@ Det är fritt att lägga till/ta bort, men det finns en extremt tydlig koppling 
     Jag ser mig själv som mer detaljfokuserad och analytisk än kreativ/idésprudlande. ÄLSKAR när det finns en stuktur att följa och arbetar bäst när jag blir tilldelad en tydlig uppgift med en deadline. Däremot tycker jag ibland att det kan vara jobbigt att ta större intiativ själv och känner mig mycket mer bekväm i att följa gruppens dynamik istället för att ta en ledande roll. Vid stress syns jag som mer bakåtlutad och tystlåten än vanligt. Oftast lägger jag 99% av mitt driv på att bli klar med den uppgiften jag är stressad av och börjar jobba stenhårt, så det kan bli svårare att faktiskt få kontakt med mig.
 
 #### Mohammed:
-Jag är en person som uppskattar tydliga instruktioner och struktur, eftersom jag jobbar som bäst då. När jag väl har koll på uppgiften försöker jag också vara lite kreativ i hur jag löser den. Jag är ganska lugn av mig och tar kanske inte alltid mest plats i gruppen, men bidrar alltid när jag kan.
+    Jag är en person som uppskattar tydliga instruktioner och struktur, eftersom jag jobbar som bäst då. När jag väl har koll på uppgiften försöker jag också vara lite kreativ i hur jag löser den. Jag är ganska lugn av mig och tar kanske inte alltid mest plats i gruppen, men bidrar alltid när jag kan.
 
 #### Jennie: 
-Jag är en kreativ idéspruta men som också tänker väldigt mycket strategiskt. Har ett väldigt bra konsekvenstänk, och det gör att jag ser helheten väldigt bra. Tex "gör vi såhär så påverkar det detta". Finns det ingen annan i gruppen som tar en ledande roll så tar jag oftast på mig den rollen, men uppskattar om någon annan tar den rollen som är bättre på att styra upp än en annan. Vid stress så ändrar jag oftast mitt mind-set från "nice to have " till "need to have" och går lätt in i ett prioriteringsmode. viktigaste är att leverera en bra produkt, men också att alla i gruppen ska må bra och att det ska vara roligt! 
+    Jag är en kreativ idéspruta men som också tänker väldigt mycket strategiskt. Har ett väldigt bra konsekvenstänk, och det gör att jag ser helheten väldigt bra. Tex "gör vi såhär så påverkar det detta". Finns det ingen annan i gruppen som tar en ledande roll så tar jag oftast på mig den rollen, men uppskattar om någon annan tar den rollen som är bättre på att styra upp än en annan. Vid stress så ändrar jag oftast mitt mind-set från "nice to have " till "need to have" och går lätt in i ett prioriteringsmode. viktigaste är att leverera en bra produkt, men också att alla i gruppen ska må bra och att det ska vara roligt! 
 
 Hurdant reagerar varje gruppmedlem vid stress?
 - Flyr situationen, slutar delta, ignorerar situationen/grupparbetet
@@ -134,10 +134,10 @@ Vilken roll brukar varje gruppmedlem ta på sig i ett grupparbete? Vilken roll h
     Jag är bättre på att säkerställa detaljer och finslipa lösningar än att ta fram större kreativa koncept/idéer. Tycker dock att det är lättare att bolla idéer med andra istället för att försöka brainstorma själv. 
 
 #### Mohammed:
-Jag tycker att jag har ett öga för detaljer,  men Jag kan  fastna lite för länge i detaljer och behöver bli bättre på att släppa saker när de är "good enough".
+    Jag tycker att jag har ett öga för detaljer,  men Jag kan  fastna lite för länge i detaljer och behöver bli bättre på att släppa saker när de är "good enough".
 
 #### Jennie: 
-Jag är bra på att komma på idéer och lösningar, men även att avgränsa. Vissa saker är hur roliga som helst att göra, men om det tar för mycket av ens välmående så är jag bra på att styra upp så vi fokuserar på det nödvändigaste - och om tid finns så kan man bygga något extra. Även fast man lärt sig massor sedan man började studera så känner man sig ändå väldigt rookie, så många delar känner mig sig sämre på, som tex Typescript. Det skulle jag vilja träna mer på, även Github i och med att göra projekt där man arbetar i bransches och merge conflicts. Är inte hundra bekväm med sådant ännu så det kommer bli nyttigt att träna på här. 
+    Jag är bra på att komma på idéer och lösningar, men även att avgränsa. Vissa saker är hur roliga som helst att göra, men om det tar för mycket av ens välmående så är jag bra på att styra upp så vi fokuserar på det nödvändigaste - och om tid finns så kan man bygga något extra. Även fast man lärt sig massor sedan man började studera så känner man sig ändå väldigt rookie, så många delar känner mig sig sämre på, som tex Typescript. Det skulle jag vilja träna mer på, även Github i och med att göra projekt där man arbetar i bransches och merge conflicts. Är inte hundra bekväm med sådant ännu så det kommer bli nyttigt att träna på här. 
 
 ### Scrum master
 Utse gärna en scrum master som ansvarar för att _delegera_ uppgifter. Scrum mastern ska inte _göra allt_, utan se till att alla har att göra och att ingen sitter fast. Vill ni rotera rollen, så gör det, men det går också bra om en person är bekväm med att ta på sig rollen. Om ingen vill vara scrum master så bör ni komma överens om vem som styr skutan på annat sätt.
