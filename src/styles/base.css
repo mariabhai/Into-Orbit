@@ -1,0 +1,146 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
+.space-map {
+  width: 100%;
+  color: #001d36;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  overflow: hidden;
+}
+.space-map .space-map-background {
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.space-map li {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.space-map li img {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.space-map-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-inline: 20px;
+  margin-block: 20px;
+}
+.space-map-title h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.space-map-title h3 {
+  position: relative;
+  right: 40px;
+  top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  -webkit-text-decoration: underline #ff5e00;
+          text-decoration: underline #ff5e00;
+}
+
+.space-map-list {
+  color: #f2f2f2;
+}
+
+.space-map-list-1 {
+  position: relative;
+  top: 120px;
+  left: -175px;
+}
+
+.space-map-list-2 {
+  position: relative;
+  top: 50px;
+  left: 290px;
+}
+
+.space-map-list-3 {
+  position: relative;
+  top: 290px;
+  left: 470px;
+}
+
+.space-map-list-4 {
+  position: relative;
+  top: 290px;
+  left: 5px;
+}
+
+.space-map-list-5 {
+  position: relative;
+  top: 90px;
+  left: -550px;
+}
+
+.space-map-list-6 {
+  position: relative;
+  top: -290px;
+  left: -585px;
+}
