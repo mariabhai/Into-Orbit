@@ -4,7 +4,7 @@
 }
 
 .space-map {
-  width: 100%;
+  width: 100vw;
   color: #001d36;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
 
@@ -13,14 +13,32 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100vw;
     height: 100vh;
+  }
+
+  li {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 2rem;
+
+    img {
+      width: 35px;
+      height: 35px;
+      margin-top: 10px;
+    }
   }
+}
+
+.space-map-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin-inline: 20px;
+  margin-block: 20px;
+  
   h2 {
     font-size: 4rem;
   }
@@ -32,21 +50,37 @@
     font-size: 2.5rem;
     text-decoration: underline #ff5e00;
   }
-
-  .space-map-title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  li {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
+.space-map-list {
+  color: #f2f2f2;
+}
+.space-map-list-1 {
+  position: absolute;
+  top: 33%;
+  left: 35%;
+}
+.space-map-list-2 {
+  position: absolute;
+  top: 35.5%;
+  left: 66.5%;
+}
+.space-map-list-3 {
+  position: absolute;
+  top: 78.5%;
+  left: 78%;
+}
+.space-map-list-4 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+.space-map-list-5 {
+  position: absolute;
+  top: 73%;
+  left: 13.5%;
+}
+.space-map-list-6 {
+  position: absolute;
+  top: 42.3%;
+  left: 10.4%;
 }
