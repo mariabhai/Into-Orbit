@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+}
+
+.space-map {
+  width: 100%;
+  color: #001d36;
+  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+
+  .space-map-background {
+    background-image: url(/src/assets/images/webp/space-map-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  h2 {
+    font-size: 4rem;
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+  }
+
+  h3 {
+    position: relative;
+    top: -2rem;
+    left: 80rem;
+    font-size: 2.5rem;
+    text-decoration: underline #ff5e00;
+  }
+  li {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
