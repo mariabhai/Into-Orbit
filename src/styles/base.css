@@ -72,17 +72,22 @@ table {
 }
 .space-map h2 {
   font-size: 4rem;
-  position: relative;
-  top: 1rem;
-  left: 2rem;
 }
 .space-map h3 {
   position: relative;
-  top: -2rem;
-  left: 80rem;
+  right: 40px;
+  top: 15px;
   font-size: 2.5rem;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
+}
+.space-map .space-map-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
 .space-map li {
   font-size: 1.5rem;
