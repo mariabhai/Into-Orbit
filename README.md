@@ -4,16 +4,36 @@
 
 ## About the design
 
-Into Orbit is a concept for a premium space travel company offering exclusive journeys beyond Earth. The brand is built around ambition, innovation, and once-in-a-lifetime experiences, aimed at travellers with both the financial means and the curiosity to go beyond ordinary tourism.
+Into Orbit is a concept for a premium space travel company offering exclusive journeys beyond Earth. The brand is built around innovation, exploration, and once-in-a-lifetime experiences, which influenced both the visual style and the overall tone of the design.
 
-The visual identity was designed to feel cinematic, futuristic, and premium, without becoming overly technical or childish. The colour palette reflects technology, space, and the adventurous nature of travelling beyond Earth. The deep blue tones create a sense of depth, innovation, and exclusivity, while the lighter neutral colour keeps the interface balanced, clean, and readable. The orange accent adds energy and confidence, giving the brand a slightly bold and daring edge while also helping to highlight calls to action, links, and other important interactive details. The logo was also created as part of the visual identity and follows the same rounded, modern, and slightly futuristic design language as the rest of the interface.
+The visual identity was created to feel cinematic, futuristic, and premium without becoming overly technical or childish. The colour palette is based on deep blue tones to reflect space, technology, and exclusivity. A light neutral colour is used to create contrast and keep the interface clean and readable, while the orange accent colour is used to highlight calls to action, links, markers, and other important interactive elements. The logo was also created as part of the visual identity, using the same typeface as the main headings together with a custom vector symbol to reflect orbit, movement, and the overall space theme.
 
-The typography combines a more expressive display heading style with a clean and readable sans serif for supporting text. This balance was chosen to give the brand a confident and slightly editorial feel while still keeping the interface easy to scan and use. Large headings help create impact and atmosphere, while smaller text styles are kept clear and functional across navigation, buttons, links, and supporting content.
+For typography, we chose **Goodspace Rounded** for headings **H1–H4**. For supporting text, navigation, buttons, and smaller content, we use **Poppins**.
 
-Rounded shapes are used throughout buttons, cards, containers, and other interface elements to soften the visual language and make the design feel more modern and approachable. This also creates a contrast against the darker, more dramatic imagery and reinforces a sense of polished futurism. Buttons and links were designed to feel clear and usable, while still matching the overall brand expression.
+Rounded shapes are used throughout buttons, cards, containers, and other UI elements. This choice helps soften the overall look and creates a contrast against the darker imagery and space theme. Buttons and links were designed to feel clear and usable while still matching the brand identity.
 
-Large image areas play an important role in the design. They are used to create scale, mood, and a sense of aspiration, helping the brand feel immersive rather than purely informational. Some of the imagery was generated with the help of AI to better align with the brand identity and create a more consistent visual atmosphere throughout the design. The layout is based on clearly separated sections and reusable card-based components, making the design easier to understand visually and more realistic to implement in code.
+Large image areas are used to create atmosphere, scale, and a stronger visual connection to the concept. Some of the imagery was generated with the help of AI in order to better match the brand identity and create a more consistent visual style throughout the design.
 
-## Figma
+The layout is based on clearly separated sections, reusable card components, and simple navigation. This was done to create a clear visual structure and make the design easier to understand and implement.
+
+### Figma
 
 [Open the team Moodboard design in Figma](https://www.figma.com/design/ZPbQt4fZ07pghM9mvb9MO1/into-orbit?node-id=262-2158&t=HlhPd3pJeQi035qX-1)
+
+### Prototype and interaction notes
+
+We have built an interactive Figma prototype to show important UI states and intended behaviour.
+
+Please note that the linked prototype currently shows the **desktop version** of the design.
+
+The prototype includes:
+- hover states for buttons and links
+- examples of how the swiper sections are intended to work
+- the intended interaction for the space map
+
+The space map is designed as an interactive section where markers and paths react on hover and click, mainly for desktop use.
+
+For the swiper sections, this library may be useful:
+[Swiper.js](https://swiperjs.com/)
+
+[Open the Figma prototype](https://www.figma.com/proto/ZPbQt4fZ07pghM9mvb9MO1/into-orbit?node-id=169-578&t=d6brvQ8UDzwErvFC-1&scaling=scale-down&content-scaling=fixed&page-id=15%3A76&starting-point-node-id=169%3A578&show-proto-sidebar=1)
