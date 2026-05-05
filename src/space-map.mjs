@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         label.style.zIndex = '100';
         label.style.border = '0.5px solid #f2f2f2';
         label.style.backgroundColor = 'rgba(0, 29, 54, 0.8)';
-        label.style.padding = '5px 10px';
+        label.style.padding = '5px 5px';
         label.style.borderRadius = '10px';
         pin.appendChild(label);
         pin.setAttribute('aria-pressed', 'true');
