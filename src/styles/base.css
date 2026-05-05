@@ -67,14 +67,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .space-map .space-map-background {
   background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 150px);
   position: fixed;
-  top: 140px;
+  top: 150px;
   left: 0;
   z-index: -1;
 }
