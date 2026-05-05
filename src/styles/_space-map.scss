@@ -52,7 +52,7 @@
       outline: 2px solid #ff5e00;
       outline-offset: 2px;
       border-radius: 10px;
-      padding: 10px;
+      box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.15);
       z-index: 20;
     }
 
@@ -85,18 +85,20 @@
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    outline: none; // Remove browser default outline
 
     &:hover h3 {
       color: #ff5e00;
       transform: scale(1.05);
     }
 
-    &:focus-visible h3 {
+    &:focus-visible {
       outline: 2px solid #ff5e00;
       outline-offset: 4px;
       border-radius: 10px;
-      padding: 5px;
+    }
+
+    &:focus-visible h3 {
+      color: #ff5e00;
     }
   }
 

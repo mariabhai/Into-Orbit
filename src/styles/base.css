@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px solid #ff5e00;
   outline-offset: 2px;
   border-radius: 10px;
-  padding: 10px;
+  box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.15);
   z-index: 20;
 }
 .space-map button img {
@@ -131,17 +131,18 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  outline: none;
 }
 .space-map-title a:hover h3 {
   color: #ff5e00;
   transform: scale(1.05);
 }
-.space-map-title a:focus-visible h3 {
+.space-map-title a:focus-visible {
   outline: 2px solid #ff5e00;
   outline-offset: 4px;
   border-radius: 10px;
-  padding: 5px;
+}
+.space-map-title a:focus-visible h3 {
+  color: #ff5e00;
 }
 .space-map-title h3 {
   position: relative;
