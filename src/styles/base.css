@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-map-list-1 {
   position: fixed;
-  top: 26%;
+  top: 24%;
   left: 39%;
 }
 
@@ -160,14 +160,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-map-list-5 {
   position: fixed;
-  top: 72%;
-  left: 13%;
+  top: 70.5%;
+  left: 15.5%;
 }
 
 .space-map-list-6 {
   position: fixed;
-  top: 40%;
-  left: 10%;
+  top: 40.5%;
+  left: 13%;
 }
 
 @media (max-width: 1024px) {
