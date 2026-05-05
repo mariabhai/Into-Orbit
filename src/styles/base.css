@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #001d36;
   font-family: "myFont", "Bitstream Vera Serif", serif;
   position: relative;
-  padding: 0 clamp(10px, 5%, 40px);
+  padding: 0 clamp(15px, 10%, 25px);
 }
 .space-map .space-map-background {
   background-image: url(/src/assets/images/webp/space-map-image.webp);
@@ -72,9 +72,9 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 96px);
   position: fixed;
-  top: 150px;
+  top: 96px;
   left: 0;
   z-index: -1;
 }
@@ -118,11 +118,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-inline: 20px;
-  padding-block: 20px;
   position: relative;
   z-index: 100;
-  background: white;
 }
 .space-map-title h2 {
   font-size: 4rem;
@@ -134,18 +131,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
+  top: 15px;
 }
 
 .space-map-list-1 {
   position: fixed;
-  top: 25%;
+  top: 26%;
   left: 39%;
 }
 
 .space-map-list-2 {
   position: fixed;
-  top: 22%;
-  left: 72.5%;
+  top: 30%;
+  left: 67%;
 }
 
 .space-map-list-3 {
