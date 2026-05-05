@@ -26,16 +26,32 @@
     cursor: pointer;
     z-index: 1;
     width: fit-content;
-    min-width: 35px;
+    min-width: 44px;
+    min-height: 44px;
     position: absolute;
+    transition: z-index 0.2s ease;
+    border-radius: 4px;
 
     &:hover {
+      z-index: 2;
+    }
+
+    // Keyboard focus visible state
+    &:focus-visible {
+      outline: 2px solid #ff5e00;
+      outline-offset: 2px;
       z-index: 2;
     }
 
     img {
       width: 35px;
       height: 35px;
+      transition: transform 0.2s ease;
+    }
+
+    // Hover effect for better UX
+    &:hover img {
+      transform: scale(1.1);
     }
   }
 }
@@ -44,8 +60,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-inline: 20px;
-  margin-block: 20px;
+  padding-inline: 20px;
+  padding-block: 20px;
 
   h2 {
     font-size: 4rem;
@@ -54,7 +70,6 @@
 
   h3 {
     position: relative;
-    right: 40px;
     top: 15px;
     font-size: 2rem;
     font-weight: 400;
@@ -65,86 +80,44 @@
   color: #f2f2f2;
 
   img[data-label] {
-  cursor: pointer;
-  margin-bottom: 5px;
-  /* other styles */
-}
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* other styles */
+  }
 }
 
 .space-map-list-1 {
   position: absolute;
   top: 180px;
   left: 550px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
 
 .space-map-list-2 {
   position: absolute;
   top: 200px;
   left: 1030px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
 
 .space-map-list-3 {
   position: absolute;
   top: 560px;
   left: 1210px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
 
 .space-map-list-4 {
   position: absolute;
   top: 650px;
   left: 690px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
 
 .space-map-list-5 {
   position: absolute;
   top: 580px;
   left: 190px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
 
 .space-map-list-6 {
   position: absolute;
   bottom: 445px;
   left: 140px;
-  pointer-events: auto;
-  z-index: 1;
-
-  &:hover {
-    z-index: 2;
-    pointer-events: auto;
-  }
 }
