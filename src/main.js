@@ -1,3 +1,1 @@
-import { initSpaceMap } from './js/space-map.mjs';
-
-initSpaceMap();
+import './space-map.mjs';
