@@ -5,16 +5,19 @@
 
 .space-map {
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   min-height: 100vh;
   color: #001d36;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   position: relative;
   overflow: visible;
+  padding: 0 clamp(10px, 5%, 40px);
 
   .space-map-background {
     background-image: url(/src/assets/images/webp/space-map-image.webp);
-    background-size: contain;
-    background-position: center top;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
