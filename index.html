@@ -53,33 +53,22 @@
     <article class="space-map-background">
       <ul class="space-map-list">
         <li class="space-map-list-1">
-
-          <p class="hidden">Mars bound</p>
-          <img src="/src/assets/svg/pin-icon.svg" alt="Mars bound">
+          <img src="/src/assets/svg/pin-icon.svg" alt="Mars bound" data-label="Mars bound">
         </li>
         <li class="space-map-list-2">
-
-          <p class="hidden">Saturn soar</p><img src="/src/assets/svg/pin-icon.svg" alt="Saturn soar">
+          <img src="/src/assets/svg/pin-icon.svg" alt="Saturn soar" data-label="Saturn soar">
         </li>
         <li class="space-map-list-3">
-          <p class="hidden">Short orbit</p>
-          <img src="/src/assets/svg/pin-icon.svg" alt="Short orbit">
-
+          <img src="/src/assets/svg/pin-icon.svg" alt="Short orbit" data-label="Short orbit">
         </li>
         <li class="space-map-list-4">
-          <p class="hidden">View point</p>
-
-          <img src="/src/assets/svg/pin-icon.svg" alt="View point">
+          <img src="/src/assets/svg/pin-icon.svg" alt="View point" data-label="View point">
         </li>
         <li class="space-map-list-5">
-          <p class="hidden">Fast orbit</p>
-
-          <img src="/src/assets/svg/pin-icon.svg" alt="Fast orbit">
+          <img src="/src/assets/svg/pin-icon.svg" alt="Fast orbit" data-label="Fast orbit">
         </li>
         <li class="space-map-list-6">
-          <p class="hidden">Space walk</p>
-
-          <img src="/src/assets/svg/pin-icon.svg" alt="Space walk">
+          <img src="/src/assets/svg/pin-icon.svg" alt="Space walk" data-label="Space walk">
         </li>
       </ul>
     </article>
@@ -111,6 +100,67 @@
 
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-</body>
+  <script>
+    // Initialize space map interactions with dynamic label creation
+    document.addEventListener('DOMContentLoaded', () => {
+      const listContainer = document.querySelector('.space-map-list');
+      if (listContainer) {
+        const pins = listContainer.querySelectorAll('li');
+        pins.forEach(pin => {
+          const img = pin.querySelector('img');
+          const labelText = img.dataset.label;
+          let label = null;
+
+          // Create label element with absolute positioning
+          const createLabel = () => {
+            if (!label) {
+              label = document.createElement('p');
+              label.textContent = labelText;
+              label.style.position = 'absolute';
+              label.style.top = '-30px';
+              label.style.left = '50%';
+              label.style.transform = 'translateX(-50%)';
+              label.style.whiteSpace = 'nowrap';
+              label.style.color = '#f2f2f2';
+              label.style.fontSize = '1.5rem';
+              label.style.margin = '0';
+              label.style.pointerEvents = 'none';
+              pin.appendChild(label);
+            }
+          };
+
+          // Remove label element
+          const removeLabel = () => {
+            if (label) {
+              label.remove();
+              label = null;
+            }
+          };
+
+          // Hover events
+          pin.addEventListener('mouseenter', createLabel);
+          pin.addEventListener('mouseleave', removeLabel);
+
+          // Click to toggle label
+          pin.addEventListener('click', e => {
+            e.stopPropagation();
+            if (label) {
+              removeLabel();
+            } else {
+              createLabel();
+            }
+          });
+        });
+
+        // Click outside to close all labels
+        document.addEventListener('click', () => {
+          pins.forEach(pin => {
+            const p = pin.querySelector('p');
+            if (p) p.remove();
+          });
+        });
+      }
+    });
+  </script>
 
 </html>
