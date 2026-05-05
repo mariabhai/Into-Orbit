@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
           label = document.createElement('p');
           label.textContent = labelText;
           label.style.position = 'absolute';
-          label.style.top = '-30px';
+          label.style.top = '-55px';
           label.style.left = '50%';
           label.style.transform = 'translateX(-50%)';
           label.style.whiteSpace = 'nowrap';
@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
           label.style.fontSize = '1.5rem';
           label.style.margin = '0';
           label.style.pointerEvents = 'none';
+          label.style.border = '0.25px solid #f2f2f2';
+          label.style.backgroundColor = 'rgba(0, 29, 54, 0.2)';
+          label.style.padding = '5px 10px';
+          label.style.borderRadius = '10px';
           pin.appendChild(label);
         }
       };

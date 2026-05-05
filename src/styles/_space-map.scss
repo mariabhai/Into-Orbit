@@ -63,12 +63,18 @@
 }
 .space-map-list {
   color: #f2f2f2;
+
+  img[data-label] {
+  cursor: pointer;
+  margin-bottom: 5px;
+  /* other styles */
+}
 }
 
 .space-map-list-1 {
   position: absolute;
-  top: 120px;
-  left: 20px;
+  top: 180px;
+  left: 550px;
   pointer-events: auto;
   z-index: 1;
 
@@ -80,8 +86,8 @@
 
 .space-map-list-2 {
   position: absolute;
-  top: 50px;
-  left: 290px;
+  top: 200px;
+  left: 1030px;
   pointer-events: auto;
   z-index: 1;
 
@@ -93,8 +99,8 @@
 
 .space-map-list-3 {
   position: absolute;
-  top: 290px;
-  left: 470px;
+  top: 560px;
+  left: 1210px;
   pointer-events: auto;
   z-index: 1;
 
@@ -106,8 +112,8 @@
 
 .space-map-list-4 {
   position: absolute;
-  top: 290px;
-  left: 5px;
+  top: 650px;
+  left: 690px;
   pointer-events: auto;
   z-index: 1;
 
@@ -119,8 +125,8 @@
 
 .space-map-list-5 {
   position: absolute;
-  top: 90px;
-  left: calc(100% - 570px);
+  top: 580px;
+  left: 190px;
   pointer-events: auto;
   z-index: 1;
 
@@ -132,8 +138,8 @@
 
 .space-map-list-6 {
   position: absolute;
-  bottom: 290px;
-  left: calc(100% - 585px);
+  bottom: 445px;
+  left: 140px;
   pointer-events: auto;
   z-index: 1;
 
