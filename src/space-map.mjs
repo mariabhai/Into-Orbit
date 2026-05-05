@@ -3,19 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const listContainer = document.querySelector('.space-map-list');
   if (!listContainer) return;
 
-  const pins = listContainer.querySelectorAll('li');
+  const pins = listContainer.querySelectorAll('button');
 
   pins.forEach((pin, index) => {
-    const img = pin.querySelector('img');
-    if (!img) return;
+    const labelText = pin.getAttribute('aria-label');
+    if (!labelText) return;
 
-    const labelText = img.dataset.label || img.alt;
     let label = null;
 
-    // Make pin keyboard accessible
-    pin.setAttribute('role', 'button');
-    pin.setAttribute('tabindex', '0');
-    pin.setAttribute('aria-label', labelText);
+    // Buttons are already accessible (no need to set role or tabindex)
     pin.setAttribute('aria-pressed', 'false');
 
     // Create label element with absolute positioning
@@ -26,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         label.setAttribute('aria-hidden', 'false');
 
         // Responsive positioning based on viewport width
-        const isMobile = window.innerWidth <= 640;
+        const isMobile = window.innerWidth <= 480;
         const topOffset = isMobile ? '-40px' : '-55px';
         const fontSize = isMobile ? '1rem' : '1.5rem';
 
@@ -39,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         label.style.fontSize = fontSize;
         label.style.margin = '0';
         label.style.pointerEvents = 'none';
+        label.style.zIndex = '100';
         label.style.border = '0.5px solid #f2f2f2';
         label.style.backgroundColor = 'rgba(0, 29, 54, 0.8)';
         label.style.padding = '5px 10px';
@@ -86,16 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape' && label) {
         removeLabel();
       }
-    });
-
-    // Focus/Blur for better visual feedback
-    pin.addEventListener('focus', () => {
-      pin.style.outline = '2px solid #ff5e00';
-      pin.style.outlineOffset = '2px';
-    });
-
-    pin.addEventListener('blur', () => {
-      pin.style.outline = 'none';
     });
   });
 
