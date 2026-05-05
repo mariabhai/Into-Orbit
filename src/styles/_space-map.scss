@@ -51,6 +51,8 @@
     &:focus-visible {
       outline: 2px solid #ff5e00;
       outline-offset: 2px;
+      border-radius: 10px;
+      padding: 10px;
       z-index: 20;
     }
 
@@ -79,12 +81,33 @@
     font-weight: 400;
   }
 
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none; // Remove browser default outline
+
+    &:hover h3 {
+      color: #ff5e00;
+      transform: scale(1.05);
+    }
+
+    &:focus-visible h3 {
+      outline: 2px solid #ff5e00;
+      outline-offset: 4px;
+      border-radius: 10px;
+      padding: 5px;
+    }
+  }
+
   h3 {
     position: relative;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: underline #ff5e00;
-    top: 15px;
+    top: 20px;
+    color: #001d36;
+    transition: all 0.3s ease;
   }
 }
 

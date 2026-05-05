@@ -103,6 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 .space-map button:focus-visible {
   outline: 2px solid #ff5e00;
   outline-offset: 2px;
+  border-radius: 10px;
+  padding: 10px;
   z-index: 20;
 }
 .space-map button img {
@@ -125,13 +127,31 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4rem;
   font-weight: 400;
 }
+.space-map-title a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+}
+.space-map-title a:hover h3 {
+  color: #ff5e00;
+  transform: scale(1.05);
+}
+.space-map-title a:focus-visible h3 {
+  outline: 2px solid #ff5e00;
+  outline-offset: 4px;
+  border-radius: 10px;
+  padding: 5px;
+}
 .space-map-title h3 {
   position: relative;
   font-size: 2rem;
   font-weight: 400;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
-  top: 15px;
+  top: 20px;
+  color: #001d36;
+  transition: all 0.3s ease;
 }
 
 .space-map-list-1 {
