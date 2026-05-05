@@ -24,13 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
         label = document.createElement('p');
         label.textContent = labelText;
         label.setAttribute('aria-hidden', 'false');
+
+        // Responsive positioning based on viewport width
+        const isMobile = window.innerWidth <= 640;
+        const topOffset = isMobile ? '-40px' : '-55px';
+        const fontSize = isMobile ? '1rem' : '1.5rem';
+
         label.style.position = 'absolute';
-        label.style.top = '-55px';
+        label.style.top = topOffset;
         label.style.left = '50%';
         label.style.transform = 'translateX(-50%)';
         label.style.whiteSpace = 'nowrap';
         label.style.color = '#f2f2f2';
-        label.style.fontSize = '1.5rem';
+        label.style.fontSize = fontSize;
         label.style.margin = '0';
         label.style.pointerEvents = 'none';
         label.style.border = '0.5px solid #f2f2f2';
