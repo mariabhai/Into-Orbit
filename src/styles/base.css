@@ -144,3 +144,74 @@ h1, h2, h3, h4, h5, h6 {
   top: -290px;
   left: -585px;
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  width: 520px;
+  height: 834px;
+  padding: 48px;
+  border-radius: 5px;
+  background-color: rgb(0, 13, 25, 80%);
+  font-family: "Poppins";
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 424px;
+  height: 192px;
+  background-color: #ff5e00;
+  
+  a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #f2f2f2;
+    }
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+  width: 424px;
+  height: 334px;
+  gap: 31px;
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+.menu-customers-review {
+  width: 424px;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-newsletter {
+  text-align: center;
+  width: 424px;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.newsletter-mail {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(242, 242, 242, 54%);
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: left;
+}
