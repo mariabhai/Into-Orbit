@@ -5,40 +5,144 @@
 $white-noise: #f2f2f2;
 $dark-orbit: #000d19;
 $space-dust: #ff5e00;
+$dark-trans-matter: rgba(
+  $color: #333d47,
+  $alpha: 0.4,
+);
 
 @font-face {
   font-family: 'myFont';
   src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
 }
 
-footer {
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+.site-footer {
   background-color: $white-noise;
   color: #001d36;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
-}
-.site-footer {
-  padding: 50px 0;
+  padding: clamp(30px, 10vw, 50px) 0;
 
   section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 25px;
-    padding-inline: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: clamp(20px, 5vw, 25px);
+    padding-inline: clamp(20px, 5vw, 50px);
   }
 
-  li {
+  nav {
+    text-align: left;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: clamp(10px, 2vw, 15px);
+    font-weight: 600;
+    text-align: left;
+  }
+
+  ul {
     list-style: none;
-    margin-bottom: 10px;
-    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: clamp(8px, 1.5vw, 10px);
+
+      a {
+        color: #001d36;
+        text-decoration: none;
+        transition: color 0.2s ease;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        display: inline-block;
+        text-decoration: underline;
+
+        @media (hover: hover) {
+          &:hover {
+            color: $space-dust;
+          }
+        }
+
+        &:focus-visible {
+          outline: 2px solid $space-dust;
+          outline-offset: 2px;
+          border-radius: 4px;
+        }
+      }
+    }
   }
 
-  a {
-    color: #001d36;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: clamp(40px, 10vw, 80px);
+    grid-column: 1 / -1;
 
-    &:hover {
-      color: #ff5e00;
+    img {
+      width: clamp(40px, 15vw, 150px);
+      height: auto;
     }
+  }
+}
+
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
+
+@media (min-width: 1025px) {
+  .site-footer section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .site-footer section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================
+   MOBILE LAYOUT (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+  .site-footer {
+    padding: clamp(20px, 5vw, 30px) 0;
+
+    section {
+      grid-template-columns: 1fr;
+    }
+
+    figure {
+      grid-column: 1;
+      padding-block: clamp(30px, 8vw, 50px);
+    }
+  }
+}
+
+/* ============================================
+   FOOTER COPYRIGHT
+   ============================================ */
+
+.site-footer-copyright {
+  display: flex;
+  width: clamp(80%, 90vw, 100%);
+  justify-content: center;
+  margin: clamp(30px, 5vw, 50px) auto 0;
+  padding-top: clamp(20px, 3vw, 30px);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: $dark-trans-matter;
+  border-top: 3px solid $dark-trans-matter;
+
+  p {
+    margin: clamp(10px, 2vw, 15px) 0;
+    text-align: center;
   }
 }
