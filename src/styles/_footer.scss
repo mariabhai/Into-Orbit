@@ -81,11 +81,12 @@ $dark-trans-matter: rgba(
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding-block: clamp(40px, 10vw, 80px);
     grid-column: 1 / -1;
 
     img {
-      width: clamp(40px, 15vw, 150px);
+      width: clamp(90px, 40vw, 400px);
       height: auto;
     }
   }
@@ -126,6 +127,7 @@ $dark-trans-matter: rgba(
     figure {
       grid-column: 1;
       padding-block: clamp(30px, 8vw, 50px);
+      width: 100%;
     }
   }
 }
