@@ -185,6 +185,9 @@ h1, h2, h3, h4, h5, h6 {
     right: 0.75rem;
   }
 }
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 @font-face {
   font-family: "myFont";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
@@ -259,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
-  top: 30px;
+  top: 25px;
   color: #001d36;
   transition: all 0.3s ease;
 }
@@ -282,6 +285,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 10px;
 }
 
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
 .space-map-list-1 {
   position: absolute;
   top: 20%;
@@ -290,34 +296,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-map-list-2 {
   position: absolute;
-  top: 25%;
+  top: 24%;
   left: 67.5%;
 }
 
 .space-map-list-3 {
   position: absolute;
-  top: 51%;
-  left: 80%;
+  top: 48.5%;
+  left: 79%;
 }
 
 .space-map-list-4 {
   position: absolute;
-  top: 59%;
-  left: 48%;
+  top: 56%;
+  left: 47%;
 }
 
 .space-map-list-5 {
   position: absolute;
-  top: 53%;
+  top: 49.5%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
   position: absolute;
-  top: 32.5%;
-  left: 13.5%;
+  top: 31%;
+  left: 12.5%;
 }
 
+/* ============================================
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
 @media (max-width: 1024px) {
   .space-map {
     background-size: contain;
@@ -375,6 +384,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 13%;
   }
 }
+/* ============================================
+   MOBILE LAYOUT (max-width: 480px)
+   ============================================ */
 @media (max-width: 480px) {
   .space-map {
     background-size: contain;
@@ -396,9 +408,8 @@ h1, h2, h3, h4, h5, h6 {
   .space-map-title {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    padding-inline: 10px;
-    padding-block: 10px;
+    padding-inline: 1px;
+    padding-bottom: 10px;
   }
   .space-map-title h2 {
     font-size: 1.8rem;
