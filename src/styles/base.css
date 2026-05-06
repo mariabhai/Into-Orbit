@@ -207,8 +207,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 30px;
   }
   .space-map-title {
-    padding-inline: 15px;
-    padding-block: 15px;
+    padding-inline: 10px;
+    padding-block: 10px;
   }
   .space-map-title h2 {
     font-size: 2.5rem;
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 10px;
     padding-inline: 10px;
-    padding-block: 15px;
+    padding-block: 10px;
   }
   .space-map-title h2 {
     font-size: 1.8rem;
