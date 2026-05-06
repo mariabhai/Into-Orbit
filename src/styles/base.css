@@ -646,15 +646,19 @@ header {
 }
 .site-footer section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: clamp(20px, 5vw, 25px);
-  padding-inline: clamp(40px, 10vw, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: clamp(100px, 20vw, 125px);
+  width: min(100%, 1200px);
+  margin-inline: 300px;
+  padding-bottom: 90px;
+  border-bottom: 3px solid rgba(51, 61, 71, 0.4);
+  justify-items: center;
 }
 .site-footer nav {
   text-align: left;
 }
 .site-footer h3 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
   margin-bottom: clamp(10px, 2vw, 15px);
   font-weight: 600;
   text-align: left;
@@ -673,7 +677,7 @@ header {
   text-decoration-color: #000d19;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   display: inline-block;
   transition: text-decoration-color 0.2s ease;
 }
@@ -709,6 +713,7 @@ header {
    ============================================ */
 @media (min-width: 1025px) {
   .site-footer section {
+    width: min(100%, 1200px);
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -717,7 +722,22 @@ header {
    ============================================ */
 @media (max-width: 1024px) {
   .site-footer section {
+    width: min(100%, 900px);
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .site-footer nav {
+    text-align: left;
+  }
+  .site-footer h3 {
+    text-align: center;
+  }
+  .site-footer ul {
+    text-align: left;
+  }
+  .site-footer li,
+  .site-footer a {
+    text-align: left;
   }
 }
 /* ============================================
@@ -731,7 +751,7 @@ header {
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    padding-inline: clamp(20px, 6vw, 30px);
+    padding-inline: clamp(8px, 3vw, 16px);
   }
   .site-footer nav,
   .site-footer h3,
@@ -759,14 +779,12 @@ header {
   display: flex;
   width: min(100%, 900px);
   justify-content: center;
-  margin: clamp(30px, 5vw, 50px) auto 0;
-  padding-top: clamp(20px, 3vw, 30px);
+  margin: clamp(15px, 2.5vw, 25px) auto 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: rgba(51, 61, 71, 0.4);
-  border-top: 3px solid rgba(51, 61, 71, 0.4);
 }
 .site-footer-copyright p {
-  margin: clamp(10px, 2vw, 15px) 0;
+  margin: clamp(5px, 1vw, 7.5px) 0;
   text-align: center;
 }
 
