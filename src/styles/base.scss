@@ -1,4 +1,11 @@
 @use 'reset';
+@use 'destinations';
 @use 'space-map';
 @use 'menu';
 @use 'header';
+@use 'footer';
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}

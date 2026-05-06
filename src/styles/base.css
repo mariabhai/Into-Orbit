@@ -53,43 +53,204 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+.destinations {
+  padding: 4rem 1.25rem;
+  color: #001d36;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  background-color: #ffffff;
+}
+
+.destinations__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.destinations__title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.destinations__link {
+  color: #001d36;
+  font-size: 1.25rem;
+  -webkit-text-decoration: underline #001d36;
+          text-decoration: underline #001d36;
+  text-underline-offset: 0.25rem;
+}
+
+.destinations__link:hover,
+.destinations__link:focus-visible {
+  text-decoration-color: #ff5e00;
+}
+
+.destinations__swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.destinations__track {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 24rem));
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.destinations__card {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.destinations__card[hidden] {
+  display: none;
+}
+
+.destinations__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.destinations__card-title {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translateX(-50%);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+  color: #f2f2f2;
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: rgba(0, 29, 54, 0.82);
+}
+
+.destinations__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.destinations__next-button {
+  position: absolute;
+  top: 45%;
+  right: 0.25rem;
+  width: 2.75rem;
+  height: 4rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.destinations__next-button::before {
+  content: "";
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-top: 0.2rem solid #ff5e00;
+  border-right: 0.2rem solid #ff5e00;
+  transform: rotate(45deg);
+}
+
+.destinations__pagination-button {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 1px solid #ff5e00;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.destinations__pagination-button[hidden] {
+  display: none;
+}
+
+.destinations__pagination-button--active {
+  background-color: #ff5e00;
+}
+
+@media (min-width: 1024px) {
+  .destinations__track {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: initial;
+  }
+  .destinations__next-button {
+    right: 0.75rem;
+  }
+}
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 @font-face {
   font-family: "myFont";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
 .space-map {
   width: 100%;
+  min-height: 100vh;
   color: #001d36;
   font-family: "myFont", "Bitstream Vera Serif", serif;
+  position: relative;
   overflow: hidden;
-}
-.space-map .space-map-background {
+  padding: 0 clamp(15px, 10%, 25px);
   background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center 100px;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+  background-attachment: scroll;
 }
-.space-map li {
+.space-map button {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 44px;
+  min-height: 44px;
+  position: absolute;
+  transition: z-index 0.2s ease;
+  border-radius: 4px;
+  overflow: visible;
+  border: none;
+  background: none;
+  padding: 0;
 }
-.space-map li img {
+.space-map button:hover {
+  z-index: 20;
+}
+.space-map button:focus-visible {
+  outline: 2px solid #ff5e00;
+  outline-offset: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.15);
+  z-index: 20;
+  padding: 3px;
+}
+.space-map button img {
   width: 35px;
   height: 35px;
-  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+.space-map button:hover img {
+  transform: scale(1.2);
 }
 
 .space-map-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-inline: 20px;
-  margin-block: 20px;
+  position: relative;
+  z-index: 100;
 }
 .space-map-title h2 {
   font-size: 4rem;
@@ -97,46 +258,64 @@ h1, h2, h3, h4, h5, h6 {
 }
 .space-map-title h3 {
   position: relative;
-  right: 40px;
-  top: 15px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 400;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
+  top: 25px;
+  color: #001d36;
+  transition: all 0.3s ease;
+}
+.space-map-title a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.space-map-title a:hover h3 {
+  color: #ff5e00;
+  transform: scale(1.1);
+}
+.space-map-title a:focus-visible {
+  outline: 2px solid #ff5e00;
+  outline-offset: -4px;
+  border-radius: 10px;
+}
+.space-map-title a:focus-visible h3 {
+  color: #ff5e00;
+  padding: 0 10px;
 }
 
-.space-map-list {
-  color: #f2f2f2;
-}
-
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
 .space-map-list-1 {
-  position: relative;
-  top: 120px;
-  left: -175px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 
 .space-map-list-2 {
-  position: relative;
-  top: 50px;
-  left: 290px;
+  position: absolute;
+  top: 24%;
+  left: 67.5%;
 }
 
 .space-map-list-3 {
-  position: relative;
-  top: 290px;
-  left: 470px;
+  position: absolute;
+  top: 48.5%;
+  left: 79%;
 }
 
 .space-map-list-4 {
-  position: relative;
-  top: 290px;
-  left: 5px;
+  position: absolute;
+  top: 56%;
+  left: 47%;
 }
 
 .space-map-list-5 {
-  position: relative;
-  top: 90px;
-  left: -550px;
+  position: absolute;
+  top: 49.5%;
+  left: 15.5%;
 }
 
 .space-map-list-6 {
