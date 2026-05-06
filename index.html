@@ -62,6 +62,104 @@
     <!-------------------------------------- DESTINATIONS ---------------------------->
     <!--############################################################################-->
 
+    <section id="destinations" class="destinations" aria-labelledby="destinations-title">
+      <div class="destinations__header">
+        <h2 id="destinations-title" class="destinations__title">Destinations</h2>
+
+        <a class="destinations__link" href="#space-map">All the spots</a>
+      </div>
+
+      <div class="destinations__swiper" aria-label="Destination carousel">
+        <div class="destinations__track">
+          <article class="destinations__card" data-destination-card>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-1-image.webp"
+              alt="Astronaut on a space walk above Earth"
+            />
+            <h3 class="destinations__card-title">Space walk</h3>
+          </article>
+
+          <article class="destinations__card" data-destination-card>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-2-image.webp"
+              alt="Spacecraft flying in orbit above Earth"
+            />
+            <h3 class="destinations__card-title">Fast orbit</h3>
+          </article>
+
+          <article class="destinations__card" data-destination-card>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-3-image.webp"
+              alt="Exploration vehicle on the surface of Mars"
+            />
+            <h3 class="destinations__card-title">Mars bound</h3>
+          </article>
+
+          <article class="destinations__card" data-destination-card hidden>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-4-img.webp"
+              alt="Spacecraft in short orbit above Earth"
+            />
+            <h3 class="destinations__card-title">Short orbit</h3>
+          </article>
+
+          <article class="destinations__card" data-destination-card hidden>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-5-image.webp"
+              alt="View of Earth from space"
+            />
+            <h3 class="destinations__card-title">View point</h3>
+          </article>
+
+          <article class="destinations__card" data-destination-card hidden>
+            <img
+              class="destinations__image"
+              src="/src/assets/images/webp/destination-6-image.webp"
+              alt="View of Saturn from space"
+            />
+            <h3 class="destinations__card-title">Saturn soar</h3>
+          </article>
+        </div>
+
+        <button
+          class="destinations__next-button"
+          type="button"
+          aria-label="Show next destinations"
+          data-destination-next-button
+        ></button>
+
+        <div class="destinations__pagination" aria-label="Destination pages" data-destination-pagination>
+          <button
+            class="destinations__pagination-button destinations__pagination-button--active"
+            type="button"
+            aria-label="Show destinations 1 to 3"
+            aria-current="true"
+            data-destination-page="0"
+          ></button>
+
+          <button
+            class="destinations__pagination-button"
+            type="button"
+            aria-label="Show destinations 4 to 6"
+            data-destination-page="1"
+          ></button>
+
+          <button
+            class="destinations__pagination-button"
+            type="button"
+            aria-label="Show destinations 5 to 6"
+            data-destination-page="2"
+            hidden
+          ></button>
+        </div>
+      </div>
+    </section>
+
     <!--############################################################################-->
     <!-------------------------------------- SPACE MAP ------------------------------->
     <!--############################################################################-->

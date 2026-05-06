@@ -53,6 +53,309 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Poppins";
+  color: #f2f2f2;
+  background-color: rgba(0, 13, 25, 0.8);
+  background-image: url("/src/assets/images/webp/hero-image-1.webp");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 0 25px;
+  margin-bottom: 15px;
+}
+
+.header-hero {
+  padding-inline: 20px;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  padding: 0 8px 0 0;
+}
+.header-logo img {
+  width: 81.11px;
+  height: 41.54px;
+}
+
+.header-line {
+  flex: 1;
+  height: 1px;
+  background: #f2f2f2;
+}
+
+.header-nav {
+  display: none;
+}
+
+.menu-toggle {
+  background: #000d19;
+  opacity: 80%;
+  border: 0.3px solid rgb(48, 48, 48);
+  border-radius: 5px;
+  padding: 8px 9px;
+  cursor: pointer;
+}
+.menu-toggle img {
+  width: 34.67px;
+  height: 42px;
+  stroke: #ff5e00;
+}
+
+.header-pretitle {
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.header-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 259px;
+  margin-bottom: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.header-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "myFont";
+  font-size: 16px;
+}
+.header-actions .btn.btn-primary {
+  color: #000d19;
+  background: #ff5e00;
+  border: 2px solid #ff5e00;
+  border-radius: 15px;
+  padding: 0 8px;
+}
+.header-actions .btn.btn-primary:hover {
+  background: none;
+  color: #f2f2f2;
+}
+.header-actions .btn.btn-link {
+  color: #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+}
+.header-actions .btn.btn-link:hover {
+  border-bottom: 2px solid #ff5e00;
+}
+
+@media (min-width: 768px) {
+  .header-topbar {
+    padding: 20px 25px 0 25px;
+    margin-bottom: 70px;
+  }
+  .header-hero {
+    padding-inline: 60px;
+    margin-bottom: 120px;
+  }
+  .header-pretitle {
+    font-size: 24px;
+  }
+  .header-title {
+    font-size: 64px;
+    line-height: 96px;
+  }
+  .header-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 459px;
+    margin-bottom: 50px;
+  }
+  .header-actions {
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-actions .btn-primary {
+    text-align: center;
+    font-size: 20px;
+  }
+  .header-actions .btn-link {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-pretitle {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .header-title {
+    font-size: 96px;
+    margin-bottom: 30px;
+  }
+  .header-description {
+    max-width: 719px;
+    margin-bottom: 50px;
+  }
+}
+.destinations {
+  padding: 4rem 1.25rem;
+  color: #001d36;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  background-color: #ffffff;
+}
+
+.destinations__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.destinations__title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.destinations__link {
+  color: #001d36;
+  font-size: 1.25rem;
+  text-decoration: underline #001d36;
+  text-underline-offset: 0.25rem;
+}
+
+.destinations__link:hover,
+.destinations__link:focus-visible {
+  text-decoration-color: #ff5e00;
+}
+
+.destinations__swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.destinations__track {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 24rem));
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.destinations__card {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.destinations__card[hidden] {
+  display: none;
+}
+
+.destinations__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destinations__card-title {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translateX(-50%);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+  color: #f2f2f2;
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: rgba(0, 29, 54, 0.82);
+}
+
+.destinations__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.destinations__next-button {
+  position: absolute;
+  top: 45%;
+  right: 0.25rem;
+  width: 2.75rem;
+  height: 4rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.destinations__next-button::before {
+  content: "";
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-top: 0.2rem solid #ff5e00;
+  border-right: 0.2rem solid #ff5e00;
+  transform: rotate(45deg);
+}
+
+.destinations__pagination-button {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 1px solid #ff5e00;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.destinations__pagination-button[hidden] {
+  display: none;
+}
+
+.destinations__pagination-button--active {
+  background-color: #ff5e00;
+}
+
+@media (min-width: 1024px) {
+  .destinations__track {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: initial;
+  }
+  .destinations__next-button {
+    right: 0.75rem;
+  }
+}
 @font-face {
   font-family: "myFont";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
@@ -101,8 +404,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 15px;
   font-size: 2rem;
   font-weight: 400;
-  -webkit-text-decoration: underline #ff5e00;
-          text-decoration: underline #ff5e00;
+  text-decoration: underline #ff5e00;
 }
 
 .space-map-list {
