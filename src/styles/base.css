@@ -59,88 +59,262 @@ h1, h2, h3, h4, h5, h6 {
 }
 .space-map {
   width: 100%;
+  min-height: 100vh;
   color: #001d36;
   font-family: "myFont", "Bitstream Vera Serif", serif;
-  overflow: hidden;
+  position: relative;
+  padding: 0 clamp(15px, 10%, 25px);
 }
 .space-map .space-map-background {
   background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 96px);
+  position: fixed;
+  top: 96px;
+  left: 0;
+  z-index: -1;
 }
-.space-map li {
+.space-map button {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 44px;
+  min-height: 44px;
+  position: fixed;
+  transition: z-index 0.2s ease;
+  border-radius: 4px;
+  overflow: visible;
+  border: none;
+  background: none;
+  padding: 0;
 }
-.space-map li img {
+.space-map button:hover {
+  z-index: 20;
+}
+.space-map button:focus-visible {
+  outline: 2px solid #ff5e00;
+  outline-offset: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px rgba(255, 94, 0, 0.15);
+  z-index: 20;
+  padding: 3px;
+}
+.space-map button img {
   width: 35px;
   height: 35px;
-  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+.space-map button:hover img {
+  transform: scale(1.2);
 }
 
 .space-map-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-inline: 20px;
-  margin-block: 20px;
+  position: relative;
+  z-index: 100;
 }
 .space-map-title h2 {
   font-size: 4rem;
   font-weight: 400;
 }
+.space-map-title a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.space-map-title a:hover h3 {
+  color: #ff5e00;
+  transform: scale(1.1);
+}
+.space-map-title a:focus-visible {
+  outline: 2px solid #ff5e00;
+  outline-offset: -4px;
+  border-radius: 10px;
+}
+.space-map-title a:focus-visible h3 {
+  color: #ff5e00;
+  padding: 0 10px;
+}
 .space-map-title h3 {
   position: relative;
-  right: 40px;
-  top: 15px;
   font-size: 2rem;
   font-weight: 400;
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
-}
-
-.space-map-list {
-  color: #f2f2f2;
+  top: 20px;
+  color: #001d36;
+  transition: all 0.3s ease;
 }
 
 .space-map-list-1 {
-  position: relative;
-  top: 120px;
-  left: -175px;
+  position: fixed;
+  top: 24%;
+  left: 39%;
 }
 
 .space-map-list-2 {
-  position: relative;
-  top: 50px;
-  left: 290px;
+  position: fixed;
+  top: 30%;
+  left: 67%;
 }
 
 .space-map-list-3 {
-  position: relative;
-  top: 290px;
-  left: 470px;
+  position: fixed;
+  top: 68%;
+  left: 82%;
 }
 
 .space-map-list-4 {
-  position: relative;
-  top: 290px;
-  left: 5px;
+  position: fixed;
+  top: 80%;
+  left: 49%;
 }
 
 .space-map-list-5 {
-  position: relative;
-  top: 90px;
-  left: -550px;
+  position: fixed;
+  top: 70.5%;
+  left: 15.5%;
 }
 
 .space-map-list-6 {
-  position: relative;
-  top: -290px;
-  left: -585px;
+  position: fixed;
+  top: 40.5%;
+  left: 13%;
+}
+
+@media (max-width: 1024px) {
+  .space-map .space-map-background {
+    background-size: contain;
+    background-attachment: fixed;
+    height: 80vh;
+  }
+  .space-map button {
+    font-size: 1rem;
+  }
+  .space-map button img {
+    width: 30px;
+    height: 30px;
+  }
+  .space-map-title {
+    padding-inline: 10px;
+    padding-block: 10px;
+  }
+  .space-map-title h2 {
+    font-size: 2.5rem;
+  }
+  .space-map-title h3 {
+    font-size: 1.5rem;
+    right: 20px;
+  }
+  .space-map-list-1 {
+    position: fixed;
+    top: 24%;
+    left: 40%;
+  }
+  .space-map-list-2 {
+    position: fixed;
+    top: 27.5%;
+    right: 30%;
+    left: auto;
+  }
+  .space-map-list-3 {
+    position: fixed;
+    top: 70%;
+    right: 16%;
+    left: auto;
+  }
+  .space-map-list-4 {
+    position: fixed;
+    top: 80%;
+    left: 45%;
+  }
+  .space-map-list-5 {
+    position: fixed;
+    top: 72.5%;
+    left: 15%;
+  }
+  .space-map-list-6 {
+    position: fixed;
+    top: 38%;
+    left: 13%;
+  }
+}
+@media (max-width: 480px) {
+  .space-map .space-map-background {
+    background-size: contain;
+    background-attachment: fixed;
+    height: 60vh;
+  }
+  .space-map button {
+    font-size: 0.9rem;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .space-map button img {
+    width: 28px;
+    height: 28px;
+  }
+  .space-map button:hover img {
+    transform: scale(1.05);
+  }
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    padding-block: 10px;
+  }
+  .space-map-title h2 {
+    font-size: 1.8rem;
+  }
+  .space-map-title h3 {
+    position: static;
+    font-size: 1.2rem;
+    -webkit-text-decoration: underline #ff5e00;
+            text-decoration: underline #ff5e00;
+  }
+  .space-map-list-1 {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+  }
+  .space-map-list-2 {
+    position: fixed;
+    top: 35%;
+    right: 27%;
+    left: auto;
+  }
+  .space-map-list-3 {
+    position: fixed;
+    top: 57%;
+    right: 15%;
+    left: auto;
+  }
+  .space-map-list-4 {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .space-map-list-5 {
+    position: fixed;
+    top: 58%;
+    left: 12%;
+  }
+  .space-map-list-6 {
+    position: fixed;
+    top: 41%;
+    left: 10%;
+  }
 }
