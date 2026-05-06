@@ -736,7 +736,7 @@ header {
    ============================================ */
 .site-footer-copyright {
   display: flex;
-  width: clamp(80%, 90vw, 100%);
+  width: clamp(70%, 90vw, 100%);
   justify-content: center;
   margin: clamp(30px, 5vw, 50px) auto 0;
   padding-top: clamp(20px, 3vw, 30px);
