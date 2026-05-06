@@ -196,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-height: 100vh;
   color: #001d36;
+  background-color: #f2f2f2;
   font-family: "myFont", "Bitstream Vera Serif", serif;
   position: relative;
   overflow: hidden;
@@ -627,6 +628,44 @@ header {
     margin-bottom: 50px;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
+footer {
+  background-color: #f2f2f2;
+  color: #001d36;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+}
+
+.site-footer {
+  padding: 50px 0;
+}
+.site-footer section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  padding-inline: 50px;
+}
+.site-footer li {
+  list-style: none;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.site-footer a {
+  color: #001d36;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.site-footer a:hover {
+  color: #ff5e00;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;

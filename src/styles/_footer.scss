@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+$white-noise: #f2f2f2;
+$dark-orbit: #000d19;
+$space-dust: #ff5e00;
+
+@font-face {
+  font-family: 'myFont';
+  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+}
+
+footer {
+  background-color: $white-noise;
+  color: #001d36;
+  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+}
+.site-footer {
+  padding: 50px 0;
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    padding-inline: 50px;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  a {
+    color: #001d36;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #ff5e00;
+    }
+  }
+}
