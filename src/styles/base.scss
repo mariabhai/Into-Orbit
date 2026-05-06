@@ -1,3 +1,9 @@
 @import 'reset';
 @import 'destinations';
 @import 'space-map';
+
+
+main {
+display: grid;
+grid-template-columns: 1fr;
+  }
