@@ -188,6 +188,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================
    GLOBAL STYLES
    ============================================ */
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "myFont";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
@@ -195,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .space-map {
   width: 100%;
   min-height: 100vh;
-  color: #001d36;
+  color: #000d19;
   font-family: "myFont", "Bitstream Vera Serif", serif;
   position: relative;
   overflow: hidden;
@@ -225,8 +229,10 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   padding: 0;
 }
-.space-map button:hover {
-  z-index: 20;
+@media (hover: hover) {
+  .space-map button:hover {
+    z-index: 20;
+  }
 }
 .space-map button:focus-visible {
   outline: 2px solid #ff5e00;
@@ -241,8 +247,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 35px;
   transition: transform 0.2s ease;
 }
-.space-map button:hover img {
-  transform: scale(1.2);
+@media (hover: hover) {
+  .space-map button:hover img {
+    transform: scale(1.2);
+  }
 }
 
 .space-map-title {
@@ -263,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-decoration: underline #ff5e00;
           text-decoration: underline #ff5e00;
   top: 25px;
-  color: #001d36;
+  color: #000d19;
   transition: all 0.3s ease;
 }
 .space-map-title a {
@@ -271,9 +279,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.space-map-title a:hover h3 {
-  color: #ff5e00;
-  transform: scale(1.1);
+@media (hover: hover) {
+  .space-map-title a:hover h3 {
+    color: #ff5e00;
+    transform: scale(1.1);
+  }
 }
 .space-map-title a:focus-visible {
   outline: 2px solid #ff5e00;
@@ -340,15 +350,22 @@ h1, h2, h3, h4, h5, h6 {
     width: 30px;
     height: 30px;
   }
+  button {
+    font-size: 1rem;
+  }
+  button img {
+    width: 25px;
+    height: 25px;
+  }
   .space-map-title {
     padding-inline: 10px;
     padding-block: 10px;
   }
   .space-map-title h2 {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
   }
   .space-map-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     right: 20px;
   }
   .space-map-list-1 {
@@ -385,9 +402,83 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* ============================================
-   MOBILE LAYOUT (max-width: 480px)
+   MOBILE LAYOUT (max-width: 768px)
    ============================================ */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .space-map {
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 60vh;
+  }
+  .space-map button {
+    font-size: 0.9rem;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .space-map button img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 768px) and (hover: hover) {
+  .space-map button:hover img {
+    transform: scale(1.03);
+  }
+}
+@media (max-width: 768px) {
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 1px;
+    padding-bottom: 10px;
+  }
+  .space-map-title h2 {
+    font-size: 2.4rem;
+  }
+  .space-map-title h3 {
+    position: static;
+    font-size: 1.2rem;
+    -webkit-text-decoration: underline #ff5e00;
+            text-decoration: underline #ff5e00;
+  }
+  .space-map-list-1 {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+  }
+  .space-map-list-2 {
+    position: absolute;
+    top: 35%;
+    right: 29%;
+    left: auto;
+  }
+  .space-map-list-3 {
+    position: absolute;
+    top: 63%;
+    right: 16%;
+    left: auto;
+  }
+  .space-map-list-4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .space-map-list-5 {
+    position: absolute;
+    top: 67%;
+    left: 14%;
+  }
+  .space-map-list-6 {
+    position: absolute;
+    top: 43%;
+    left: 12%;
+  }
+}
+/* ============================================
+   MOBILE LAYOUT (max-width: 680px)
+   ============================================ */
+@media (max-width: 680px) {
   .space-map {
     background-size: contain;
     background-attachment: scroll;
@@ -402,9 +493,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 15px;
     height: 15px;
   }
+}
+@media (max-width: 680px) and (hover: hover) {
   .space-map button:hover img {
     transform: scale(1.05);
   }
+}
+@media (max-width: 680px) {
   .space-map-title {
     flex-direction: row;
     align-items: center;
@@ -412,11 +507,85 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
   }
   .space-map-title h2 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   .space-map-title h3 {
     position: static;
     font-size: 1.2rem;
+    -webkit-text-decoration: underline #ff5e00;
+            text-decoration: underline #ff5e00;
+  }
+  .space-map-list-1 {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+  }
+  .space-map-list-2 {
+    position: absolute;
+    top: 35%;
+    right: 29%;
+    left: auto;
+  }
+  .space-map-list-3 {
+    position: absolute;
+    top: 57%;
+    right: 15%;
+    left: auto;
+  }
+  .space-map-list-4 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .space-map-list-5 {
+    position: absolute;
+    top: 61.5%;
+    left: 14%;
+  }
+  .space-map-list-6 {
+    position: absolute;
+    top: 41%;
+    left: 12%;
+  }
+}
+/* ============================================
+   MOBILE LAYOUT (max-width: 425px)
+   ============================================ */
+@media (max-width: 425px) {
+  .space-map {
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 60vh;
+  }
+  .space-map button {
+    font-size: 0.9rem;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  .space-map button img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 425px) and (hover: hover) {
+  .space-map button:hover img {
+    transform: scale(1.02);
+  }
+}
+@media (max-width: 425px) {
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 1px;
+    padding-bottom: 10px;
+  }
+  .space-map-title h2 {
+    font-size: 2rem;
+  }
+  .space-map-title h3 {
+    position: static;
+    font-size: 1rem;
     -webkit-text-decoration: underline #ff5e00;
             text-decoration: underline #ff5e00;
   }
@@ -427,31 +596,31 @@ h1, h2, h3, h4, h5, h6 {
   }
   .space-map-list-2 {
     position: absolute;
-    top: 29%;
-    right: 27%;
+    top: 29.5%;
+    right: 28%;
     left: auto;
   }
   .space-map-list-3 {
     position: absolute;
-    top: 47%;
+    top: 45%;
     right: 15%;
     left: auto;
   }
   .space-map-list-4 {
     position: absolute;
-    top: 52%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%);
   }
   .space-map-list-5 {
     position: absolute;
-    top: 48%;
-    left: 12%;
+    top: 46%;
+    left: 11.5%;
   }
   .space-map-list-6 {
     position: absolute;
-    top: 34%;
-    left: 10%;
+    top: 32%;
+    left: 9%;
   }
 }
 * {

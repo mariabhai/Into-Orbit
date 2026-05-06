@@ -1,6 +1,13 @@
 /* ============================================
    GLOBAL STYLES
    ============================================ */
+* {
+  box-sizing: border-box;
+}
+
+$dark-orbit: #000d19;
+$space-dust: #ff5e00;
+
 
 @font-face {
   font-family: 'myFont';
@@ -10,7 +17,7 @@
 .space-map {
   width: 100%;
   min-height: 100vh;
-  color: #001d36;
+  color: $dark-orbit;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   position: relative;
   overflow: hidden;
@@ -40,8 +47,10 @@
     background: none;
     padding: 0;
 
-    &:hover {
-      z-index: 20;
+    @media (hover: hover) {
+      &:hover {
+        z-index: 20;
+      }
     }
 
     // Keyboard focus visible state
@@ -61,8 +70,10 @@
     }
 
     // Hover effect for better UX
-    &:hover img {
-      transform: scale(1.2);
+    @media (hover: hover) {
+      &:hover img {
+        transform: scale(1.2);
+      }
     }
   }
 }
@@ -83,9 +94,9 @@
     position: relative;
     font-size: 1.4rem;
     font-weight: 400;
-    text-decoration: underline #ff5e00;
+    text-decoration: underline $space-dust;
     top: 25px;
-    color: #001d36;
+    color: $dark-orbit;
     transition: all 0.3s ease;
   }
 
@@ -94,19 +105,21 @@
     transition: all 0.3s ease;
     cursor: pointer;
 
-    &:hover h3 {
-      color: #ff5e00;
-      transform: scale(1.1);
+    @media (hover: hover) {
+      &:hover h3 {
+        color: $space-dust;
+        transform: scale(1.1);
+      }
     }
 
     &:focus-visible {
-      outline: 2px solid #ff5e00;
+      outline: 2px solid $space-dust;
       outline-offset: -4px;
       border-radius: 10px;
     }
 
     &:focus-visible h3 {
-      color: #ff5e00;
+      color: $space-dust;
       padding: 0 10px;
     }
   }
@@ -172,16 +185,25 @@
     }
   }
 
+  button {
+    font-size: 1rem;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
   .space-map-title {
     padding-inline: 10px;
     padding-block: 10px;
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 3.4rem;
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       right: 20px;
     }
   }
@@ -226,10 +248,95 @@
 }
 
 /* ============================================
-   MOBILE LAYOUT (max-width: 480px)
+   MOBILE LAYOUT (max-width: 768px)
    ============================================ */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .space-map {
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 60vh;
+
+    button {
+      font-size: 0.9rem;
+      min-width: 40px;
+      min-height: 40px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (hover: hover) {
+        &:hover img {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 1px;
+    padding-bottom: 10px;
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+      position: static;
+      font-size: 1.2rem;
+      text-decoration: underline $space-dust;
+    }
+  }
+
+  .space-map-list-1 {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+  }
+
+  .space-map-list-2 {
+    position: absolute;
+    top: 35%;
+    right: 29%;
+    left: auto;
+  }
+
+  .space-map-list-3 {
+    position: absolute;
+    top: 63%;
+    right: 16%;
+    left: auto;
+  }
+
+  .space-map-list-4 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .space-map-list-5 {
+    position: absolute;
+    top: 67%;
+    left: 14%;
+  }
+
+  .space-map-list-6 {
+    position: absolute;
+    top: 43%;
+    left: 12%;
+  }
+}
+
+/* ============================================
+   MOBILE LAYOUT (max-width: 680px)
+   ============================================ */
+
+@media (max-width: 680px) {
   .space-map {
     background-size: contain;
     background-attachment: scroll;
@@ -245,8 +352,10 @@
         height: 15px;
       }
 
-      &:hover img {
-        transform: scale(1.05);
+      @media (hover: hover) {
+        &:hover img {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -258,13 +367,98 @@
     padding-bottom: 10px;
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
     }
 
     h3 {
       position: static;
       font-size: 1.2rem;
-      text-decoration: underline #ff5e00;
+      text-decoration: underline $space-dust;
+    }
+  }
+
+  .space-map-list-1 {
+    position: absolute;
+    top: 32%;
+    left: 40%;
+  }
+
+  .space-map-list-2 {
+    position: absolute;
+    top: 35%;
+    right: 29%;
+    left: auto;
+  }
+
+  .space-map-list-3 {
+    position: absolute;
+    top: 57%;
+    right: 15%;
+    left: auto;
+  }
+
+  .space-map-list-4 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .space-map-list-5 {
+    position: absolute;
+    top: 61.5%;
+    left: 14%;
+  }
+
+  .space-map-list-6 {
+    position: absolute;
+    top: 41%;
+    left: 12%;
+  }
+}
+
+/* ============================================
+   MOBILE LAYOUT (max-width: 425px)
+   ============================================ */
+
+@media (max-width: 425px) {
+  .space-map {
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 60vh;
+
+    button {
+      font-size: 0.9rem;
+      min-width: 40px;
+      min-height: 40px;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
+
+      @media (hover: hover) {
+        &:hover img {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: 1px;
+    padding-bottom: 10px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      position: static;
+      font-size: 1rem;
+      text-decoration: underline $space-dust;
     }
   }
 
@@ -276,34 +470,34 @@
 
   .space-map-list-2 {
     position: absolute;
-    top: 29%;
-    right: 27%;
+    top: 29.5%;
+    right: 28%;
     left: auto;
   }
 
   .space-map-list-3 {
     position: absolute;
-    top: 47%;
+    top: 45%;
     right: 15%;
     left: auto;
   }
 
   .space-map-list-4 {
     position: absolute;
-    top: 52%;
+    top: 48%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .space-map-list-5 {
     position: absolute;
-    top: 48%;
-    left: 12%;
+    top: 46%;
+    left: 11.5%;
   }
 
   .space-map-list-6 {
     position: absolute;
-    top: 34%;
-    left: 10%;
+    top: 32%;
+    left: 9%;
   }
 }
