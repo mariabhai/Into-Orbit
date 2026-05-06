@@ -21,7 +21,7 @@ $dark-trans-matter: rgba(
 
 .site-footer {
   background-color: $white-noise;
-  color: #001d36;
+  color: $dark-orbit;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   padding: clamp(30px, 10vw, 50px) 0;
 
@@ -52,16 +52,18 @@ $dark-trans-matter: rgba(
       margin-bottom: clamp(8px, 1.5vw, 10px);
 
       a {
-        color: #001d36;
-        text-decoration: none;
-        transition: color 0.2s ease;
+        color: $dark-orbit;
+        text-decoration: underline;
+        text-decoration-color: $dark-orbit;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
         font-size: clamp(1rem, 2vw, 1.3rem);
         display: inline-block;
-        text-decoration: underline;
+        transition: text-decoration-color 0.2s ease;
 
         @media (hover: hover) {
           &:hover {
-            color: $space-dust;
+            text-decoration-color: $space-dust;
           }
         }
 
@@ -69,6 +71,7 @@ $dark-trans-matter: rgba(
           outline: 2px solid $space-dust;
           outline-offset: 2px;
           border-radius: 4px;
+          text-decoration-color: $space-dust;
         }
       }
     }

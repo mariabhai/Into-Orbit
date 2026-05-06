@@ -640,7 +640,7 @@ header {
    ============================================ */
 .site-footer {
   background-color: #f2f2f2;
-  color: #001d36;
+  color: #000d19;
   font-family: "myFont", "Bitstream Vera Serif", serif;
   padding: clamp(30px, 10vw, 50px) 0;
 }
@@ -668,22 +668,25 @@ header {
   margin-bottom: clamp(8px, 1.5vw, 10px);
 }
 .site-footer ul li a {
-  color: #001d36;
-  text-decoration: none;
-  transition: color 0.2s ease;
+  color: #000d19;
+  text-decoration: underline;
+  text-decoration-color: #000d19;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
   font-size: clamp(1rem, 2vw, 1.3rem);
   display: inline-block;
-  text-decoration: underline;
+  transition: text-decoration-color 0.2s ease;
 }
 @media (hover: hover) {
   .site-footer ul li a:hover {
-    color: #ff5e00;
+    text-decoration-color: #ff5e00;
   }
 }
 .site-footer ul li a:focus-visible {
   outline: 2px solid #ff5e00;
   outline-offset: 2px;
   border-radius: 4px;
+  text-decoration-color: #ff5e00;
 }
 .site-footer figure {
   display: flex;
