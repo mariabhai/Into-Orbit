@@ -125,9 +125,12 @@ $dark-trans-matter: rgba(
     }
 
     figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
       grid-column: 1;
       padding-block: clamp(30px, 8vw, 50px);
-      width: 100%;
     }
   }
 }
