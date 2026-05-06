@@ -117,9 +117,9 @@ $dark-trans-matter: rgba(
 @media (max-width: 1024px) {
   .site-footer section {
     width: min(100%, 900px);
-    margin-inline: auto;
+    margin-inline: 80px;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(40px, 8vw, 60px);
+    gap: clamp(80px, 16vw, 120px);
     justify-items: center;
     align-items: start;
   }
