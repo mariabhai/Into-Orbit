@@ -10,20 +10,11 @@
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   position: relative;
   padding: 0 clamp(15px, 10%, 25px);
-
-  .space-map-background {
-    background-image: url(/src/assets/images/webp/space-map-image.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: calc(100vh - 96px);
-    position: fixed;
-    top: 96px;
-    left: 0;
-    z-index: -1;
-  }
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 
   button {
     font-size: 1.5rem;
@@ -155,11 +146,9 @@
 // Tablet layout (481px - 1024px)
 @media (max-width: 1024px) {
   .space-map {
-    .space-map-background {
-      background-size: contain;
-      background-attachment: fixed;
-      height: 80vh;
-    }
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 80vh;
 
     button {
       font-size: 1rem;
@@ -194,7 +183,7 @@
   .space-map-list-2 {
     position: fixed;
     top: 27.5%;
-    right:30%;
+    right: 30%;
     left: auto;
   }
 
@@ -219,7 +208,7 @@
 
   .space-map-list-6 {
     position: fixed;
-    top:38%;
+    top: 38%;
     left: 13%;
   }
 }
@@ -227,11 +216,9 @@
 // Mobile layout (max-width: 480px)
 @media (max-width: 480px) {
   .space-map {
-    .space-map-background {
-      background-size: contain;
-      background-attachment: fixed;
-      height: 60vh;
-    }
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 60vh;
 
     button {
       font-size: 0.9rem;

@@ -196,19 +196,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "myFont", "Bitstream Vera Serif", serif;
   position: relative;
   padding: 0 clamp(15px, 10%, 25px);
-}
-.space-map .space-map-background {
   background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: calc(100vh - 96px);
-  position: fixed;
-  top: 96px;
-  left: 0;
-  z-index: -1;
+  background-attachment: scroll;
 }
 .space-map button {
   font-size: 1.5rem;
@@ -326,10 +318,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1024px) {
-  .space-map .space-map-background {
+  .space-map {
     background-size: contain;
     background-attachment: fixed;
-    height: 80vh;
+    min-height: 80vh;
   }
   .space-map button {
     font-size: 1rem;
@@ -383,10 +375,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 480px) {
-  .space-map .space-map-background {
+  .space-map {
     background-size: contain;
     background-attachment: fixed;
-    height: 60vh;
+    min-height: 60vh;
   }
   .space-map button {
     font-size: 0.9rem;
