@@ -1,3 +1,7 @@
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
 @font-face {
   font-family: 'myFont';
   src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
@@ -9,21 +13,14 @@
   color: #001d36;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   position: relative;
+  overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
 
-  .space-map-background {
-    background-image: url(/src/assets/images/webp/space-map-image.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: calc(100vh - 96px);
-    position: fixed;
-    top: 96px;
-    left: 0;
-    z-index: -1;
-  }
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: contain;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 
   button {
     font-size: 1.5rem;
@@ -35,7 +32,7 @@
     width: fit-content;
     min-width: 44px;
     min-height: 44px;
-    position: fixed;
+    position: absolute;
     transition: z-index 0.2s ease;
     border-radius: 4px;
     overflow: visible;
@@ -82,6 +79,16 @@
     font-weight: 400;
   }
 
+  h3 {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: underline #ff5e00;
+    top: 25px;
+    color: #001d36;
+    transition: all 0.3s ease;
+  }
+
   a {
     text-decoration: none;
     transition: all 0.3s ease;
@@ -103,63 +110,57 @@
       padding: 0 10px;
     }
   }
-
-  h3 {
-    position: relative;
-    font-size: 2rem;
-    font-weight: 400;
-    text-decoration: underline #ff5e00;
-    top: 20px;
-    color: #001d36;
-    transition: all 0.3s ease;
-  }
 }
 
-// Desktop layout (1025px and up)
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
+
 .space-map-list-1 {
-  position: fixed;
-  top: 24%;
-  left: 39%;
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 
 .space-map-list-2 {
-  position: fixed;
-  top: 30%;
-  left: 67%;
+  position: absolute;
+  top: 24%;
+  left: 67.5%;
 }
 
 .space-map-list-3 {
-  position: fixed;
-  top: 68%;
-  left: 82%;
+  position: absolute;
+  top: 48.5%;
+  left: 79%;
 }
 
 .space-map-list-4 {
-  position: fixed;
-  top: 80%;
-  left: 49%;
+  position: absolute;
+  top: 56%;
+  left: 47%;
 }
 
 .space-map-list-5 {
-  position: fixed;
-  top: 70.5%;
+  position: absolute;
+  top: 49.5%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
-  position: fixed;
-  top: 40.5%;
-  left: 13%;
+  position: absolute;
+  top: 31%;
+  left: 12.5%;
 }
 
-// Tablet layout (481px - 1024px)
+/* ============================================
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
+
 @media (max-width: 1024px) {
   .space-map {
-    .space-map-background {
-      background-size: contain;
-      background-attachment: fixed;
-      height: 80vh;
-    }
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 80vh;
 
     button {
       font-size: 1rem;
@@ -186,52 +187,53 @@
   }
 
   .space-map-list-1 {
-    position: fixed;
-    top: 24%;
+    position: absolute;
+    top: 27%;
     left: 40%;
   }
 
   .space-map-list-2 {
-    position: fixed;
-    top: 27.5%;
-    right:30%;
+    position: absolute;
+    top: 31%;
+    right: 29%;
     left: auto;
   }
 
   .space-map-list-3 {
-    position: fixed;
-    top: 70%;
+    position: absolute;
+    top: 60%;
     right: 16%;
     left: auto;
   }
 
   .space-map-list-4 {
-    position: fixed;
-    top: 80%;
+    position: absolute;
+    top: 68%;
     left: 45%;
   }
 
   .space-map-list-5 {
-    position: fixed;
-    top: 72.5%;
+    position: absolute;
+    top: 62%;
     left: 15%;
   }
 
   .space-map-list-6 {
-    position: fixed;
-    top:38%;
+    position: absolute;
+    top: 39.5%;
     left: 13%;
   }
 }
 
-// Mobile layout (max-width: 480px)
+/* ============================================
+   MOBILE LAYOUT (max-width: 480px)
+   ============================================ */
+
 @media (max-width: 480px) {
   .space-map {
-    .space-map-background {
-      background-size: contain;
-      background-attachment: fixed;
-      height: 60vh;
-    }
+    background-size: contain;
+    background-attachment: scroll;
+    min-height: 60vh;
 
     button {
       font-size: 0.9rem;
@@ -239,8 +241,8 @@
       min-height: 40px;
 
       img {
-        width: 28px;
-        height: 28px;
+        width: 15px;
+        height: 15px;
       }
 
       &:hover img {
@@ -252,9 +254,8 @@
   .space-map-title {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    padding-inline: 10px;
-    padding-block: 10px;
+    padding-inline: 1px;
+    padding-bottom: 10px;
 
     h2 {
       font-size: 1.8rem;
@@ -268,41 +269,41 @@
   }
 
   .space-map-list-1 {
-    position: fixed;
-    top: 35%;
+    position: absolute;
+    top: 27%;
     left: 40%;
   }
 
   .space-map-list-2 {
-    position: fixed;
-    top: 35%;
+    position: absolute;
+    top: 29%;
     right: 27%;
     left: auto;
   }
 
   .space-map-list-3 {
-    position: fixed;
-    top: 57%;
+    position: absolute;
+    top: 47%;
     right: 15%;
     left: auto;
   }
 
   .space-map-list-4 {
-    position: fixed;
-    top: 60%;
+    position: absolute;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .space-map-list-5 {
-    position: fixed;
-    top: 58%;
+    position: absolute;
+    top: 48%;
     left: 12%;
   }
 
   .space-map-list-6 {
-    position: fixed;
-    top: 41%;
+    position: absolute;
+    top: 34%;
     left: 10%;
   }
 }

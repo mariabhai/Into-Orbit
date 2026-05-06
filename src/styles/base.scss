@@ -1,4 +1,10 @@
 @import 'reset';
 @import 'destinations';
 @import 'space-map';
+@import 'header';
 @import 'footer';
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}

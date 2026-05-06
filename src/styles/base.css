@@ -185,6 +185,9 @@ h1, h2, h3, h4, h5, h6 {
     right: 0.75rem;
   }
 }
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 @font-face {
   font-family: "myFont";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
@@ -195,20 +198,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #001d36;
   font-family: "myFont", "Bitstream Vera Serif", serif;
   position: relative;
+  overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
-}
-.space-map .space-map-background {
   background-image: url(/src/assets/images/webp/space-map-image.webp);
   background-size: contain;
-  background-position: center;
+  background-position: center 100px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  height: calc(100vh - 96px);
-  position: fixed;
-  top: 96px;
-  left: 0;
-  z-index: -1;
+  background-attachment: scroll;
 }
 .space-map button {
   font-size: 1.5rem;
@@ -221,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   min-width: 44px;
   min-height: 44px;
-  position: fixed;
+  position: absolute;
   transition: z-index 0.2s ease;
   border-radius: 4px;
   overflow: visible;
@@ -260,6 +256,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4rem;
   font-weight: 400;
 }
+.space-map-title h3 {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-text-decoration: underline #ff5e00;
+          text-decoration: underline #ff5e00;
+  top: 25px;
+  color: #001d36;
+  transition: all 0.3s ease;
+}
 .space-map-title a {
   text-decoration: none;
   transition: all 0.3s ease;
@@ -278,58 +284,54 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff5e00;
   padding: 0 10px;
 }
-.space-map-title h3 {
-  position: relative;
-  font-size: 2rem;
-  font-weight: 400;
-  -webkit-text-decoration: underline #ff5e00;
-          text-decoration: underline #ff5e00;
-  top: 20px;
-  color: #001d36;
-  transition: all 0.3s ease;
-}
 
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
 .space-map-list-1 {
-  position: fixed;
-  top: 24%;
-  left: 39%;
+  position: absolute;
+  top: 20%;
+  left: 40%;
 }
 
 .space-map-list-2 {
-  position: fixed;
-  top: 30%;
-  left: 67%;
+  position: absolute;
+  top: 24%;
+  left: 67.5%;
 }
 
 .space-map-list-3 {
-  position: fixed;
-  top: 68%;
-  left: 82%;
+  position: absolute;
+  top: 48.5%;
+  left: 79%;
 }
 
 .space-map-list-4 {
-  position: fixed;
-  top: 80%;
-  left: 49%;
+  position: absolute;
+  top: 56%;
+  left: 47%;
 }
 
 .space-map-list-5 {
-  position: fixed;
-  top: 70.5%;
+  position: absolute;
+  top: 49.5%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
-  position: fixed;
-  top: 40.5%;
-  left: 13%;
+  position: absolute;
+  top: 31%;
+  left: 12.5%;
 }
 
+/* ============================================
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
 @media (max-width: 1024px) {
-  .space-map .space-map-background {
+  .space-map {
     background-size: contain;
-    background-attachment: fixed;
-    height: 80vh;
+    background-attachment: scroll;
+    min-height: 80vh;
   }
   .space-map button {
     font-size: 1rem;
@@ -350,43 +352,46 @@ h1, h2, h3, h4, h5, h6 {
     right: 20px;
   }
   .space-map-list-1 {
-    position: fixed;
-    top: 24%;
+    position: absolute;
+    top: 27%;
     left: 40%;
   }
   .space-map-list-2 {
-    position: fixed;
-    top: 27.5%;
-    right: 30%;
+    position: absolute;
+    top: 31%;
+    right: 29%;
     left: auto;
   }
   .space-map-list-3 {
-    position: fixed;
-    top: 70%;
+    position: absolute;
+    top: 60%;
     right: 16%;
     left: auto;
   }
   .space-map-list-4 {
-    position: fixed;
-    top: 80%;
+    position: absolute;
+    top: 68%;
     left: 45%;
   }
   .space-map-list-5 {
-    position: fixed;
-    top: 72.5%;
+    position: absolute;
+    top: 62%;
     left: 15%;
   }
   .space-map-list-6 {
-    position: fixed;
-    top: 38%;
+    position: absolute;
+    top: 39.5%;
     left: 13%;
   }
 }
+/* ============================================
+   MOBILE LAYOUT (max-width: 480px)
+   ============================================ */
 @media (max-width: 480px) {
-  .space-map .space-map-background {
+  .space-map {
     background-size: contain;
-    background-attachment: fixed;
-    height: 60vh;
+    background-attachment: scroll;
+    min-height: 60vh;
   }
   .space-map button {
     font-size: 0.9rem;
@@ -394,8 +399,8 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 40px;
   }
   .space-map button img {
-    width: 28px;
-    height: 28px;
+    width: 15px;
+    height: 15px;
   }
   .space-map button:hover img {
     transform: scale(1.05);
@@ -403,9 +408,8 @@ h1, h2, h3, h4, h5, h6 {
   .space-map-title {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-    padding-inline: 10px;
-    padding-block: 10px;
+    padding-inline: 1px;
+    padding-bottom: 10px;
   }
   .space-map-title h2 {
     font-size: 1.8rem;
@@ -417,36 +421,213 @@ h1, h2, h3, h4, h5, h6 {
             text-decoration: underline #ff5e00;
   }
   .space-map-list-1 {
-    position: fixed;
-    top: 35%;
+    position: absolute;
+    top: 27%;
     left: 40%;
   }
   .space-map-list-2 {
-    position: fixed;
-    top: 35%;
+    position: absolute;
+    top: 29%;
     right: 27%;
     left: auto;
   }
   .space-map-list-3 {
-    position: fixed;
-    top: 57%;
+    position: absolute;
+    top: 47%;
     right: 15%;
     left: auto;
   }
   .space-map-list-4 {
-    position: fixed;
-    top: 60%;
+    position: absolute;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
   }
   .space-map-list-5 {
-    position: fixed;
-    top: 58%;
+    position: absolute;
+    top: 48%;
     left: 12%;
   }
   .space-map-list-6 {
-    position: fixed;
-    top: 41%;
+    position: absolute;
+    top: 34%;
     left: 10%;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Poppins";
+  color: #f2f2f2;
+  background-color: rgba(0, 13, 25, 0.8);
+  background-image: url("/src/assets/images/webp/hero-image-1.webp");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 0 25px;
+  margin-bottom: 15px;
+}
+
+.header-hero {
+  padding-inline: 20px;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  padding: 0 8px 0 0;
+}
+.header-logo img {
+  width: 81.11px;
+  height: 41.54px;
+}
+
+.header-line {
+  flex: 1;
+  height: 1px;
+  background: #f2f2f2;
+}
+
+.header-nav {
+  display: none;
+}
+
+.menu-toggle {
+  background: #000d19;
+  opacity: 80%;
+  border: 0.3px solid rgb(48, 48, 48);
+  border-radius: 5px;
+  padding: 8px 9px;
+  cursor: pointer;
+}
+.menu-toggle img {
+  width: 34.67px;
+  height: 42px;
+  stroke: #ff5e00;
+}
+
+.header-pretitle {
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.header-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 259px;
+  margin-bottom: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.header-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "myFont";
+  font-size: 16px;
+}
+.header-actions .btn.btn-primary {
+  color: #000d19;
+  background: #ff5e00;
+  border: 2px solid #ff5e00;
+  border-radius: 15px;
+  padding: 0 8px;
+}
+.header-actions .btn.btn-primary:hover {
+  background: none;
+  color: #f2f2f2;
+}
+.header-actions .btn.btn-link {
+  color: #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+}
+.header-actions .btn.btn-link:hover {
+  border-bottom: 2px solid #ff5e00;
+}
+
+@media (min-width: 768px) {
+  .header-topbar {
+    padding: 20px 25px 0 25px;
+    margin-bottom: 70px;
+  }
+  .header-hero {
+    padding-inline: 60px;
+    margin-bottom: 120px;
+  }
+  .header-pretitle {
+    font-size: 24px;
+  }
+  .header-title {
+    font-size: 64px;
+    line-height: 96px;
+  }
+  .header-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 459px;
+    margin-bottom: 50px;
+  }
+  .header-actions {
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-actions .btn-primary {
+    text-align: center;
+    font-size: 20px;
+  }
+  .header-actions .btn-link {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-pretitle {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .header-title {
+    font-size: 96px;
+    margin-bottom: 30px;
+  }
+  .header-description {
+    max-width: 719px;
+    margin-bottom: 50px;
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
