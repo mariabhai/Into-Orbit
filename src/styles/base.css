@@ -650,7 +650,7 @@ header {
   gap: clamp(100px, 20vw, 125px);
   width: min(100%, 1200px);
   margin-inline: auto;
-  padding-inline: clamp(15px, 10%, 25px);
+  padding-inline: clamp(16px, 3wv, 40px);
   padding-bottom: 90px;
   border-bottom: 3px solid rgba(51, 61, 71, 0.4);
   justify-items: center;
