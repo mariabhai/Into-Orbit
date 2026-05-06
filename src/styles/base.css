@@ -642,13 +642,13 @@ header {
   background-color: #f2f2f2;
   color: #000d19;
   font-family: "myFont", "Bitstream Vera Serif", serif;
-  padding: clamp(30px, 10vw, 50px) 0;
+  padding: clamp(10px, 2.6vw, 16px) 0;
 }
 .site-footer section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: clamp(20px, 5vw, 25px);
-  padding-inline: clamp(20px, 5vw, 50px);
+  padding-inline: clamp(40px, 10vw, 100px);
 }
 .site-footer nav {
   text-align: left;
@@ -736,7 +736,7 @@ header {
    ============================================ */
 .site-footer-copyright {
   display: flex;
-  width: clamp(70%, 90vw, 100%);
+  width: clamp(60%, 80vw, 90%);
   justify-content: center;
   margin: clamp(30px, 5vw, 50px) auto 0;
   padding-top: clamp(20px, 3vw, 30px);
