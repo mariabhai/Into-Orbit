@@ -12,6 +12,12 @@
   overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
 
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: contain;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
   button {
     font-size: 1.5rem;
     display: flex;
@@ -55,12 +61,6 @@
       transform: scale(1.2);
     }
   }
-
-  background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
-  background-position: center 100px;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 .space-map-title {
@@ -73,6 +73,16 @@
   h2 {
     font-size: 4rem;
     font-weight: 400;
+  }
+
+  h3 {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: underline #ff5e00;
+    top: 30px;
+    color: #001d36;
+    transition: all 0.3s ease;
   }
 
   a {
@@ -96,16 +106,6 @@
       padding: 0 10px;
     }
   }
-
-  h3 {
-    position: relative;
-    font-size: 2rem;
-    font-weight: 400;
-    text-decoration: underline #ff5e00;
-    top: 20px;
-    color: #001d36;
-    transition: all 0.3s ease;
-  }
 }
 
 // Desktop layout (1025px and up)
@@ -117,32 +117,32 @@
 
 .space-map-list-2 {
   position: absolute;
-  top: 40%;
-  left: 69.5%;
+  top: 39%;
+  left: 66.5%;
 }
 
 .space-map-list-3 {
   position: absolute;
-  top: 84%;
-  left: 82%;
+  top: 78%;
+  left: 80%;
 }
 
 .space-map-list-4 {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 49%;
 }
 
 .space-map-list-5 {
   position: absolute;
-  top: 70.5%;
+  top: 79%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
   position: absolute;
-  top: 40.5%;
-  left: 13%;
+  top: 48.5%;
+  left: 13.5%;
 }
 
 // Tablet layout (481px - 1024px)

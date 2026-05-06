@@ -197,6 +197,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: contain;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 .space-map button {
   font-size: 1.5rem;
@@ -236,13 +241,6 @@ h1, h2, h3, h4, h5, h6 {
 .space-map button:hover img {
   transform: scale(1.2);
 }
-.space-map {
-  background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
-  background-position: center 100px;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
 
 .space-map-title {
   display: flex;
@@ -254,6 +252,16 @@ h1, h2, h3, h4, h5, h6 {
 .space-map-title h2 {
   font-size: 4rem;
   font-weight: 400;
+}
+.space-map-title h3 {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-text-decoration: underline #ff5e00;
+          text-decoration: underline #ff5e00;
+  top: 30px;
+  color: #001d36;
+  transition: all 0.3s ease;
 }
 .space-map-title a {
   text-decoration: none;
@@ -273,16 +281,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff5e00;
   padding: 0 10px;
 }
-.space-map-title h3 {
-  position: relative;
-  font-size: 2rem;
-  font-weight: 400;
-  -webkit-text-decoration: underline #ff5e00;
-          text-decoration: underline #ff5e00;
-  top: 20px;
-  color: #001d36;
-  transition: all 0.3s ease;
-}
 
 .space-map-list-1 {
   position: absolute;
@@ -292,32 +290,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-map-list-2 {
   position: absolute;
-  top: 40%;
-  left: 69.5%;
+  top: 39%;
+  left: 66.5%;
 }
 
 .space-map-list-3 {
   position: absolute;
-  top: 84%;
-  left: 82%;
+  top: 78%;
+  left: 80%;
 }
 
 .space-map-list-4 {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 49%;
 }
 
 .space-map-list-5 {
   position: absolute;
-  top: 70.5%;
+  top: 79%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
   position: absolute;
-  top: 40.5%;
-  left: 13%;
+  top: 48.5%;
+  left: 13.5%;
 }
 
 @media (max-width: 1024px) {
