@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+}
+
+// Palett
+$white-noise: #f2f2f2;
+$dark-orbit: #000d19;
+$space-dust: #ff5e00;
+
+// Fonts
+$Goodspace: 'myFont';
+$Poppins: 'Poppins';
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+
+  font-family: 'Poppins';
+  color: $white-noise;
+
+  background-color: rgba($dark-orbit, 0.8);
+  background-image: url('/src/assets/images/webp/hero-image-1.webp');
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+.header-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 0 25px; // top right bottom left
+  margin-bottom: 15px;
+}
+.header-hero {
+  padding-inline: 20px;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  padding: 0 8px 0 0;
+
+  img {
+    width: 81.11px;
+    height: 41.54px;
+  }
+}
+
+.header-line {
+  flex: 1;
+  height: 1px;
+  background: $white-noise;
+}
+
+.header-nav {
+  display: none;
+}
+
+.menu-toggle {
+  background: $dark-orbit;
+  opacity: 80%;
+  border: 0.3px solid rgb(48, 48, 48);
+  border-radius: 5px;
+  padding: 8px 9px;
+  cursor: pointer;
+
+  img {
+    width: 34.67px;
+    height: 42px;
+    stroke: $space-dust;
+  }
+}
+
+.header-pretitle {
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.header-title {
+  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.header-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 259px;
+  margin-bottom: 1rem;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-family: $Goodspace;
+    font-size: 16px;
+
+    &.btn-primary {
+      color: $dark-orbit;
+      background: $space-dust;
+      border: 2px solid $space-dust;
+      border-radius: 15px;
+      padding: 0 8px; // block inline
+      &:hover {
+        background: none;
+        color: $white-noise;
+      }
+    }
+    &.btn-link {
+      color: $white-noise;
+      border-bottom: 2px solid $white-noise;
+      &:hover {
+        border-bottom: 2px solid $space-dust;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-topbar {
+    padding: 20px 25px 0 25px; // top right bottom left
+    margin-bottom: 70px;
+  }
+  .header-hero {
+    padding-inline: 60px;
+    margin-bottom: 120px;
+  }
+
+  .header-pretitle {
+    font-size: 24px;
+  }
+  .header-title {
+    font-size: 64px;
+    line-height: 96px;
+  }
+  .header-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 459px;
+    margin-bottom: 50px;
+  }
+
+  .header-actions {
+    justify-content: center;
+    gap: 20px;
+
+    .btn-primary {
+      text-align: center;
+      font-size: 20px;
+    }
+    .btn-link {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-pretitle {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .header-title {
+    font-size: 96px;
+    margin-bottom: 30px;
+  }
+  .header-description {
+    max-width: 719px;
+    margin-bottom: 50px;
+  }
+}
