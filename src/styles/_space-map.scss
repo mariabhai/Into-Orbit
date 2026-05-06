@@ -9,12 +9,8 @@
   color: #001d36;
   font-family: 'myFont', 'Bitstream Vera Serif', serif;
   position: relative;
+  overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
-  background-image: url(/src/assets/images/webp/space-map-image.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 
   button {
     font-size: 1.5rem;
@@ -26,7 +22,7 @@
     width: fit-content;
     min-width: 44px;
     min-height: 44px;
-    position: fixed;
+    position: absolute;
     transition: z-index 0.2s ease;
     border-radius: 4px;
     overflow: visible;
@@ -59,6 +55,12 @@
       transform: scale(1.2);
     }
   }
+
+  background-image: url(/src/assets/images/webp/space-map-image.webp);
+  background-size: cover;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .space-map-title {
@@ -108,37 +110,37 @@
 
 // Desktop layout (1025px and up)
 .space-map-list-1 {
-  position: fixed;
-  top: 24%;
-  left: 39%;
+  position: absolute;
+  top: 33.5%;
+  left: 40%;
 }
 
 .space-map-list-2 {
-  position: fixed;
-  top: 30%;
-  left: 67%;
+  position: absolute;
+  top: 40%;
+  left: 69.5%;
 }
 
 .space-map-list-3 {
-  position: fixed;
-  top: 68%;
+  position: absolute;
+  top: 84%;
   left: 82%;
 }
 
 .space-map-list-4 {
-  position: fixed;
+  position: absolute;
   top: 80%;
   left: 49%;
 }
 
 .space-map-list-5 {
-  position: fixed;
+  position: absolute;
   top: 70.5%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
-  position: fixed;
+  position: absolute;
   top: 40.5%;
   left: 13%;
 }
@@ -147,7 +149,7 @@
 @media (max-width: 1024px) {
   .space-map {
     background-size: contain;
-    background-attachment: fixed;
+    background-attachment: scroll;
     min-height: 80vh;
 
     button {
@@ -175,39 +177,39 @@
   }
 
   .space-map-list-1 {
-    position: fixed;
+    position: absolute;
     top: 24%;
     left: 40%;
   }
 
   .space-map-list-2 {
-    position: fixed;
+    position: absolute;
     top: 27.5%;
     right: 30%;
     left: auto;
   }
 
   .space-map-list-3 {
-    position: fixed;
+    position: absolute;
     top: 70%;
     right: 16%;
     left: auto;
   }
 
   .space-map-list-4 {
-    position: fixed;
+    position: absolute;
     top: 80%;
     left: 45%;
   }
 
   .space-map-list-5 {
-    position: fixed;
+    position: absolute;
     top: 72.5%;
     left: 15%;
   }
 
   .space-map-list-6 {
-    position: fixed;
+    position: absolute;
     top: 38%;
     left: 13%;
   }
@@ -217,7 +219,7 @@
 @media (max-width: 480px) {
   .space-map {
     background-size: contain;
-    background-attachment: fixed;
+    background-attachment: scroll;
     min-height: 60vh;
 
     button {
@@ -255,40 +257,40 @@
   }
 
   .space-map-list-1 {
-    position: fixed;
+    position: absolute;
     top: 35%;
     left: 40%;
   }
 
   .space-map-list-2 {
-    position: fixed;
+    position: absolute;
     top: 35%;
     right: 27%;
     left: auto;
   }
 
   .space-map-list-3 {
-    position: fixed;
+    position: absolute;
     top: 57%;
     right: 15%;
     left: auto;
   }
 
   .space-map-list-4 {
-    position: fixed;
+    position: absolute;
     top: 60%;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .space-map-list-5 {
-    position: fixed;
+    position: absolute;
     top: 58%;
     left: 12%;
   }
 
   .space-map-list-6 {
-    position: fixed;
+    position: absolute;
     top: 41%;
     left: 10%;
   }
