@@ -1,0 +1,131 @@
+.destinations {
+  padding: 4rem 1.25rem;
+  color: #001d36;
+  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+  background-color: #ffffff;
+}
+
+.destinations__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.destinations__title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.destinations__link {
+  color: #001d36;
+  font-size: 1.25rem;
+  text-decoration: underline #001d36;
+  text-underline-offset: 0.25rem;
+}
+
+.destinations__link:hover,
+.destinations__link:focus-visible {
+  text-decoration-color: #ff5e00;
+}
+
+.destinations__swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.destinations__track {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 24rem));
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.destinations__card {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.destinations__card[hidden] {
+  display: none;
+}
+
+.destinations__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destinations__card-title {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translateX(-50%);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+  color: #f2f2f2;
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: rgba(0, 29, 54, 0.82);
+}
+
+.destinations__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.destinations__next-button {
+  position: absolute;
+  top: 45%;
+  right: 0.25rem;
+  width: 2.75rem;
+  height: 4rem;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.destinations__next-button::before {
+  content: '';
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-top: 0.2rem solid #ff5e00;
+  border-right: 0.2rem solid #ff5e00;
+  transform: rotate(45deg);
+}
+
+.destinations__pagination-button {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 1px solid #ff5e00;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.destinations__pagination-button[hidden] {
+  display: none;
+}
+
+.destinations__pagination-button--active {
+  background-color: #ff5e00;
+}
+
+@media (min-width: 1024px) {
+  .destinations__track {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: initial;
+  }
+
+  .destinations__next-button {
+    right: 0.75rem;
+  }
+}
