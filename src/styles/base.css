@@ -283,38 +283,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .space-map-list-1 {
-  position: fixed;
-  top: 33.5%;
+  position: absolute;
+  top: 20%;
   left: 40%;
 }
 
 .space-map-list-2 {
   position: absolute;
-  top: 39%;
-  left: 66.5%;
+  top: 25%;
+  left: 67.5%;
 }
 
 .space-map-list-3 {
   position: absolute;
-  top: 78%;
+  top: 51%;
   left: 80%;
 }
 
 .space-map-list-4 {
   position: absolute;
-  top: 85%;
-  left: 49%;
+  top: 59%;
+  left: 48%;
 }
 
 .space-map-list-5 {
   position: absolute;
-  top: 79%;
+  top: 53%;
   left: 15.5%;
 }
 
 .space-map-list-6 {
   position: absolute;
-  top: 48.5%;
+  top: 32.5%;
   left: 13.5%;
 }
 
@@ -344,34 +344,34 @@ h1, h2, h3, h4, h5, h6 {
   }
   .space-map-list-1 {
     position: absolute;
-    top: 24%;
+    top: 27%;
     left: 40%;
   }
   .space-map-list-2 {
     position: absolute;
-    top: 27.5%;
-    right: 30%;
+    top: 31%;
+    right: 29%;
     left: auto;
   }
   .space-map-list-3 {
     position: absolute;
-    top: 70%;
+    top: 60%;
     right: 16%;
     left: auto;
   }
   .space-map-list-4 {
     position: absolute;
-    top: 80%;
+    top: 68%;
     left: 45%;
   }
   .space-map-list-5 {
     position: absolute;
-    top: 72.5%;
+    top: 62%;
     left: 15%;
   }
   .space-map-list-6 {
     position: absolute;
-    top: 38%;
+    top: 39.5%;
     left: 13%;
   }
 }
@@ -387,8 +387,8 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 40px;
   }
   .space-map button img {
-    width: 28px;
-    height: 28px;
+    width: 15px;
+    height: 15px;
   }
   .space-map button:hover img {
     transform: scale(1.05);
@@ -411,35 +411,35 @@ h1, h2, h3, h4, h5, h6 {
   }
   .space-map-list-1 {
     position: absolute;
-    top: 35%;
+    top: 27%;
     left: 40%;
   }
   .space-map-list-2 {
     position: absolute;
-    top: 35%;
+    top: 29%;
     right: 27%;
     left: auto;
   }
   .space-map-list-3 {
     position: absolute;
-    top: 57%;
+    top: 47%;
     right: 15%;
     left: auto;
   }
   .space-map-list-4 {
     position: absolute;
-    top: 60%;
+    top: 52%;
     left: 50%;
     transform: translateX(-50%);
   }
   .space-map-list-5 {
     position: absolute;
-    top: 58%;
+    top: 48%;
     left: 12%;
   }
   .space-map-list-6 {
     position: absolute;
-    top: 41%;
+    top: 34%;
     left: 10%;
   }
 }
