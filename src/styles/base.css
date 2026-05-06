@@ -693,10 +693,13 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-inline: auto;
   padding-block: clamp(40px, 10vw, 80px);
   grid-column: 1/-1;
 }
 .site-footer figure img {
+  display: block;
+  margin-inline: auto;
   width: clamp(90px, 40vw, 400px);
   height: auto;
 }
@@ -726,14 +729,27 @@ header {
   }
   .site-footer section {
     grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding-inline: clamp(20px, 6vw, 30px);
+  }
+  .site-footer nav,
+  .site-footer h3,
+  .site-footer ul,
+  .site-footer li {
+    text-align: center;
   }
   .site-footer figure {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-inline: auto;
     grid-column: 1;
     padding-block: clamp(30px, 8vw, 50px);
+  }
+  .site-footer .site-footer-copyright {
+    width: min(90%, 900px);
   }
 }
 /* ============================================
@@ -741,7 +757,7 @@ header {
    ============================================ */
 .site-footer-copyright {
   display: flex;
-  width: clamp(60%, 80vw, 90%);
+  width: min(100%, 900px);
   justify-content: center;
   margin: clamp(30px, 5vw, 50px) auto 0;
   padding-top: clamp(20px, 3vw, 30px);
