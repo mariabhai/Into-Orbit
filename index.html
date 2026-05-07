@@ -17,7 +17,7 @@
   <body>
     <!--############################################################################-->
     <!--------------------------------------MENU ------------------------------------->
-    <!--###########################################################################--->
+    <!--############################################################################-->
 
   <section id="menu" class="menu hidden">
     <div class="menu-container">
@@ -100,6 +100,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!--############################################################################-->
       <!-------------------------------------- DESTINATIONS ---------------------------->
@@ -108,142 +109,6 @@
       <section id="destinations" class="destinations" aria-labelledby="destinations-title">
         <div class="destinations__header">
           <h2 id="destinations-title" class="destinations__title">Destinations</h2>
-      <div class="space-map-container">
-        <img src="/src/assets/images/webp/space-map-image.webp" alt="Interactive space destinations map"
-          class="space-map-image" />
-
-        <ul class="space-map-list">
-          <li>
-            <button class="space-map-list-1" type="button" aria-label="Mars bound">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-2" type="button" aria-label="Saturn soar">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-3" type="button" aria-label="Short orbit">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-4" type="button" aria-label="View point">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-5" type="button" aria-label="Fast orbit">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-6" type="button" aria-label="Space walk">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!--############################################################################-->
-    <!-------------------------------------- OUR MISSION ----------------------------->
-    <!--############################################################################-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--############################################################################-->
-    <!--------------------------------- MOMENTS CAPTURED ----------------------------->
-    <!--############################################################################-->
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--############################################################################-->
-    <!-------------------------------------- FOOTER ---------------------------------->
-    <!--###########################################################################--->
-    <footer class="site-footer">
-      <figure>
-        <img src="/src/assets/svg/logo-symbol.svg" alt="Into Orbit logo" />
-      </figure>
-      <section>
-        <nav aria-labelledby="footer-plan-trip">
-          <h3 id="footer-plan-trip">Plan Your Trip</h3>
-          <ul>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">First-time flyer</a></li>
-            <li><a href="#">Travel prep</a></li>
-            <li><a href="#">Payments & insurance</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-about">
-          <h3 id="footer-about">About</h3>
-          <ul>
-            <li><a href="#">Our mission</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Orbit news</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-support">
-          <h3 id="footer-support">Support</h3>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Booking terms</a></li>
-            <li><a href="#">Privacy policies</a></li>
-            <li><a href="#">Cookies</a></li>
-
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-orbit">
-          <h3 id="footer-orbit">Stay in Orbit</h3>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
-        </nav>
-      </section>
-      <div class="site-footer-copyright">
-        <p>&copy; 2026 Into Orbit Stockholm.</p>
-      </div>
-    </footer>
-
-
-
-
-
-
-
-
 
           <a class="destinations__link" href="#space-map">All the spots</a>
         </div>
@@ -342,6 +207,7 @@
       <!--############################################################################-->
       <!-------------------------------------- SPACE MAP ------------------------------->
       <!--############################################################################-->
+
       <section id="space-map" class="space-map">
         <div class="space-map-title">
           <h2>Space Map</h2>
@@ -428,9 +294,104 @@
       <!--------------------------------- MOMENTS CAPTURED ----------------------------->
       <!--############################################################################-->
 
+      <section class="moments-captured" aria-labelledby="moments-captured-title">
+        <div class="moments-captured-header">
+          <h2 class="moments-captured-title" id="moments-captured-title">Moments captured</h2>
+          <a href="#" class="moments-captured-link">See all</a>
+        </div>
+
+        <div class="swiper moments-captured-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-1-image.jpg"
+                alt="Astronaut sitting inside a spacecraft looking out over Earth and a distant planet"
+                width="1385"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-2-image.jpg"
+                alt="Astronaut standing on a rocky lunar surface with planets and asteroids in space"
+                width="1392"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-3-image.jpg"
+                alt="Astronaut beside a futuristic rover on a distant planet at sunrise"
+                width="1392"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <button class="swiper-button-prev" aria-label="Previous slide"></button>
+          <button class="swiper-button-next" aria-label="Next slide"></button>
+        </div>
+      </section>
+
       <!--############################################################################-->
       <!-------------------------------------- FOOTER ---------------------------------->
       <!--###########################################################################--->
+
+      <footer class="site-footer">
+        <figure>
+          <img src="/src/assets/svg/logo-symbol.svg" alt="Into Orbit logo" />
+        </figure>
+
+        <section>
+          <nav aria-labelledby="footer-plan-trip">
+            <h3 id="footer-plan-trip">Plan Your Trip</h3>
+            <ul>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">First-time flyer</a></li>
+              <li><a href="#">Travel prep</a></li>
+              <li><a href="#">Payments & insurance</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-about">
+            <h3 id="footer-about">About</h3>
+            <ul>
+              <li><a href="#">Our mission</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Orbit news</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-support">
+            <h3 id="footer-support">Support</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Booking terms</a></li>
+              <li><a href="#">Privacy policies</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-orbit">
+            <h3 id="footer-orbit">Stay in Orbit</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <div class="site-footer-copyright">
+          <p>&copy; 2026 Into Orbit Stockholm.</p>
+        </div>
+      </footer>
 
       <!--############################################################################-->
       <!-------------------------------------- COOKIES --------------------------------->
