@@ -7,23 +7,25 @@
 @use 'footer';
 
 // Color Palette
-$Dark_orbit: #000D19;
-$White_noise: #F2F2F2;
+$Dark_orbit: #000d19;
+$White_noise: #f2f2f2;
 $Dark_trans_matter: rgb(0, 13, 25, 80%);
-$Space_dust: #FF5E00;
-$Sand_storm: #FFA36E;
-$Obyss_blue: #001D36;
+$Space_dust: #ff5e00;
+$Sand_storm: #ffa36e;
+$Obyss_blue: #001d36;
 $dark-trans-matter: rgba(
   $color: #333d47,
-  $alpha: 0.4,);
+  $alpha: 0.4,
+);
+$goodspace-rounded-font-family: 'GoodspaceRounded';
+$goodspace-rounded-font-path: '/src/assets/fonts/GoodspaceRounded.otf';
 
 @font-face {
-  font-family: 'GoodspaceRounded';
-  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+  font-family: $goodspace-rounded-font-family;
+  src: url($goodspace-rounded-font-path) format('opentype');
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
-
