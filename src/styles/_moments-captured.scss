@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .moments-captured {
   padding: 1rem;
 }
@@ -14,10 +16,15 @@
 }
 
 .moments-captured-link {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 2px solid grey; // change color and add variable later
+  color: $obyss-blue;
+  border-bottom: 2px solid $obyss-blue;
+
+  &:hover {
+    border-bottom: 2px solid $space-dust;
+  }
 }
 
 @media (min-width: 768px) {
