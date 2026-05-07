@@ -995,7 +995,7 @@ header {
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
 body {
-  font-family: "GoodspaceRounded", "Bitstream Vera Serif", serif;
+  font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
 }
 
 main {
