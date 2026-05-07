@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .moments-captured-title {
@@ -23,12 +24,34 @@
   border-bottom: 2px solid $obyss-blue;
 
   &:hover {
-    border-bottom: 2px solid $space-dust;
+    border-color: $space-dust;
   }
 }
+
+.moments-captured-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.moments-captured-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} // kolla sen om detta verkligen behövs
+
+.moments-captured-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} // kolla sen om detta verkligen behövs
 
 @media (min-width: 768px) {
   .moments-captured-title {
     font-size: 4rem;
+  }
+
+  .moments-captured-link {
+    font-size: 1.5rem;
   }
 }
