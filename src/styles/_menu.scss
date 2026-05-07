@@ -91,13 +91,14 @@ $Obyss_blue: #001D36;
 
 .menu-customers-review,
 .menu-newsletter {
-  line-height: 1.2rem;
+  line-height: 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 12px;
   border: 1px solid white;
   border-radius: 15px;
   padding: 1rem;
+  width: 30vw;
 
   p {
     white-space: pre-line;
