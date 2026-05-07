@@ -1,28 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
-$white-noise: #f2f2f2;
-$dark-orbit: #000d19;
-$space-dust: #ff5e00;
-$dark-trans-matter: rgba(
-  $color: #333d47,
-  $alpha: 0.4,
-);
-
-@font-face {
-  font-family: 'myFont';
-  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
-}
-
 /* ============================================
    GLOBAL STYLES
    ============================================ */
 
 .site-footer {
-  background-color: $white-noise;
-  color: $dark-orbit;
-  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+  background-color: $White_noise;
+  color: $Dark_orbit;
+  font-family: $goodspace-rounded-font-family;
   padding: clamp(10px, 2.6vw, 16px) 0;
 
   section {
@@ -33,7 +16,7 @@ $dark-trans-matter: rgba(
     margin-inline: auto;
     padding-inline: clamp(16px, 1vw, 40px);
     padding-bottom: 90px;
-    border-bottom: 3px solid $dark-trans-matter;
+    border-bottom: 3px solid $Dark-trans-matter-transparency;
     justify-items: center;
   }
 
@@ -57,9 +40,9 @@ $dark-trans-matter: rgba(
       margin-bottom: clamp(8px, 1.5vw, 10px);
 
       a {
-        color: $dark-orbit;
+        color: $Dark_orbit;
         text-decoration: underline;
-        text-decoration-color: $dark-orbit;
+        text-decoration-color: $Dark_orbit;
         text-decoration-thickness: 2px;
         text-underline-offset: 4px;
         font-size: clamp(1.2rem, 2vw, 1.5rem);
@@ -68,15 +51,15 @@ $dark-trans-matter: rgba(
 
         @media (hover: hover) {
           &:hover {
-            text-decoration-color: $space-dust;
+            text-decoration-color: $Space_dust;
           }
         }
 
         &:focus-visible {
-          outline: 2px solid $space-dust;
+          outline: 2px solid $Space_dust;
           outline-offset: 2px;
           border-radius: 4px;
-          text-decoration-color: $space-dust;
+          text-decoration-color: $Space_dust;
         }
       }
     }
@@ -197,7 +180,7 @@ $dark-trans-matter: rgba(
   justify-content: center;
   margin: clamp(15px, 2.5vw, 25px) auto 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
-  color: $dark-trans-matter;
+  color: $Dark-trans-matter-transparency;
 
   p {
     margin: clamp(5px, 1vw, 7.5px) 0;
