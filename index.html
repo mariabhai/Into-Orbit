@@ -57,6 +57,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!--############################################################################-->
       <!-------------------------------------- DESTINATIONS ---------------------------->
@@ -218,6 +219,34 @@
       <!-------------------------------------- OUR MISSION ----------------------------->
       <!--############################################################################-->
 
+      <section id="our-mission" class="our-mission" aria-labelledby="our-mission-title">
+        <div class="our-mission__header">
+          <h2 id="our-mission-title" class="our-mission__title">Our mission</h2>
+
+          <a class="our-mission__link" href="#our-mission">More about it</a>
+        </div>
+
+        <div class="our-mission__cards">
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/rocket.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Explore</h3>
+            <p class="our-mission__card-text">Discover destinations beyond the expected.</p>
+          </article>
+
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/ufo.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Innovate</h3>
+            <p class="our-mission__card-text">Reimagining travel for the next frontier.</p>
+          </article>
+
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/stars.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Inspire</h3>
+            <p class="our-mission__card-text">Designed to spark curiosity and wonder.</p>
+          </article>
+        </div>
+      </section>
+
       <!--############################################################################-->
       <!--------------------------------- MOMENTS CAPTURED ----------------------------->
       <!--############################################################################-->
@@ -266,253 +295,60 @@
         </div>
       </section>
 
-    <!--############################################################################-->
-    <!-------------------------------------- FOOTER ---------------------------------->
-    <!--###########################################################################--->
-    <footer class="site-footer">
-      <figure>
-        <img src="/src/assets/svg/logo-symbol.svg" alt="Into Orbit logo" />
-      </figure>
-      <section>
-        <nav aria-labelledby="footer-plan-trip">
-          <h3 id="footer-plan-trip">Plan Your Trip</h3>
-          <ul>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">First-time flyer</a></li>
-            <li><a href="#">Travel prep</a></li>
-            <li><a href="#">Payments & insurance</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-about">
-          <h3 id="footer-about">About</h3>
-          <ul>
-            <li><a href="#">Our mission</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Orbit news</a></li>
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-support">
-          <h3 id="footer-support">Support</h3>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Booking terms</a></li>
-            <li><a href="#">Privacy policies</a></li>
-            <li><a href="#">Cookies</a></li>
-
-          </ul>
-        </nav>
-
-        <nav aria-labelledby="footer-orbit">
-          <h3 id="footer-orbit">Stay in Orbit</h3>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
-        </nav>
-      </section>
-      <div class="site-footer-copyright">
-        <p>&copy; 2026 Into Orbit Stockholm.</p>
-      </div>
-    </footer>
-
-
-
-
-
-
-
-
-
-          <a class="destinations__link" href="#space-map">All the spots</a>
-        </div>
-
-        <div class="destinations__swiper" aria-label="Destination carousel">
-          <div class="destinations__track">
-            <article class="destinations__card" data-destination-card>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-1-image.webp"
-                alt="Astronaut on a space walk above Earth"
-              />
-              <h3 class="destinations__card-title">Space walk</h3>
-            </article>
-
-            <article class="destinations__card" data-destination-card>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-2-image.webp"
-                alt="Spacecraft flying in orbit above Earth"
-              />
-              <h3 class="destinations__card-title">Fast orbit</h3>
-            </article>
-
-            <article class="destinations__card" data-destination-card>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-3-image.webp"
-                alt="Exploration vehicle on the surface of Mars"
-              />
-              <h3 class="destinations__card-title">Mars bound</h3>
-            </article>
-
-            <article class="destinations__card" data-destination-card hidden>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-4-img.webp"
-                alt="Spacecraft in short orbit above Earth"
-              />
-              <h3 class="destinations__card-title">Short orbit</h3>
-            </article>
-
-            <article class="destinations__card" data-destination-card hidden>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-5-image.webp"
-                alt="View of Earth from space"
-              />
-              <h3 class="destinations__card-title">View point</h3>
-            </article>
-
-            <article class="destinations__card" data-destination-card hidden>
-              <img
-                class="destinations__image"
-                src="/src/assets/images/webp/destination-6-image.webp"
-                alt="View of Saturn from space"
-              />
-              <h3 class="destinations__card-title">Saturn soar</h3>
-            </article>
-          </div>
-
-          <button
-            class="destinations__next-button"
-            type="button"
-            aria-label="Show next destinations"
-            data-destination-next-button
-          ></button>
-
-          <div class="destinations__pagination" aria-label="Destination pages" data-destination-pagination>
-            <button
-              class="destinations__pagination-button destinations__pagination-button--active"
-              type="button"
-              aria-label="Show destinations 1 to 3"
-              aria-current="true"
-              data-destination-page="0"
-            ></button>
-
-            <button
-              class="destinations__pagination-button"
-              type="button"
-              aria-label="Show destinations 4 to 6"
-              data-destination-page="1"
-            ></button>
-
-            <button
-              class="destinations__pagination-button"
-              type="button"
-              aria-label="Show destinations 5 to 6"
-              data-destination-page="2"
-              hidden
-            ></button>
-          </div>
-        </div>
-      </section>
-
-      <!--############################################################################-->
-      <!-------------------------------------- SPACE MAP ------------------------------->
-      <!--############################################################################-->
-      <section id="space-map" class="space-map">
-        <div class="space-map-title">
-          <h2>Space Map</h2>
-          <a href="#full-view">
-            <h3>Full view</h3>
-          </a>
-        </div>
-
-        <div class="space-map-container">
-          <img
-            src="/src/assets/images/webp/space-map-image.webp"
-            alt="Interactive space destinations map"
-            class="space-map-image"
-          />
-
-          <ul class="space-map-list">
-            <li>
-              <button class="space-map-list-1" type="button" aria-label="Mars bound">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-            <li>
-              <button class="space-map-list-2" type="button" aria-label="Saturn soar">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-            <li>
-              <button class="space-map-list-3" type="button" aria-label="Short orbit">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-            <li>
-              <button class="space-map-list-4" type="button" aria-label="View point">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-            <li>
-              <button class="space-map-list-5" type="button" aria-label="Fast orbit">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-            <li>
-              <button class="space-map-list-6" type="button" aria-label="Space walk">
-                <img src="/src/assets/svg/pin-icon.svg" alt="" />
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!--############################################################################-->
-      <!-------------------------------------- OUR MISSION ----------------------------->
-      <!--############################################################################-->
-
-      <section id="our-mission" class="our-mission" aria-labelledby="our-mission-title">
-        <div class="our-mission__header">
-          <h2 id="our-mission-title" class="our-mission__title">Our mission</h2>
-
-          <a class="our-mission__link" href="#our-mission">More about it</a>
-        </div>
-
-        <div class="our-mission__cards">
-          <article class="our-mission__card">
-            <img class="our-mission__icon" src="/src/assets/svg/rocket.svg" alt="" aria-hidden="true" />
-            <h3 class="our-mission__card-title">Explore</h3>
-            <p class="our-mission__card-text">Discover destinations beyond the expected.</p>
-          </article>
-
-          <article class="our-mission__card">
-            <img class="our-mission__icon" src="/src/assets/svg/ufo.svg" alt="" aria-hidden="true" />
-            <h3 class="our-mission__card-title">Innovate</h3>
-            <p class="our-mission__card-text">Reimagining travel for the next frontier.</p>
-          </article>
-
-          <article class="our-mission__card">
-            <img class="our-mission__icon" src="/src/assets/svg/stars.svg" alt="" aria-hidden="true" />
-            <h3 class="our-mission__card-title">Inspire</h3>
-            <p class="our-mission__card-text">Designed to spark curiosity and wonder.</p>
-          </article>
-        </div>
-      </section>
-
-      <!--############################################################################-->
-      <!--------------------------------- MOMENTS CAPTURED ----------------------------->
-      <!--############################################################################-->
-
       <!--############################################################################-->
       <!-------------------------------------- FOOTER ---------------------------------->
       <!--###########################################################################--->
+
+      <footer class="site-footer">
+        <figure>
+          <img src="/src/assets/svg/logo-symbol.svg" alt="Into Orbit logo" />
+        </figure>
+
+        <section>
+          <nav aria-labelledby="footer-plan-trip">
+            <h3 id="footer-plan-trip">Plan Your Trip</h3>
+            <ul>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">First-time flyer</a></li>
+              <li><a href="#">Travel prep</a></li>
+              <li><a href="#">Payments & insurance</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-about">
+            <h3 id="footer-about">About</h3>
+            <ul>
+              <li><a href="#">Our mission</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Orbit news</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-support">
+            <h3 id="footer-support">Support</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Booking terms</a></li>
+              <li><a href="#">Privacy policies</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-labelledby="footer-orbit">
+            <h3 id="footer-orbit">Stay in Orbit</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <div class="site-footer-copyright">
+          <p>&copy; 2026 Into Orbit Stockholm.</p>
+        </div>
+      </footer>
 
       <!--############################################################################-->
       <!-------------------------------------- COOKIES --------------------------------->
