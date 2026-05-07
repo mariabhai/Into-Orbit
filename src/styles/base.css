@@ -604,6 +604,176 @@ header {
     margin-bottom: 50px;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+.site-footer {
+  background-color: #f2f2f2;
+  color: #000d19;
+  font-family: "myFont", "Bitstream Vera Serif", serif;
+  padding: clamp(10px, 2.6vw, 16px) 0;
+}
+.site-footer section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: clamp(100px, 20vw, 125px);
+  width: min(100%, 1200px);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 3wv, 40px);
+  padding-bottom: 90px;
+  border-bottom: 3px solid rgba(51, 61, 71, 0.4);
+  justify-items: center;
+}
+.site-footer nav {
+  text-align: left;
+}
+.site-footer h3 {
+  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  margin-bottom: clamp(10px, 2vw, 15px);
+  font-weight: 600;
+  text-align: left;
+}
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-footer ul li {
+  margin-bottom: clamp(8px, 1.5vw, 10px);
+}
+.site-footer ul li a {
+  color: #000d19;
+  text-decoration: underline;
+  text-decoration-color: #000d19;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  display: inline-block;
+  transition: text-decoration-color 0.2s ease;
+}
+@media (hover: hover) {
+  .site-footer ul li a:hover {
+    text-decoration-color: #ff5e00;
+  }
+}
+.site-footer ul li a:focus-visible {
+  outline: 2px solid #ff5e00;
+  outline-offset: 2px;
+  border-radius: 4px;
+  text-decoration-color: #ff5e00;
+}
+.site-footer figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: clamp(40px, 10vw, 80px);
+  grid-column: 1/-1;
+}
+.site-footer figure img {
+  display: block;
+  margin-inline: auto;
+  width: clamp(90px, 40vw, 400px);
+  height: auto;
+}
+
+/* ============================================
+   DESKTOP LAYOUT (1025px and up)
+   ============================================ */
+@media (min-width: 1025px) {
+  .site-footer section {
+    width: min(100%, 1200px);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* ============================================
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  .site-footer section {
+    width: min(100%, 900px);
+    margin-inline: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(80px, 16vw, 120px);
+    justify-items: center;
+    align-items: start;
+  }
+  .site-footer nav {
+    width: 100%;
+    text-align: left;
+  }
+  .site-footer h3 {
+    text-align: left;
+  }
+  .site-footer ul {
+    width: 100%;
+    text-align: left;
+  }
+  .site-footer li,
+  .site-footer a {
+    text-align: left;
+  }
+}
+/* ============================================
+   MOBILE LAYOUT (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .site-footer {
+    padding: clamp(20px, 5vw, 30px) 0;
+  }
+  .site-footer section {
+    width: 100%;
+    margin-inline: auto;
+    grid-template-columns: 1fr;
+    gap: clamp(24px, 6vw, 36px);
+    justify-items: center;
+    text-align: center;
+    padding-inline: clamp(8px, 3vw, 16px);
+  }
+  .site-footer nav,
+  .site-footer h3,
+  .site-footer ul,
+  .site-footer li {
+    text-align: center;
+  }
+  .site-footer figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-inline: auto;
+    grid-column: 1;
+    padding-block: clamp(30px, 8vw, 50px);
+  }
+  .site-footer .site-footer-copyright {
+    width: min(90%, 900px);
+  }
+}
+/* ============================================
+   FOOTER COPYRIGHT
+   ============================================ */
+.site-footer-copyright {
+  display: flex;
+  width: min(100%, 900px);
+  justify-content: center;
+  margin: clamp(15px, 2.5vw, 25px) auto 0;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: rgba(51, 61, 71, 0.4);
+}
+.site-footer-copyright p {
+  margin: clamp(5px, 1vw, 7.5px) 0;
+  text-align: center;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
