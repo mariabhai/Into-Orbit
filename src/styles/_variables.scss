@@ -1,0 +1,20 @@
+// Shared design tokens
+$dark-orbit: #000d19;
+$white-noise: #f2f2f2;
+$dark-trans-matter: rgb(0, 13, 25, 80%);
+$space-dust: #ff5e00;
+$sand-storm: #ffa36e;
+$obyss-blue: #001d36;
+$dark-trans-matter-transparency: rgba(51, 61, 71, 0.4);
+
+$goodspace-rounded-font-family: 'GoodspaceRounded';
+$goodspace-rounded-font-stack: $goodspace-rounded-font-family, 'Poppins', 'Arial', sans-serif;
+
+// Backward-compatible aliases used in existing partials
+$Dark_orbit: $dark-orbit;
+$White_noise: $white-noise;
+$Dark_trans_matter: $dark-trans-matter;
+$Space_dust: $space-dust;
+$Sand_storm: $sand-storm;
+$Obyss_blue: $obyss-blue;
+$Dark-trans-matter-transparency: $dark-trans-matter-transparency;
