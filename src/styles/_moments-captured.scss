@@ -29,22 +29,57 @@
 }
 
 .moments-captured-swiper {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.moments-captured-swiper-wrapper {
+  display: flex;
 }
 
 .moments-captured-swiper-slide {
-  display: flex;
   justify-content: center;
   align-items: center;
-} // kolla sen om detta verkligen behövs
+  min-width: 100%;
+}
 
 .moments-captured-swiper-slide img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} // kolla sen om detta verkligen behövs
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 20%;
+
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 0.5rem;
+}
+.swiper-button-next {
+  right: 0.5rem;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  font-size: 5rem; // arrows
+  color: $space-dust;
+}
+
+.swiper-button-prev::before {
+  content: '‹';
+}
+.swiper-button-next::before {
+  content: '›';
+}
 
 @media (min-width: 768px) {
   .moments-captured-title {
