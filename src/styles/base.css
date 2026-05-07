@@ -989,6 +989,10 @@ header {
   text-align: center;
 }
 
+@font-face {
+  font-family: "GoodspaceRounded";
+  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
 main {
   display: grid;
   grid-template-columns: 1fr;

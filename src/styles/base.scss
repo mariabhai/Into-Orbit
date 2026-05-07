@@ -6,6 +6,22 @@
 @use 'header';
 @use 'footer';
 
+// Color Palette
+$Dark_orbit: #000D19;
+$White_noise: #F2F2F2;
+$Dark_trans_matter: rgb(0, 13, 25, 80%);
+$Space_dust: #FF5E00;
+$Sand_storm: #FFA36E;
+$Obyss_blue: #001D36;
+$dark-trans-matter: rgba(
+  $color: #333d47,
+  $alpha: 0.4,);
+
+@font-face {
+  font-family: 'GoodspaceRounded';
+  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
