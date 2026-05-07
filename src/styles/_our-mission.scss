@@ -1,0 +1,80 @@
+.our-mission {
+  padding: 2.5rem 1.25rem 4rem;
+  color: #001d36;
+  font-family: 'myFont', 'Poppins', Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.our-mission__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.our-mission__title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.our-mission__link {
+  color: #001d36;
+  font-size: 1.25rem;
+  text-decoration: underline #001d36;
+  text-underline-offset: 0.25rem;
+}
+
+.our-mission__link:hover,
+.our-mission__link:focus-visible {
+  text-decoration-color: #ff5e00;
+}
+
+.our-mission__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.our-mission__card {
+  display: flex;
+  min-height: 9.5rem;
+  padding: 1.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+  text-align: center;
+  background-color: #001d36;
+  border-radius: 0.5rem;
+}
+
+.our-mission__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.our-mission__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.our-mission__card-text {
+  max-width: 12rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+@media (min-width: 1024px) {
+  .our-mission__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .our-mission__card {
+    min-height: auto;
+    aspect-ratio: 2.25 / 1;
+  }
+}
