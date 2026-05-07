@@ -1,11 +1,12 @@
 /* ============================================
    GLOBAL STYLES
    ============================================ */
+@use 'variables' as v;
 
 .site-footer {
-  background-color: $White_noise;
-  color: $Dark_orbit;
-  font-family: $goodspace-rounded-font-family;
+  background-color: v.$White_noise;
+  color: v.$Dark_orbit;
+  font-family: v.$goodspace-rounded-font-family;
   padding: clamp(10px, 2.6vw, 16px) 0;
 
   section {
@@ -16,7 +17,7 @@
     margin-inline: auto;
     padding-inline: clamp(16px, 1vw, 40px);
     padding-bottom: 90px;
-    border-bottom: 3px solid $Dark-trans-matter-transparency;
+    border-bottom: 3px solid v.$Dark-trans-matter-transparency;
     justify-items: center;
   }
 
@@ -40,9 +41,9 @@
       margin-bottom: clamp(8px, 1.5vw, 10px);
 
       a {
-        color: $Dark_orbit;
+        color: v.$Dark_orbit;
         text-decoration: underline;
-        text-decoration-color: $Dark_orbit;
+        text-decoration-color: v.$Dark_orbit;
         text-decoration-thickness: 2px;
         text-underline-offset: 4px;
         font-size: clamp(1.2rem, 2vw, 1.5rem);
@@ -51,15 +52,15 @@
 
         @media (hover: hover) {
           &:hover {
-            text-decoration-color: $Space_dust;
+            text-decoration-color: v.$Space_dust;
           }
         }
 
         &:focus-visible {
-          outline: 2px solid $Space_dust;
+          outline: 2px solid v.$Space_dust;
           outline-offset: 2px;
           border-radius: 4px;
-          text-decoration-color: $Space_dust;
+          text-decoration-color: v.$Space_dust;
         }
       }
     }
@@ -180,7 +181,7 @@
   justify-content: center;
   margin: clamp(15px, 2.5vw, 25px) auto 0;
   font-size: clamp(0.9rem, 1.5vw, 1rem);
-  color: $Dark-trans-matter-transparency;
+  color: v.$Dark-trans-matter-transparency;
 
   p {
     margin: clamp(5px, 1vw, 7.5px) 0;
