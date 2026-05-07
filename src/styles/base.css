@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
-button {
+.space-map button {
   font-size: clamp(0.9rem, 2vw, 1.5rem);
   display: flex;
   flex-direction: column;
@@ -234,11 +234,11 @@ button {
   padding: 0;
 }
 @media (hover: hover) {
-  button:hover {
+  .space-map button:hover {
     z-index: 20;
   }
 }
-button:focus-visible {
+.space-map button:focus-visible {
   outline: 2px solid #ff5e00;
   outline-offset: 2px;
   border-radius: 10px;
@@ -246,13 +246,13 @@ button:focus-visible {
   z-index: 20;
   padding: 3px;
 }
-button img {
+.space-map button img {
   width: clamp(15px, 4vw, 35px);
   height: clamp(15px, 4vw, 35px);
   transition: transform 0.2s ease;
 }
 @media (hover: hover) {
-  button:hover img {
+  .space-map button:hover img {
     transform: scale(1.2);
   }
 }
