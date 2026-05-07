@@ -1,11 +1,13 @@
+@use 'variables' as v;
+
 .our-mission {
   padding: 2.5rem 1.25rem 4rem;
-  color: #001d36;
-  font-family: 'myFont', ≈;
-  background-color: #ffffff;
+  color: v.$obyss-blue;
+  font-family: v.$goodspace-rounded-font-stack;
+  background-color: v.$white;
 }
 
-.our-mission__header {
+.our-mission-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,55 +15,55 @@
   margin-bottom: 2rem;
 }
 
-.our-mission__title {
+.our-mission-title {
   font-size: 4rem;
   font-weight: 400;
 }
 
-.our-mission__link {
-  color: #001d36;
+.our-mission-link {
+  color: v.$obyss-blue;
   font-size: 1.25rem;
-  text-decoration: underline #001d36;
+  text-decoration: underline v.$obyss-blue;
   text-underline-offset: 0.25rem;
 }
 
-.our-mission__link:hover,
-.our-mission__link:focus-visible {
-  text-decoration-color: #ff5e00;
+.our-mission-link:hover,
+.our-mission-link:focus-visible {
+  text-decoration-color: v.$space-dust;
 }
 
-.our-mission__cards {
+.our-mission-cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-.our-mission__card {
+.our-mission-card {
   display: flex;
   min-height: 9.5rem;
   padding: 1.5rem 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f2f2f2;
+  color: v.$white-noise;
   text-align: center;
-  background-color: #001d36;
+  background-color: v.$obyss-blue;
   border-radius: 0.5rem;
 }
 
-.our-mission__icon {
+.our-mission-icon {
   width: 2.5rem;
   height: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
-.our-mission__card-title {
+.our-mission-card-title {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.our-mission__card-text {
+.our-mission-card-text {
   max-width: 12rem;
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 0.875rem;
@@ -69,11 +71,11 @@
 }
 
 @media (min-width: 1024px) {
-  .our-mission__cards {
+  .our-mission-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .our-mission__card {
+  .our-mission-card {
     min-height: auto;
     aspect-ratio: 2.25 / 1;
   }
