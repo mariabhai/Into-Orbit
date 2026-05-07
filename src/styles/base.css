@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -434,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 .our-mission {
   padding: 2.5rem 1.25rem 4rem;
   color: #001d36;
-  font-family: "myFont", "Poppins", Arial, sans-serif;
+  font-family: "myFont", ≈;
   background-color: #ffffff;
 }
 
@@ -993,6 +994,10 @@ header {
   font-family: "GoodspaceRounded";
   src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
+body {
+  font-family: "GoodspaceRounded", "Bitstream Vera Serif", serif;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;

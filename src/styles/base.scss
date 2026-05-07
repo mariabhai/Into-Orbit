@@ -18,11 +18,16 @@ $dark-trans-matter: rgba(
   $alpha: 0.4,
 );
 $goodspace-rounded-font-family: 'GoodspaceRounded';
+$goodspace-rounded-font-stack: $goodspace-rounded-font-family, 'Bitstream Vera Serif', serif;
 $goodspace-rounded-font-path: '/src/assets/fonts/GoodspaceRounded.otf';
 
 @font-face {
   font-family: $goodspace-rounded-font-family;
   src: url($goodspace-rounded-font-path) format('opentype');
+}
+
+body {
+  font-family: $goodspace-rounded-font-stack;
 }
 
 main {
