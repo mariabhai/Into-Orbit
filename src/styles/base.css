@@ -815,7 +815,7 @@ header {
    GLOBAL STYLES
    ============================================ */
 .site-footer {
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
   color: #000d19;
   font-family: "GoodspaceRounded";
   padding: clamp(10px, 2.6vw, 16px) 0;
