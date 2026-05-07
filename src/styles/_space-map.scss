@@ -1,12 +1,12 @@
 /* ============================================
    SPACE MAP STYLES
    ============================================ */
-@use 'variables' as *;
+@use 'variables' as v;
 
 .space-map {
   width: 100%;
-  color: $Dark-orbit;
-  font-family: $goodspace-rounded-font-family;
+  color: v.$Dark-orbit;
+  font-family: v.$goodspace-rounded-font-family;
   position: relative;
   overflow: hidden;
   padding: 0 clamp(15px, 10%, 25px);
@@ -89,9 +89,9 @@
     position: relative;
     font-size: clamp(1rem, 3vw, 1.4rem);
     font-weight: 400;
-    text-decoration: underline $space-dust;
+    text-decoration: underline v.$space-dust;
     top: clamp(15px, 2vw, 30px);
-    color: $Dark-orbit;
+    color: v.$Dark-orbit;
     transition: all 0.3s ease;
   }
 
@@ -102,19 +102,19 @@
 
     @media (hover: hover) {
       &:hover h3 {
-        color: $space-dust;
+        color: v.$space-dust;
         transform: scale(1.1);
       }
     }
 
     &:focus-visible {
-      outline: 2px solid $space-dust;
+      outline: 2px solid v.$space-dust;
       outline-offset: -4px;
       border-radius: 10px;
     }
 
     &:focus-visible h3 {
-      color: $space-dust;
+      color: v.$space-dust;
       padding: 0 10px;
     }
   }
