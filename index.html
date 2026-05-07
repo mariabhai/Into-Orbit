@@ -19,30 +19,73 @@
     <!--------------------------------------MENU ------------------------------------->
     <!--############################################################################-->
 
+  <section id="menu" class="menu hidden">
+    <div class="menu-container">
+      
+      <div class="close-icon">
+        <button id="closeBtn">
+          <img src="/src/assets/svg/close-icon.svg" alt="Close menu icon">
+        </button>
+      </div>
+      <div id="quicklinks" class="menu-links">
+        <a href="#">Plan your Trip</a>
+        <a href="#">Support</a>
+        <a href="#">About us</a>
+        <a href="#">Stay in orbit</a>
+      </div>
+
+      <div class="menu-links-mobile">
+        <a href="#">Destinations</a>
+        <a href="#">Space map</a>
+        <a href="#">Our mission</a>
+        <a href="#">Moments captured</a>
+        <a href="#quicklinks">Quicklinks</a>
+      </div>
+      
+      <div class="menu-info">
+        <div class="menu-customers-review">
+          <img class="review-icon" src="/src/assets/svg/reviws-icon.svg" alt="Reviews icon">
+          <p>Words from 
+            our customers</p>
+        </div>
+        
+        <div class="menu-newsletter">
+          <img class="newspaper-icon" src="/src/assets/svg/newspaper.svg" alt="Newspaper">
+          <p>Sign up for the 
+            newsletter</p>
+            <input type="email" placeholder="name@gmail.com" class="newsletter-mail">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+
+    
     <!--############################################################################-->
     <!-------------------------------------- HEADER ---------------------------------->
     <!--############################################################################-->
-
+    
     <header class="header">
       <div class="header-topbar">
         <a href="#" class="header-logo">
           <img src="src/assets/svg/logo-white-full.svg" alt="Into Orbit logo" />
         </a>
-
+        
         <div class="header-line"></div>
 
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Explore space</a></li>
-            <li><a href="#">Our mission</a></li>
-            <li><a href="#">Moments captured</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Open menu">
-          <img src="src/assets/svg/menu.svg" alt="" />
-        </button>
-      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Explore space</a></li>
+          <li><a href="#">Our mission</a></li>
+          <li><a href="#">Moments captured</a></li>
+        </ul>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
+        <img src="src/assets/svg/menu.svg" alt="" />
+      </button>
+    </div>
 
       <div class="header-hero">
         <p class="header-pretitle">Of course Earth is not enough</p>

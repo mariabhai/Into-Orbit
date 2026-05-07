@@ -3,6 +3,7 @@ import './styles/base.scss';
 
 // Import interactive modules
 import './space-map.mjs';
+import './menu.mjs';
 
 const DESTINATION_DESKTOP_CARDS_PER_PAGE = 3;
 const DESTINATION_SMALL_SCREEN_CARDS_PER_PAGE = 2;

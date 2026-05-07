@@ -1,11 +1,13 @@
-@import 'reset';
-@import 'destinations';
-@import 'space-map';
-@import 'our-mission';
-@import 'header';
-@import 'footer';
+@use 'reset';
+@use 'destinations';
+@use 'space-map';
+@use 'our-mission';
+@use 'menu';
+@use 'header';
+@use 'footer';
 
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
+
