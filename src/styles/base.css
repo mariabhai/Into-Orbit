@@ -893,6 +893,9 @@ header {
     width: 70%;
     grid-template-columns: repeat(4, 1fr);
   }
+  .site-footer h3 {
+    width: 200px;
+  }
 }
 /* ============================================
    TABLET LAYOUT (481px - 1024px)
@@ -913,6 +916,7 @@ header {
   }
   .site-footer h3 {
     text-align: left;
+    width: 200px;
   }
   .site-footer ul {
     width: 100%;
