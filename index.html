@@ -1,36 +1,78 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Into Orbit</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/styles/base.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <title>Into Orbit</title>
-</head>
+  <body>
+    <!--############################################################################-->
+    <!--------------------------------------MENU ------------------------------------->
+    <!--############################################################################-->
 
-<body>
+  <section id="menu" class="menu hidden">
+    <div class="menu-container">
+      
+      <div class="close-icon">
+        <button id="closeBtn">
+          <img src="/src/assets/svg/close-icon.svg" alt="Close menu icon">
+        </button>
+      </div>
+      <div id="quicklinks" class="menu-links">
+        <a href="#">Plan your Trip</a>
+        <a href="#">Support</a>
+        <a href="#">About us</a>
+        <a href="#">Stay in orbit</a>
+      </div>
 
-  <!--############################################################################-->
-  <!--------------------------------------MENU ------------------------------------->
-  <!--###########################################################################--->
+      <div class="menu-links-mobile">
+        <a href="#">Destinations</a>
+        <a href="#">Space map</a>
+        <a href="#">Our mission</a>
+        <a href="#">Moments captured</a>
+        <a href="#quicklinks">Quicklinks</a>
+      </div>
+      
+      <div class="menu-info">
+        <div class="menu-customers-review">
+          <img class="review-icon" src="/src/assets/svg/reviws-icon.svg" alt="Reviews icon">
+          <p>Words from 
+            our customers</p>
+        </div>
+        
+        <div class="menu-newsletter">
+          <img class="newspaper-icon" src="/src/assets/svg/newspaper.svg" alt="Newspaper">
+          <p>Sign up for the 
+            newsletter</p>
+            <input type="email" placeholder="name@gmail.com" class="newsletter-mail">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!--############################################################################-->
-  <!-------------------------------------- HEADER ---------------------------------->
-  <!--############################################################################-->
+    
 
-  <header class="header">
-    <div class="header-topbar">
-      <a href="#" class="header-logo">
-        <img src="src/assets/svg/logo-white-full.svg" alt="Into Orbit logo" />
-      </a>
-
-      <div class="header-line"></div>
+    
+    <!--############################################################################-->
+    <!-------------------------------------- HEADER ---------------------------------->
+    <!--############################################################################-->
+    
+    <header class="header">
+      <div class="header-topbar">
+        <a href="#" class="header-logo">
+          <img src="src/assets/svg/logo-white-full.svg" alt="Into Orbit logo" />
+        </a>
+        
+        <div class="header-line"></div>
 
       <nav class="header-nav">
         <ul class="header-nav-list">
@@ -40,210 +82,322 @@
           <li><a href="#">Moments captured</a></li>
         </ul>
       </nav>
-      <button class="menu-toggle" aria-label="Open menu">
+      <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
         <img src="src/assets/svg/menu.svg" alt="" />
       </button>
     </div>
 
-    <div class="header-hero">
-      <p class="header-pretitle">Of course Earth is not enough</p>
-      <h1 class="header-title">Space perhaps?</h1>
-      <p class="header-description">
-        Into Orbit is for travellers with expensive taste, excellent timing and absolutely no interest in the usual
-        itinerary.
-      </p>
-      <div class="header-actions">
-        <a href="#" class="btn btn-primary">Book a trip</a>
-        <a href="#" class="btn btn-link">About us</a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <!--############################################################################-->
-    <!-------------------------------------- DESTINATIONS ---------------------------->
-    <!--############################################################################-->
-
-    <section id="destinations" class="destinations" aria-labelledby="destinations-title">
-      <div class="destinations__header">
-        <h2 id="destinations-title" class="destinations__title">Destinations</h2>
-
-        <a class="destinations__link" href="#space-map">All the spots</a>
-      </div>
-
-      <div class="destinations__swiper" aria-label="Destination carousel">
-        <div class="destinations__track">
-          <article class="destinations__card" data-destination-card>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-1-image.webp"
-              alt="Astronaut on a space walk above Earth" />
-            <h3 class="destinations__card-title">Space walk</h3>
-          </article>
-
-          <article class="destinations__card" data-destination-card>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-2-image.webp"
-              alt="Spacecraft flying in orbit above Earth" />
-            <h3 class="destinations__card-title">Fast orbit</h3>
-          </article>
-
-          <article class="destinations__card" data-destination-card>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-3-image.webp"
-              alt="Exploration vehicle on the surface of Mars" />
-            <h3 class="destinations__card-title">Mars bound</h3>
-          </article>
-
-          <article class="destinations__card" data-destination-card hidden>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-4-img.webp"
-              alt="Spacecraft in short orbit above Earth" />
-            <h3 class="destinations__card-title">Short orbit</h3>
-          </article>
-
-          <article class="destinations__card" data-destination-card hidden>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-5-image.webp"
-              alt="View of Earth from space" />
-            <h3 class="destinations__card-title">View point</h3>
-          </article>
-
-          <article class="destinations__card" data-destination-card hidden>
-            <img class="destinations__image" src="/src/assets/images/webp/destination-6-image.webp"
-              alt="View of Saturn from space" />
-            <h3 class="destinations__card-title">Saturn soar</h3>
-          </article>
-        </div>
-
-        <button class="destinations__next-button" type="button" aria-label="Show next destinations"
-          data-destination-next-button></button>
-
-        <div class="destinations__pagination" aria-label="Destination pages" data-destination-pagination>
-          <button class="destinations__pagination-button destinations__pagination-button--active" type="button"
-            aria-label="Show destinations 1 to 3" aria-current="true" data-destination-page="0"></button>
-
-          <button class="destinations__pagination-button" type="button" aria-label="Show destinations 4 to 6"
-            data-destination-page="1"></button>
-
-          <button class="destinations__pagination-button" type="button" aria-label="Show destinations 5 to 6"
-            data-destination-page="2" hidden></button>
+      <div class="header-hero">
+        <p class="header-pretitle">Of course Earth is not enough</p>
+        <h1 class="header-title">Space perhaps?</h1>
+        <p class="header-description">
+          Into Orbit is for travellers with expensive taste, excellent timing and absolutely no interest in the usual
+          itinerary.
+        </p>
+        <div class="header-actions">
+          <a href="#" class="btn btn-primary">Book a trip</a>
+          <a href="#" class="btn btn-link">About us</a>
         </div>
       </div>
-    </section>
+    </header>
 
+    <main>
+      <!--############################################################################-->
+      <!-------------------------------------- DESTINATIONS ---------------------------->
+      <!--############################################################################-->
 
+      <section id="destinations" class="destinations" aria-labelledby="destinations-title">
+        <div class="destinations__header">
+          <h2 id="destinations-title" class="destinations__title">Destinations</h2>
 
+          <a class="destinations__link" href="#space-map">All the spots</a>
+        </div>
 
+        <div class="destinations__swiper" aria-label="Destination carousel">
+          <div class="destinations__track">
+            <article class="destinations__card" data-destination-card>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-1-image.webp"
+                alt="Astronaut on a space walk above Earth"
+              />
+              <h3 class="destinations__card-title">Space walk</h3>
+            </article>
 
+            <article class="destinations__card" data-destination-card>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-2-image.webp"
+                alt="Spacecraft flying in orbit above Earth"
+              />
+              <h3 class="destinations__card-title">Fast orbit</h3>
+            </article>
 
+            <article class="destinations__card" data-destination-card>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-3-image.webp"
+                alt="Exploration vehicle on the surface of Mars"
+              />
+              <h3 class="destinations__card-title">Mars bound</h3>
+            </article>
 
+            <article class="destinations__card" data-destination-card hidden>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-4-img.webp"
+                alt="Spacecraft in short orbit above Earth"
+              />
+              <h3 class="destinations__card-title">Short orbit</h3>
+            </article>
 
-    <!--############################################################################-->
-    <!-------------------------------------- SPACE MAP ------------------------------->
-    <!--############################################################################-->
-    <section id="space-map" class="space-map">
-      <div class="space-map-title">
-        <h2>Space Map</h2>
-        <a href="#full-view">
-          <h3>Full view</h3>
-        </a>
-      </div>
+            <article class="destinations__card" data-destination-card hidden>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-5-image.webp"
+                alt="View of Earth from space"
+              />
+              <h3 class="destinations__card-title">View point</h3>
+            </article>
 
-      <div class="space-map-container">
-        <img src="/src/assets/images/webp/space-map-image.webp" alt="Interactive space destinations map"
-          class="space-map-image" />
+            <article class="destinations__card" data-destination-card hidden>
+              <img
+                class="destinations__image"
+                src="/src/assets/images/webp/destination-6-image.webp"
+                alt="View of Saturn from space"
+              />
+              <h3 class="destinations__card-title">Saturn soar</h3>
+            </article>
+          </div>
 
-        <ul class="space-map-list">
-          <li>
-            <button class="space-map-list-1" type="button" aria-label="Mars bound">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-2" type="button" aria-label="Saturn soar">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-3" type="button" aria-label="Short orbit">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-4" type="button" aria-label="View point">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-5" type="button" aria-label="Fast orbit">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
-          <li>
-            <button class="space-map-list-6" type="button" aria-label="Space walk">
-              <img src="/src/assets/svg/pin-icon.svg" alt="" />
-            </button>
-          </li>
+          <button
+            class="destinations__next-button"
+            type="button"
+            aria-label="Show next destinations"
+            data-destination-next-button
+          ></button>
+
+          <div class="destinations__pagination" aria-label="Destination pages" data-destination-pagination>
+            <button
+              class="destinations__pagination-button destinations__pagination-button--active"
+              type="button"
+              aria-label="Show destinations 1 to 3"
+              aria-current="true"
+              data-destination-page="0"
+            ></button>
+
+            <button
+              class="destinations__pagination-button"
+              type="button"
+              aria-label="Show destinations 4 to 6"
+              data-destination-page="1"
+            ></button>
+
+            <button
+              class="destinations__pagination-button"
+              type="button"
+              aria-label="Show destinations 5 to 6"
+              data-destination-page="2"
+              hidden
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <!--############################################################################-->
+      <!-------------------------------------- SPACE MAP ------------------------------->
+      <!--############################################################################-->
+
+      <section id="space-map" class="space-map">
+        <div class="space-map-title">
+          <h2>Space Map</h2>
+          <a href="#full-view">
+            <h3>Full view</h3>
+          </a>
+        </div>
+
+        <div class="space-map-container">
+          <img
+            src="/src/assets/images/webp/space-map-image.webp"
+            alt="Interactive space destinations map"
+            class="space-map-image"
+          />
+
+          <ul class="space-map-list">
+            <li>
+              <button class="space-map-list-1" type="button" aria-label="Mars bound">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="space-map-list-2" type="button" aria-label="Saturn soar">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="space-map-list-3" type="button" aria-label="Short orbit">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="space-map-list-4" type="button" aria-label="View point">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="space-map-list-5" type="button" aria-label="Fast orbit">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="space-map-list-6" type="button" aria-label="Space walk">
+                <img src="/src/assets/svg/pin-icon.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--############################################################################-->
+      <!-------------------------------------- OUR MISSION ----------------------------->
+      <!--############################################################################-->
+
+      <section id="our-mission" class="our-mission" aria-labelledby="our-mission-title">
+        <div class="our-mission__header">
+          <h2 id="our-mission-title" class="our-mission__title">Our mission</h2>
+
+          <a class="our-mission__link" href="#our-mission">More about it</a>
+        </div>
+
+        <div class="our-mission__cards">
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/rocket.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Explore</h3>
+            <p class="our-mission__card-text">Discover destinations beyond the expected.</p>
+          </article>
+
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/ufo.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Innovate</h3>
+            <p class="our-mission__card-text">Reimagining travel for the next frontier.</p>
+          </article>
+
+          <article class="our-mission__card">
+            <img class="our-mission__icon" src="/src/assets/svg/stars.svg" alt="" aria-hidden="true" />
+            <h3 class="our-mission__card-title">Inspire</h3>
+            <p class="our-mission__card-text">Designed to spark curiosity and wonder.</p>
+          </article>
+        </div>
+      </section>
+
+      <!--############################################################################-->
+      <!--------------------------------- MOMENTS CAPTURED ----------------------------->
+      <!--############################################################################-->
+
+      <section class="moments-captured" aria-labelledby="moments-captured-title">
+        <div class="moments-captured-header">
+          <h2 class="moments-captured-title" id="moments-captured-title">Moments captured</h2>
+          <a href="#" class="moments-captured-link">See all</a>
+        </div>
+
+        <div class="swiper moments-captured-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-1-image.jpg"
+                alt="Astronaut sitting inside a spacecraft looking out over Earth and a distant planet"
+                width="1385"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-2-image.jpg"
+                alt="Astronaut standing on a rocky lunar surface with planets and asteroids in space"
+                width="1392"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="moments-captured-image"
+                src="/src/assets/images/jpg/moment-3-image.jpg"
+                alt="Astronaut beside a futuristic rover on a distant planet at sunrise"
+                width="1392"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <button class="swiper-button-prev" aria-label="Previous slide"></button>
+          <button class="swiper-button-next" aria-label="Next slide"></button>
+        </div>
+      </section>
+
+      
+
+      <!--############################################################################-->
+      <!-------------------------------------- COOKIES --------------------------------->
+      <!--############################################################################-->
+    </main>
+  <!--############################################################################-->
+  <!-------------------------------------- FOOTER ---------------------------------->
+  <!--###########################################################################--->
+  
+  <footer class="site-footer">
+    <figure>
+      <img src="/src/assets/svg/logo-symbol.svg" alt="Into Orbit logo" />
+    </figure>
+  
+    <section>
+      <nav aria-labelledby="footer-plan-trip">
+        <h3 id="footer-plan-trip">Plan Your Trip</h3>
+        <ul>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">First-time flyer</a></li>
+          <li><a href="#">Travel prep</a></li>
+          <li><a href="#">Payments & insurance</a></li>
         </ul>
-      </div>
+      </nav>
+  
+      <nav aria-labelledby="footer-about">
+        <h3 id="footer-about">About</h3>
+        <ul>
+          <li><a href="#">Our mission</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Orbit news</a></li>
+        </ul>
+      </nav>
+  
+      <nav aria-labelledby="footer-support">
+        <h3 id="footer-support">Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Booking terms</a></li>
+          <li><a href="#">Privacy policies</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </nav>
+  
+      <nav aria-labelledby="footer-orbit">
+        <h3 id="footer-orbit">Stay in Orbit</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </nav>
     </section>
-
-    <!--############################################################################-->
-    <!-------------------------------------- OUR MISSION ----------------------------->
-    <!--############################################################################-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--############################################################################-->
-    <!--------------------------------- MOMENTS CAPTURED ----------------------------->
-    <!--############################################################################-->
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--############################################################################-->
-    <!-------------------------------------- FOOTER ---------------------------------->
-    <!--###########################################################################--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--############################################################################-->
-    <!-------------------------------------- COOKIES --------------------------------->
-    <!--############################################################################-->
-
-  </main>
-  <script type="module" src="/src/main.js"></script>
-</body>
-
+  
+    <div class="site-footer-copyright">
+      <p>&copy; 2026 Into Orbit Stockholm.</p>
+    </div>
+  </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
