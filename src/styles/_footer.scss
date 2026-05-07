@@ -1,12 +1,10 @@
-
-
 /* ============================================
    GLOBAL STYLES
    ============================================ */
 
 .site-footer {
-  background-color: $white-noise;
-  color: $dark-orbit;
+  background-color: $White_noise;
+  color: $Dark_orbit;
   font-family: $goodspace-rounded-font-family;
   padding: clamp(10px, 2.6vw, 16px) 0;
 
@@ -42,9 +40,9 @@
       margin-bottom: clamp(8px, 1.5vw, 10px);
 
       a {
-        color: $dark-orbit;
+        color: $Dark_orbit;
         text-decoration: underline;
-        text-decoration-color: $dark-orbit;
+        text-decoration-color: $Dark_orbit;
         text-decoration-thickness: 2px;
         text-underline-offset: 4px;
         font-size: clamp(1.2rem, 2vw, 1.5rem);
@@ -53,15 +51,15 @@
 
         @media (hover: hover) {
           &:hover {
-            text-decoration-color: $space-dust;
+            text-decoration-color: $Space_dust;
           }
         }
 
         &:focus-visible {
-          outline: 2px solid $space-dust;
+          outline: 2px solid $Space_dust;
           outline-offset: 2px;
           border-radius: 4px;
-          text-decoration-color: $space-dust;
+          text-decoration-color: $Space_dust;
         }
       }
     }
