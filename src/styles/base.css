@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (hover: hover) {
   .space-map button:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (hover: hover) {
   .space-map-title a:hover h3 {
     color: #ff5e00;
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
 }
 .space-map-title a:focus-visible {
@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 480px) and (hover: hover) {
   button img {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 }
 .our-mission {
