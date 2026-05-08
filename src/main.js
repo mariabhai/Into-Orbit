@@ -133,3 +133,33 @@ function initDestinations() {
 }
 
 initDestinations();
+
+function initMomentsCapturedSlider() {
+  const wrapper = document.querySelector('.moments-captured-swiper-wrapper');
+  const slides = document.querySelectorAll('.moments-captured-swiper-slide');
+
+  const nextButton = document.querySelector('.swiper-button-next');
+  const prevButton = document.querySelector('.swiper-button-prev');
+
+  if (!wrapper || !slides.length || !nextButton || !prevButton) {
+    return;
+  }
+
+  let currentSlide = 0;
+
+  function updateSlider() {
+    wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  nextButton.addEventListener('click', function () {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlider();
+  });
+
+  prevButton.addEventListener('click', function () {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+}
+
+initMomentsCapturedSlider();
