@@ -5,13 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const pins = listContainer.querySelectorAll('button');
 
-  pins.forEach((pin, index) => {
+  pins.forEach((pin) => {
     const labelText = pin.getAttribute('aria-label');
     if (!labelText) return;
 
     let label = null;
 
-    // Buttons are already accessible (no need to set role or tabindex)
     pin.setAttribute('aria-pressed', 'false');
 
     // Create label element with absolute positioning
