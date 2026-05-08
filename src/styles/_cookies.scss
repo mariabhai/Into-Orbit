@@ -1,0 +1,104 @@
+@use 'variables' as v;
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.cookies {
+  background-color: v.$Dark_orbit;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 554px;
+  top: 42%;
+}
+
+.cookies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: v.$White_noise;
+  padding: 60px 30px;
+  gap: 20px;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    text-align: center;
+    font-family: 'Poppins';
+  }
+}
+
+.cookie-icon {
+  margin: auto;
+}
+
+.option-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+  a {
+    text-decoration: none;
+    border-bottom: 2px solid v.$Space-dust;
+    font-size: 1.25rem;
+    color: v.$White_noise;
+  }
+}
+
+.accept-cookies {
+  border: none;
+  background-color: v.$Space-dust;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  height: 44px;
+  cursor: pointer;
+
+  &:hover {
+    color: v.$white-noise;
+    background-color: v.$dark-orbit;
+    border: 2px solid v.$space-dust;
+  }
+}
+
+@media (min-width: 768px) {
+  .cookies {
+    top: 54%;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .cookies-text {
+    width: 85%;
+  }
+
+  .option-btns {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cookies {
+    top: 7%;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .cookies-text {
+    width: 55%;
+  }
+
+  .option-btns {
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -4,10 +4,11 @@ import './styles/base.scss';
 // Import interactive modules
 import './space-map.mjs';
 import './menu.mjs';
+import './cookies.mjs';
 
 const DESTINATION_DESKTOP_CARDS_PER_PAGE = 3;
 const DESTINATION_SMALL_SCREEN_CARDS_PER_PAGE = 2;
-const DESTINATION_ACTIVE_PAGE_CLASS = 'destinations__pagination-button--active';
+const DESTINATION_ACTIVE_PAGE_CLASS = 'destinations-pagination-button-active';
 const DESTINATION_SMALL_SCREEN_QUERY = '(max-width: 1023px)';
 
 const destinationSmallScreenMedia = window.matchMedia(DESTINATION_SMALL_SCREEN_QUERY);
