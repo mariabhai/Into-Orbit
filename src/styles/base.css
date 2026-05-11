@@ -388,8 +388,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     align-items: center;
     gap: clamp(5px, 3vw, 10px);
-    padding-inline: clamp(5px, 2vw, 15px);
-    padding-bottom: clamp(8px, 2vw, 15px);
+    padding-inline: clamp(5px, 2vw, 16px);
+    padding-bottom: clamp(8px, 2vw, 24px);
   }
   .space-map-list-1 {
     top: 19%;
