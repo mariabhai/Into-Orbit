@@ -55,10 +55,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .destinations {
-  padding: 4rem 1.25rem;
+  padding: 4rem 1.5rem;
   color: #001d36;
   font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .destinations-header {
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .destinations-title {
@@ -103,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   aspect-ratio: 16/9;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .destinations-card[hidden] {
@@ -177,7 +178,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff5e00;
 }
 
+@media (min-width: 768px) {
+  .destinations-header {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 1024px) {
+  .destinations-header {
+    margin-bottom: 2.5rem;
+  }
   .destinations-track {
     grid-template-columns: repeat(3, 1fr);
     justify-content: initial;
@@ -430,10 +439,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .our-mission {
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 2.5rem 1.5rem 4rem;
   color: #001d36;
   font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .our-mission-header {
@@ -441,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .our-mission-title {
@@ -500,7 +509,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
+@media (min-width: 768px) {
+  .our-mission-header {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 1024px) {
+  .our-mission-header {
+    margin-bottom: 2.5rem;
+  }
   .our-mission-cards {
     grid-template-columns: repeat(3, 1fr);
   }

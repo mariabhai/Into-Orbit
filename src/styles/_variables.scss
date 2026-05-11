@@ -1,5 +1,6 @@
 // Shared design tokens
 $dark-orbit: #000d19;
+$white: #ffffff;
 $white-noise: #f2f2f2;
 $dark-trans-matter: rgb(0, 13, 25, 80%);
 $space-dust: #ff5e00;
@@ -13,6 +14,7 @@ $goodspace-rounded-font-stack: $goodspace-rounded-font-family, 'Poppins', 'Arial
 
 // Backward-compatible aliases used in existing partials
 $Dark_orbit: $dark-orbit;
+$White: $white;
 $White_noise: $white-noise;
 $Dark_trans_matter: $dark-trans-matter;
 $Space_dust: $space-dust;
