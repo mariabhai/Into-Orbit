@@ -844,7 +844,7 @@ header {
 .site-footer section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: clamp(100px, 20vw, 125px);
+  gap: clamp(4px, 4vw, 16px);
   width: 70%;
   margin-inline: auto;
   padding-bottom: 90px;
@@ -925,28 +925,14 @@ header {
    ============================================ */
 @media (max-width: 1024px) {
   .site-footer section {
-    width: 70%;
     margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(80px, 16vw, 120px);
+    gap: clamp(4px, 4vw, 16px);
     justify-items: center;
     align-items: start;
   }
-  .site-footer nav {
-    width: 100%;
-    text-align: left;
-  }
   .site-footer h3 {
-    text-align: left;
     width: 220px;
-  }
-  .site-footer ul {
-    width: 100%;
-    text-align: left;
-  }
-  .site-footer li,
-  .site-footer a {
-    text-align: left;
   }
 }
 /* ============================================
@@ -957,17 +943,9 @@ header {
     padding: clamp(20px, 5vw, 30px) 0;
   }
   .site-footer section {
-    width: 70%;
-    margin-inline: auto;
     grid-template-columns: 1fr;
     gap: clamp(24px, 6vw, 36px);
     padding-inline: clamp(26px, 8vw, 38px);
-  }
-  .site-footer nav,
-  .site-footer h3,
-  .site-footer ul,
-  .site-footer li {
-    text-align: left;
   }
   .site-footer figure {
     display: flex;
