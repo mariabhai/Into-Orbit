@@ -19,6 +19,7 @@
     padding-bottom: 90px;
     border-bottom: 3px solid v.$Dark-trans-matter-transparency;
     justify-items: center;
+    box-sizing: border-box;
   }
 
   nav {
@@ -120,7 +121,7 @@
 
   .site-footer h3 {
     text-align: left;
-        width: 200px;
+        width: 220px;
 
   }
 
