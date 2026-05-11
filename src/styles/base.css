@@ -393,9 +393,6 @@ h1, h2, h3, h4, h5, h6 {
    MOBILE LAYOUT (max-width: 767px)
    ============================================ */
 @media (max-width: 767px) {
-  .space-map {
-    min-height: 60vh;
-  }
   .space-map-title {
     flex-direction: row;
     align-items: center;
