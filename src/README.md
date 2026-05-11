@@ -26,7 +26,7 @@ Into Orbit is a responsive moodboard project for a premium space travel brand. T
 
 Add finished UI screenshots here when the project is ready for presentation.
 
-- `![Home page screenshot](./path-to-your-screenshot.png)`
+- ![Home page screenshot](./path-to-your-screenshot.png)
 - Add more screenshots as needed from the final build or GitHub Pages site.
 
 ## Developers
