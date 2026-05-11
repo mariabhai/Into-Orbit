@@ -7,11 +7,15 @@
 
 .cookies {
   background-color: v.$Dark_orbit;
-  z-index: 100;
-  position: absolute;
+  z-index: 2000;
+  position: fixed;
   width: 100%;
   height: 554px;
-  top: 42%;
+  
+  bottom: 0;
+  top: 0;
+
+  transform: translateY(33%);
 }
 
 .cookies-container {
@@ -34,7 +38,7 @@
 }
 
 .cookie-icon {
-  margin: auto;
+  margin: 0;
 }
 
 .option-btns {
@@ -44,7 +48,7 @@
   
   a {
     text-decoration: none;
-    border-bottom: 2px solid v.$Space-dust;
+    border-bottom: 2px solid v.$Space_dust;
     font-size: 1.25rem;
     color: v.$White_noise;
   }
@@ -52,23 +56,21 @@
 
 .accept-cookies {
   border: none;
-  background-color: v.$Space-dust;
+  background-color: v.$Space_dust;
   border-radius: 15px;
   font-size: 1.25rem;
   height: 44px;
   cursor: pointer;
 
   &:hover {
-    color: v.$white-noise;
-    background-color: v.$dark-orbit;
-    border: 2px solid v.$space-dust;
+    color: v.$white_noise;
+    background-color: v.$dark_orbit;
+    border: 2px solid v.$space_dust;
   }
 }
 
 @media (min-width: 768px) {
   .cookies {
-    top: 54%;
-
     h2 {
       font-size: 4rem;
     }
@@ -84,9 +86,9 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1025px) {
   .cookies {
-    top: 7%;
+    transform: translateY(10%);
 
     h2 {
       font-size: 4rem;
