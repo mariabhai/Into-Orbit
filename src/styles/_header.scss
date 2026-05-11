@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: 'myFont';
-  src: url('/src/assets/fonts/GoodspaceRounded.otf') format('opentype');
+  font-family: 'GoodspaceRounded';
+  src: url('/assets/fonts/GoodspaceRounded.otf') format('opentype');
 }
 
 // Palett
@@ -13,7 +13,7 @@ $dark-orbit: #000d19;
 $space-dust: #ff5e00;
 
 // Fonts
-$Goodspace: 'myFont';
+$Goodspace: 'GoodspaceRounded';
 $Poppins: 'Poppins';
 
 header {
@@ -87,7 +87,7 @@ header {
   margin-bottom: 1rem;
 }
 .header-title {
-  font-family: 'myFont', 'Bitstream Vera Serif', serif;
+  font-family: 'GoodspaceRounded', 'Bitstream Vera Serif', serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 120%;

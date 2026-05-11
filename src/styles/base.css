@@ -642,8 +642,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: "myFont";
-  src: url("/src/assets/fonts/GoodspaceRounded.otf") format("opentype");
+  font-family: "GoodspaceRounded";
+  src: url("/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
 header {
   display: flex;
@@ -714,7 +714,7 @@ header {
 }
 
 .header-title {
-  font-family: "myFont", "Bitstream Vera Serif", serif;
+  font-family: "GoodspaceRounded", "Bitstream Vera Serif", serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 120%;
@@ -739,7 +739,7 @@ header {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "myFont";
+  font-family: "GoodspaceRounded";
   font-size: 16px;
 }
 .header-actions .btn.btn-primary {
@@ -1174,7 +1174,7 @@ header {
 }
 @font-face {
   font-family: "GoodspaceRounded";
-  src: url("/public/assets/fonts/GoodspaceRounded.otf") format("opentype");
+  src: url("/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
 body {
   font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
