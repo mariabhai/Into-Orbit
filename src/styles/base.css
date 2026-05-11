@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 100;
   padding-inline: clamp(10px, 5vw, 24px);
-  padding-bottom: clamp(15px, 5vw, 32px);
+  padding-bottom: clamp(15px, 5vw, 40px);
 }
 .space-map-title h2 {
   font-size: clamp(1.8rem, 8vw, 4rem);
