@@ -356,9 +356,6 @@ h1, h2, h3, h4, h5, h6 {
    TABLET LAYOUT (min-width: 768px)
    ============================================ */
 @media (min-width: 768px) {
-  .space-map {
-    min-height: 80vh;
-  }
   .space-map-title {
     flex-direction: row;
     align-items: center;
