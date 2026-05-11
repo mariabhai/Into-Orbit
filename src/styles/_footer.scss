@@ -11,7 +11,7 @@
   section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: clamp(100px, 20vw, 125px);
+    gap: clamp(4px, 4vw, 16px);
     width: 70%;
     margin-inline: auto;
     padding-bottom: 90px;
@@ -90,12 +90,15 @@
    ============================================ */
 
 @media (min-width: 1025px) {
-  .site-footer section {
-    width: 70%;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .site-footer h3 {
-    width: 300px;
+  .site-footer {
+    section {
+      width: 70%;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    h3 {
+      width: 300px;
+    }
   }
 }
 
@@ -104,33 +107,35 @@
    ============================================ */
 
 @media (max-width: 1024px) {
-  .site-footer section {
-    width: 70%;
-    margin-inline: auto;
-    grid-template-columns: repeat(2, 1fr);
-    gap: clamp(80px, 16vw, 120px);
-    justify-items: center;
-    align-items: start;
-  }
+  .site-footer {
+    section {
+      width: 70%;
+      margin-inline: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(80px, 16vw, 120px);
+      justify-items: center;
+      align-items: start;
+    }
 
-  .site-footer nav {
-    width: 100%;
-    text-align: left;
-  }
+    nav {
+      width: 100%;
+      text-align: left;
+    }
 
-  .site-footer h3 {
-    text-align: left;
-    width: 220px;
-  }
+    h3 {
+      text-align: left;
+      width: 220px;
+    }
 
-  .site-footer ul {
-    width: 100%;
-    text-align: left;
-  }
+    ul {
+      width: 100%;
+      text-align: left;
+    }
 
-  .site-footer li,
-  .site-footer a {
-    text-align: left;
+    li,
+    a {
+      text-align: left;
+    }
   }
 }
 

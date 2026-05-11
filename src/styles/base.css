@@ -844,7 +844,7 @@ header {
 .site-footer section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: clamp(100px, 20vw, 125px);
+  gap: clamp(4px, 4vw, 16px);
   width: 70%;
   margin-inline: auto;
   padding-bottom: 90px;
