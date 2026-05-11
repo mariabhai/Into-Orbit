@@ -68,5 +68,5 @@ The original Figma design and prototype were used as the visual reference for th
 ## Naming Conventions
 
 - kebab-case for class names in HTML and files
-- camelCase for ids in JavaScript
+- IDs currently use a mix of kebab-case (for example, `space-map`) and camelCase (for example, `menuToggle`)
 - Branch names should follow the example `feature/branchname` format.
