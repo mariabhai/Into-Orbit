@@ -927,7 +927,7 @@ header {
   .site-footer section {
     margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(80px, 16vw, 120px);
+    gap: clamp(4px, 4vw, 16px);
     justify-items: center;
     align-items: start;
   }
