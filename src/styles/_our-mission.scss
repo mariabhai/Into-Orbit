@@ -1,10 +1,10 @@
 @use 'variables' as v;
 
 .our-mission {
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 2.5rem 1.5rem 4rem;
   color: v.$obyss-blue;
   font-family: v.$goodspace-rounded-font-stack;
-  background-color: v.$white-noise;
+  background-color: v.$white;
 }
 
 .our-mission-header {
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .our-mission-title {
@@ -70,7 +70,17 @@
   line-height: 1.25;
 }
 
+@media (min-width: 768px) {
+  .our-mission-header {
+    margin-bottom: 2rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .our-mission-header {
+    margin-bottom: 2.5rem;
+  }
+
   .our-mission-cards {
     grid-template-columns: repeat(3, 1fr);
   }
