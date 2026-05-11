@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 .space-map-title h3 {
   position: relative;
   padding-top: 10px;
-  font-size: clamp(1rem, 3vw, 2.5rem);
+  font-size: clamp(0.9rem, 4vw, 1.5rem);
   font-weight: 400;
   color: #000d19;
   text-decoration-line: underline;
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (hover: hover) {
   .space-map-title a:hover h3 {
-    text-decoration-color: #8A3200;
+    text-decoration-color: #ff5e00;
   }
 }
 .space-map-title a:focus-visible {
@@ -362,6 +362,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline: clamp(5px, 2vw, 24px);
     padding-bottom: clamp(8px, 2vw, 32px);
   }
+  .space-map-title h2 {
+    font-size: 4rem;
+  }
   .space-map-list-1 {
     top: 22%;
     left: 40%;
@@ -399,6 +402,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline: clamp(5px, 2vw, 16px);
     padding-bottom: clamp(8px, 2vw, 24px);
   }
+  .space-map-title h2 {
+    font-size: 2rem;
+  }
+  .space-map-title h3 {
+    font-size: 1rem;
+  }
   .space-map-list-1 {
     top: 19%;
     left: 37%;
@@ -425,11 +434,6 @@ h1, h2, h3, h4, h5, h6 {
   .space-map-list-6 {
     top: 34%;
     left: 10%;
-  }
-}
-@media (max-width: 767px) and (hover: hover) {
-  button:hover img {
-    transform: scale(1.03);
   }
 }
 .our-mission {
