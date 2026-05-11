@@ -175,6 +175,12 @@
   .space-map {
     min-height: 80vh;
   }
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: clamp(5px, 2vw, 24px);
+    padding-bottom: clamp(8px, 2vw, 32px);
+  }
 
   .space-map-list-1 {
     top: 22%;
@@ -221,7 +227,6 @@
   .space-map-title {
     flex-direction: row;
     align-items: center;
-    gap: clamp(5px, 3vw, 10px);
     padding-inline: clamp(5px, 2vw, 16px);
     padding-bottom: clamp(8px, 2vw, 24px);
   }
