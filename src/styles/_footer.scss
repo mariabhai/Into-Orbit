@@ -4,18 +4,16 @@
 @use 'variables' as v;
 
 .site-footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: v.$Dark_orbit;
-  font-family: v.$goodspace-rounded-font-family;
   padding: clamp(10px, 2.6vw, 16px) 0;
 
   section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(100px, 20vw, 125px);
     width: 70%;
     margin-inline: auto;
-    padding-inline: clamp(16px, 1vw, 40px);
     padding-bottom: 90px;
     border-bottom: 3px solid v.$Dark-trans-matter-transparency;
     justify-items: center;
@@ -27,10 +25,11 @@
   }
 
   h3 {
-    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-size: clamp(1.7rem, 4vw, 2rem);
     margin-bottom: clamp(10px, 2vw, 15px);
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
+    font-family: v.$goodspace-rounded-font-family;
   }
 
   ul {
@@ -47,7 +46,8 @@
         text-decoration-color: v.$Dark_orbit;
         text-decoration-thickness: 2px;
         text-underline-offset: 4px;
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
+        font-family: Poppins, sans-serif;
+        font-size: clamp(1.2rem, 2vw, 1.25rem);
         display: inline-block;
         transition: text-decoration-color 0.2s ease;
 
@@ -111,7 +111,6 @@
     gap: clamp(80px, 16vw, 120px);
     justify-items: center;
     align-items: start;
-    padding-inline: clamp(16px, 5vw, 24px);
   }
 
   .site-footer nav {
@@ -121,8 +120,7 @@
 
   .site-footer h3 {
     text-align: left;
-        width: 220px;
-
+    width: 220px;
   }
 
   .site-footer ul {
@@ -149,16 +147,14 @@
       margin-inline: auto;
       grid-template-columns: 1fr;
       gap: clamp(24px, 6vw, 36px);
-      justify-items: center;
-      text-align: center;
-      padding-inline: clamp(8px, 3vw, 16px);
+      padding-inline: clamp(26px, 8vw, 38px);
     }
 
     nav,
     h3,
     ul,
     li {
-      text-align: center;
+      text-align: left;
     }
 
     figure {
@@ -173,6 +169,14 @@
 
     .site-footer-copyright {
       width: min(90%, 900px);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      font-size: 1rem;
     }
   }
 }
