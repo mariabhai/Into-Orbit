@@ -1174,7 +1174,7 @@ header {
 }
 @font-face {
   font-family: "GoodspaceRounded";
-  src: url("./public/assets/fonts/GoodspaceRounded.otf") format("opentype");
+  src: url("/public/assets/fonts/GoodspaceRounded.otf") format("opentype");
 }
 body {
   font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
