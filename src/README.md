@@ -56,7 +56,7 @@ npm run dev
 - `src/main.js` - application entry point
 - `src/styles/` - SCSS source files and shared variables
 - `public/` - static assets served directly by Vite
-- `src/assets/` - project images, icons, and fonts used by the design
+- `public/assets/` - project images, icons, fonts, and other static design assets
 
 ## Design Reference
 
