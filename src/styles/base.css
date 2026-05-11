@@ -963,6 +963,12 @@ header {
   .site-footer .site-footer-copyright {
     width: min(90%, 900px);
   }
+  .site-footer h3 {
+    font-size: 1.5rem;
+  }
+  .site-footer a {
+    font-size: 1rem;
+  }
 }
 /* ============================================
    FOOTER COPYRIGHT
