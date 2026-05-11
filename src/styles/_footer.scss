@@ -111,7 +111,6 @@
     gap: clamp(80px, 16vw, 120px);
     justify-items: center;
     align-items: start;
-    padding-inline: clamp(16px, 5vw, 24px);
   }
 
   .site-footer nav {
@@ -148,16 +147,14 @@
       margin-inline: auto;
       grid-template-columns: 1fr;
       gap: clamp(24px, 6vw, 36px);
-      justify-items: center;
-      text-align: center;
-      padding-inline: clamp(8px, 3vw, 16px);
+      padding-inline: clamp(26px, 8vw, 38px);
     }
 
     nav,
     h3,
     ul,
     li {
-      text-align: center;
+      text-align: left;
     }
 
     figure {
