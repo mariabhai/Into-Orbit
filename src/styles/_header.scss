@@ -1,16 +1,4 @@
-@font-face {
-  font-family: 'GoodspaceRounded';
-  src: url('/assets/fonts/GoodspaceRounded.otf') format('opentype');
-}
-
-// Palett
-$white-noise: #f2f2f2;
-$dark-orbit: #000d19;
-$space-dust: #ff5e00;
-
-// Fonts
-$Goodspace: 'GoodspaceRounded';
-$Poppins: 'Poppins';
+@use './variables' as v;
 
 header {
   display: flex;
@@ -20,9 +8,9 @@ header {
   overflow: hidden;
 
   font-family: 'Poppins';
-  color: $white-noise;
+  color: v.$white-noise;
 
-  background-color: rgba($dark-orbit, 0.8);
+  background-color: v.$dark-orbit;
   background-image: url('/assets/images/webp/hero-image-1.webp');
   background-size: cover;
   background-position: center 20%;
@@ -54,7 +42,7 @@ header {
 .header-line {
   flex: 1;
   height: 1px;
-  background: $white-noise;
+  background: v.$white-noise;
 }
 
 .header-nav {
@@ -62,7 +50,7 @@ header {
 }
 
 .menu-toggle {
-  background: $dark-orbit;
+  background: v.$dark-orbit;
   border: 0.3px solid rgb(48, 48, 48);
   border-radius: 5px;
   padding: 8px 9px;
@@ -83,7 +71,7 @@ header {
 }
 
 .header-title {
-  font-family: 'GoodspaceRounded', 'Bitstream Vera Serif', serif;
+  font-family: v.$goodspace-rounded-font-family;
   font-weight: 400;
   font-size: 40px;
   line-height: 120%;
@@ -109,26 +97,28 @@ header {
     justify-content: center;
 
     text-decoration: none;
-    font-family: $Goodspace;
+    font-family: v.$goodspace-rounded-font-family;
     font-size: 16px;
 
     &.btn-primary {
-      color: $dark-orbit;
-      background: $space-dust;
-      border: 2px solid $space-dust;
+      color: v.$dark-orbit;
+      background: v.$space-dust;
+      border: 2px solid v.$space-dust;
       border-radius: 15px;
-      padding: 0 8px; // block inline
+      padding: 0 8px;
+
       &:hover {
         background: none;
-        color: $white-noise;
+        color: v.$white-noise;
       }
     }
 
     &.btn-link {
-      color: $white-noise;
-      border-bottom: 2px solid $white-noise;
+      color: v.$white-noise;
+      border-bottom: 2px solid v.$white-noise;
+
       &:hover {
-        border-bottom: 2px solid $space-dust;
+        border-bottom: 2px solid v.$space-dust;
       }
     }
   }
@@ -182,10 +172,9 @@ header {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    background-color: $dark-orbit; // change later
+    background-color: v.$dark-trans-matter;
     border: none;
-    border-radius: 5px;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
   }
   .header-nav {
     display: block;
@@ -199,9 +188,9 @@ header {
   }
 
   .header-nav-list a {
-    color: $white-noise;
+    color: v.$white-noise;
     text-decoration: none;
-    font-family: $Goodspace;
+    font-family: v.$goodspace-rounded-font-family;
     font-size: 1.25rem;
     font-weight: 400;
   }
