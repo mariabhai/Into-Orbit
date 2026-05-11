@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
 .space-map-title h3 {
   position: relative;
   padding-top: 10px;
-  font-size: clamp(0.9rem, 4vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 2.5rem);
   font-weight: 400;
   color: #000d19;
   text-decoration-line: underline;
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (hover: hover) {
   .space-map-title a:hover h3 {
-    text-decoration-color: #ff5e00;
+    text-decoration-color: #8A3200;
   }
 }
 .space-map-title a:focus-visible {
@@ -353,17 +353,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-  TABLET AND UP LAYOUT (min-width: 768px)
-  ============================================ */
-@media (min-width: 768px) {
+   TABLET LAYOUT (481px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  .space-map {
+    min-height: 80vh;
+  }
   .space-map-title {
     flex-direction: row;
     align-items: center;
     padding-inline: clamp(5px, 2vw, 24px);
     padding-bottom: clamp(8px, 2vw, 32px);
-  }
-  .space-map-title h2 {
-    font-size: 4rem;
   }
   .space-map-list-1 {
     top: 22%;
@@ -393,59 +393,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* ============================================
-   DESKTOP LAYOUT (min-width: 1024px)
+   MOBILE LAYOUT (max-width: 480px)
    ============================================ */
-@media (min-width: 1024px) {
-  .space-map-title {
-    padding-inline: clamp(10px, 5vw, 24px);
-    padding-bottom: clamp(15px, 5vw, 40px);
+@media (max-width: 480px) {
+  .space-map {
+    min-height: 60vh;
   }
-  .space-map-title h2 {
-    font-size: 4rem;
-  }
-  .space-map-list-1 {
-    top: 20%;
-    left: 39%;
-  }
-  .space-map-list-2 {
-    top: 27%;
-    left: 67.5%;
-    right: auto;
-  }
-  .space-map-list-3 {
-    top: 68%;
-    left: 80%;
-    right: auto;
-  }
-  .space-map-list-4 {
-    top: 79%;
-    left: 49%;
-    transform: none;
-  }
-  .space-map-list-5 {
-    top: 72.5%;
-    left: 16%;
-  }
-  .space-map-list-6 {
-    top: 38%;
-    left: 13%;
-  }
-}
-/* ============================================
-   MOBILE LAYOUT (max-width: 767px)
-   ============================================ */
-@media (max-width: 767px) {
   .space-map-title {
     flex-direction: row;
     align-items: center;
     padding-inline: clamp(5px, 2vw, 16px);
     padding-bottom: clamp(8px, 2vw, 24px);
-  }
-  .space-map-title h2 {
-    font-size: 2rem;
-  }
-  .space-map-title h3 {
-    font-size: 1rem;
   }
   .space-map-list-1 {
     top: 19%;
@@ -473,6 +431,11 @@ h1, h2, h3, h4, h5, h6 {
   .space-map-list-6 {
     top: 34%;
     left: 10%;
+  }
+}
+@media (max-width: 480px) and (hover: hover) {
+  button:hover img {
+    transform: scale(1.03);
   }
 }
 .our-mission {
@@ -697,14 +660,23 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GoodspaceRounded";
+  src: url("/assets/fonts/GoodspaceRounded.otf") format("opentype");
+}
 header {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   width: 100%;
   overflow: hidden;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Poppins";
   color: #f2f2f2;
-  background-color: #000d19;
+  background-color: rgba(0, 13, 25, 0.8);
   background-image: url("/assets/images/webp/hero-image-1.webp");
   background-size: cover;
   background-position: center 20%;
@@ -715,17 +687,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 1.5rem 0 1.5rem;
+  padding: 20px 25px 0 25px;
   margin-bottom: 15px;
 }
 
 .header-hero {
-  padding-inline: 1.25rem;
-  margin-bottom: 2rem;
+  padding-inline: 20px;
+  margin-bottom: 30px;
 }
 
 .header-logo {
-  padding: 0 0.5rem 0 0;
+  padding: 0 8px 0 0;
 }
 .header-logo img {
   width: 81.11px;
@@ -744,44 +716,46 @@ header {
 
 .menu-toggle {
   background: #000d19;
+  opacity: 80%;
   border: 0.3px solid rgb(48, 48, 48);
   border-radius: 5px;
-  padding: 0.5rem 0.55rem;
+  padding: 8px 9px;
   cursor: pointer;
 }
 .menu-toggle img {
   width: 34.67px;
   height: 42px;
+  stroke: #ff5e00;
 }
 
 .header-pretitle {
   font-weight: 275;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .header-title {
-  font-family: "GoodspaceRounded";
+  font-family: "GoodspaceRounded", "Bitstream Vera Serif", serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 40px;
   line-height: 120%;
   margin-bottom: 10px;
 }
 
 .header-description {
   font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  max-width: 16rem;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 259px;
   margin-bottom: 1rem;
 }
 
 .header-actions {
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 16px;
 }
 .header-actions .btn {
   display: inline-flex;
@@ -789,14 +763,14 @@ header {
   justify-content: center;
   text-decoration: none;
   font-family: "GoodspaceRounded";
-  font-size: 1rem;
+  font-size: 16px;
 }
 .header-actions .btn.btn-primary {
   color: #000d19;
   background: #ff5e00;
   border: 2px solid #ff5e00;
   border-radius: 15px;
-  padding: 0 0.5rem;
+  padding: 0 8px;
 }
 .header-actions .btn.btn-primary:hover {
   background: none;
@@ -812,84 +786,51 @@ header {
 
 @media (min-width: 768px) {
   .header-topbar {
-    padding: 1.25rem 1.55rem 0 1.55rem;
-    margin-bottom: 4.5rem;
+    padding: 20px 25px 0 25px;
+    margin-bottom: 70px;
   }
   .header-hero {
-    padding-inline: 3.75rem;
-    margin-bottom: 7.5rem;
+    padding-inline: 60px;
+    margin-bottom: 120px;
   }
   .header-pretitle {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   .header-title {
-    font-size: 4rem;
-    line-height: 6rem;
+    font-size: 64px;
+    line-height: 96px;
   }
   .header-description {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 120%;
-    max-width: 29rem;
-    margin-bottom: 3rem;
+    max-width: 459px;
+    margin-bottom: 50px;
   }
   .header-actions {
     justify-content: center;
-    gap: 1.25rem;
+    gap: 20px;
   }
   .header-actions .btn-primary {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 20px;
   }
   .header-actions .btn-link {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 @media (min-width: 1024px) {
-  .header-nav-wrapper {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    background-color: rgba(0, 13, 25, 0.8);
-    border: none;
-    padding: 1rem 1.5rem;
-  }
-  .header-nav {
-    display: block;
-  }
-  .header-nav-list {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-  }
-  .header-nav-list a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-family: "GoodspaceRounded";
-    font-size: 1.25rem;
-    font-weight: 400;
-  }
   .header-pretitle {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 400;
   }
   .header-title {
-    font-size: 6rem;
-    margin-bottom: 1.9rem;
+    font-size: 96px;
+    margin-bottom: 30px;
   }
   .header-description {
-    max-width: 45rem;
-    margin-bottom: 3.1rem;
-  }
-  .menu-toggle {
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  .menu-toggle img {
-    width: 10px;
-    height: 40px;
+    max-width: 719px;
+    margin-bottom: 50px;
   }
 }
 /* ============================================
@@ -972,6 +913,7 @@ header {
    ============================================ */
 @media (min-width: 1025px) {
   .site-footer section {
+    width: 70%;
     grid-template-columns: repeat(4, 1fr);
   }
   .site-footer h3 {
@@ -985,7 +927,7 @@ header {
   .site-footer section {
     margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(16px, 4vw, 32px);
+    gap: clamp(4px, 4vw, 16px);
     justify-items: center;
     align-items: start;
   }
