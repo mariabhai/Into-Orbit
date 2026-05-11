@@ -168,8 +168,8 @@
 }
 
 /* ============================================
-   TABLET LAYOUT (min-width: 768px)
-   ============================================ */
+  TABLET AND UP LAYOUT (min-width: 768px)
+  ============================================ */
 
 @media (min-width: 768px) {
   .space-map-title {
@@ -212,6 +212,54 @@
 
   .space-map-list-6 {
     top: 36.5%;
+    left: 13%;
+  }
+}
+
+/* ============================================
+   DESKTOP LAYOUT (min-width: 1024px)
+   ============================================ */
+
+@media (min-width: 1024px) {
+  .space-map-title {
+    padding-inline: clamp(10px, 5vw, 24px);
+    padding-bottom: clamp(15px, 5vw, 40px);
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .space-map-list-1 {
+    top: 20%;
+    left: 39%;
+  }
+
+  .space-map-list-2 {
+    top: 27%;
+    left: 67.5%;
+    right: auto;
+  }
+
+  .space-map-list-3 {
+    top: 68%;
+    left: 80%;
+    right: auto;
+  }
+
+  .space-map-list-4 {
+    top: 79%;
+    left: 49%;
+    transform: none;
+  }
+
+  .space-map-list-5 {
+    top: 72.5%;
+    left: 16%;
+  }
+
+  .space-map-list-6 {
+    top: 38%;
     left: 13%;
   }
 }
