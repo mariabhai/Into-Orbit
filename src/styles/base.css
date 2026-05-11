@@ -815,14 +815,13 @@ header {
    GLOBAL STYLES
    ============================================ */
 .site-footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000d19;
-  font-family: "GoodspaceRounded";
   padding: clamp(10px, 2.6vw, 16px) 0;
 }
 .site-footer section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(400px, minmax(200px, 1fr));
   gap: clamp(100px, 20vw, 125px);
   width: 70%;
   margin-inline: auto;
@@ -836,10 +835,11 @@ header {
   text-align: left;
 }
 .site-footer h3 {
-  font-size: clamp(1.7rem, 4vw, 2.2rem);
+  font-size: clamp(1.7rem, 4vw, 2rem);
   margin-bottom: clamp(10px, 2vw, 15px);
-  font-weight: 600;
+  font-weight: 400;
   text-align: left;
+  font-family: "GoodspaceRounded";
 }
 .site-footer ul {
   list-style: none;
@@ -855,7 +855,8 @@ header {
   text-decoration-color: #000d19;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-family: Poppins, sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.25rem);
   display: inline-block;
   transition: text-decoration-color 0.2s ease;
 }
