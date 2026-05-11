@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -43,21 +58,27 @@ p {
   text-wrap: pretty;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 .destinations {
   padding: 4rem 1.5rem;
   color: #001d36;
-  font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
+  font-family: 'GoodspaceRounded', 'Poppins', 'Arial', sans-serif;
   background-color: #ffffff;
 }
 
@@ -78,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #001d36;
   font-size: 1.25rem;
   -webkit-text-decoration: underline #001d36;
-          text-decoration: underline #001d36;
+  text-decoration: underline #001d36;
   text-underline-offset: 0.25rem;
 }
 
@@ -114,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .destinations-card-title {
@@ -151,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .destinations-next-button::before {
-  content: "";
+  content: '';
   display: block;
   width: 1.75rem;
   height: 1.75rem;
@@ -201,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 .space-map {
   width: 100%;
   color: #000d19;
-  font-family: "GoodspaceRounded";
+  font-family: 'GoodspaceRounded';
   position: relative;
   overflow: hidden;
 }
@@ -302,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 .space-map-title a:focus-visible h3 {
-  text-decoration-color: #8A3200;
+  text-decoration-color: #8a3200;
 }
 
 .space-map-list {
@@ -361,9 +382,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding-inline: clamp(5px, 2vw, 24px);
     padding-bottom: clamp(8px, 2vw, 32px);
-  }
-  .space-map-title h2 {
-    font-size: 4rem;
   }
   .space-map-list-1 {
     top: 22%;
@@ -439,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 .our-mission {
   padding: 2.5rem 1.5rem 4rem;
   color: #001d36;
-  font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
+  font-family: 'GoodspaceRounded', 'Poppins', 'Arial', sans-serif;
   background-color: #ffffff;
 }
 
@@ -460,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #001d36;
   font-size: 1.25rem;
   -webkit-text-decoration: underline #001d36;
-          text-decoration: underline #001d36;
+  text-decoration: underline #001d36;
   text-underline-offset: 0.25rem;
 }
 
@@ -502,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .our-mission-card-text {
   max-width: 12rem;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25;
 }
@@ -540,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 48px;
   border-radius: 5px;
   background-color: rgb(0, 13, 25);
-  font-family: "Poppins";
+  font-family: 'Poppins';
   gap: 96px;
   border: 2px solid white;
 }
@@ -663,10 +681,10 @@ header {
   flex-direction: column;
   width: 100%;
   overflow: hidden;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   color: #f2f2f2;
   background-color: #000d19;
-  background-image: url("/assets/images/webp/hero-image-1.webp");
+  background-image: url('/assets/images/webp/hero-image-1.webp');
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
@@ -724,7 +742,7 @@ header {
 }
 
 .header-title {
-  font-family: "GoodspaceRounded";
+  font-family: 'GoodspaceRounded';
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 120%;
@@ -749,7 +767,7 @@ header {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "GoodspaceRounded";
+  font-family: 'GoodspaceRounded';
   font-size: 1rem;
 }
 .header-actions .btn.btn-primary {
@@ -827,7 +845,7 @@ header {
   .header-nav-list a {
     color: #f2f2f2;
     text-decoration: none;
-    font-family: "GoodspaceRounded";
+    font-family: 'GoodspaceRounded';
     font-size: 1.25rem;
     font-weight: 400;
   }
@@ -880,7 +898,7 @@ header {
   margin-bottom: clamp(10px, 2vw, 15px);
   font-weight: 400;
   text-align: left;
-  font-family: "GoodspaceRounded";
+  font-family: 'GoodspaceRounded';
 }
 .site-footer ul {
   list-style: none;
@@ -1050,7 +1068,7 @@ header {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-button-prev,
@@ -1079,11 +1097,11 @@ header {
 }
 
 .swiper-button-prev::before {
-  content: "‹";
+  content: '‹';
 }
 
 .swiper-button-next::before {
-  content: "›";
+  content: '›';
 }
 
 @media (min-width: 768px) {
@@ -1132,7 +1150,7 @@ header {
 }
 .cookies-container p {
   text-align: center;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .cookie-icon {
@@ -1196,15 +1214,14 @@ header {
   }
 }
 @font-face {
-  font-family: "GoodspaceRounded";
-  src: url("/assets/fonts/GoodspaceRounded.otf") format("opentype");
+  font-family: 'GoodspaceRounded';
+  src: url('/assets/fonts/GoodspaceRounded.otf') format('opentype');
 }
 body {
-  font-family: "GoodspaceRounded", "Poppins", "Arial", sans-serif;
+  font-family: 'GoodspaceRounded', 'Poppins', 'Arial', sans-serif;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 72px;
 }
