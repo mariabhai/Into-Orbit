@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 100;
   padding-inline: clamp(10px, 5vw, 24px);
-  padding-bottom: clamp(15px, 5vw, 32px);
+  padding-bottom: clamp(15px, 5vw, 40px);
 }
 .space-map-title h2 {
   font-size: clamp(1.8rem, 8vw, 4rem);
@@ -350,6 +350,12 @@ h1, h2, h3, h4, h5, h6 {
   .space-map {
     min-height: 80vh;
   }
+  .space-map-title {
+    flex-direction: row;
+    align-items: center;
+    padding-inline: clamp(5px, 2vw, 24px);
+    padding-bottom: clamp(8px, 2vw, 32px);
+  }
   .space-map-list-1 {
     top: 22%;
     left: 40%;
@@ -387,7 +393,6 @@ h1, h2, h3, h4, h5, h6 {
   .space-map-title {
     flex-direction: row;
     align-items: center;
-    gap: clamp(5px, 3vw, 10px);
     padding-inline: clamp(5px, 2vw, 16px);
     padding-bottom: clamp(8px, 2vw, 24px);
   }
