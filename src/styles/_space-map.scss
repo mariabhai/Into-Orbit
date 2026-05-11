@@ -168,10 +168,10 @@
 }
 
 /* ============================================
-   TABLET LAYOUT (481px - 1024px)
+   TABLET LAYOUT (min-width: 768px)
    ============================================ */
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .space-map {
     min-height: 80vh;
   }
@@ -216,10 +216,10 @@
 }
 
 /* ============================================
-   MOBILE LAYOUT (max-width: 480px)
+   MOBILE LAYOUT (max-width: 767px)
    ============================================ */
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .space-map {
     min-height: 60vh;
   }

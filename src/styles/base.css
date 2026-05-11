@@ -353,9 +353,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   TABLET LAYOUT (481px - 1024px)
+   TABLET LAYOUT (min-width: 768px)
    ============================================ */
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .space-map {
     min-height: 80vh;
   }
@@ -393,9 +393,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* ============================================
-   MOBILE LAYOUT (max-width: 480px)
+   MOBILE LAYOUT (max-width: 767px)
    ============================================ */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .space-map {
     min-height: 60vh;
   }
@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 10%;
   }
 }
-@media (max-width: 480px) and (hover: hover) {
+@media (max-width: 767px) and (hover: hover) {
   button:hover img {
     transform: scale(1.03);
   }
@@ -660,23 +660,14 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "GoodspaceRounded";
-  src: url("/assets/fonts/GoodspaceRounded.otf") format("opentype");
-}
 header {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   width: 100%;
   overflow: hidden;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, sans-serif;
   color: #f2f2f2;
-  background-color: rgba(0, 13, 25, 0.8);
+  background-color: #000d19;
   background-image: url("/assets/images/webp/hero-image-1.webp");
   background-size: cover;
   background-position: center 20%;
@@ -687,17 +678,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px 0 25px;
+  padding: 1.25rem 1.5rem 0 1.5rem;
   margin-bottom: 15px;
 }
 
 .header-hero {
-  padding-inline: 20px;
-  margin-bottom: 30px;
+  padding-inline: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .header-logo {
-  padding: 0 8px 0 0;
+  padding: 0 0.5rem 0 0;
 }
 .header-logo img {
   width: 81.11px;
@@ -716,46 +707,44 @@ header {
 
 .menu-toggle {
   background: #000d19;
-  opacity: 80%;
   border: 0.3px solid rgb(48, 48, 48);
   border-radius: 5px;
-  padding: 8px 9px;
+  padding: 0.5rem 0.55rem;
   cursor: pointer;
 }
 .menu-toggle img {
   width: 34.67px;
   height: 42px;
-  stroke: #ff5e00;
 }
 
 .header-pretitle {
   font-weight: 275;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 120%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 .header-title {
-  font-family: "GoodspaceRounded", "Bitstream Vera Serif", serif;
+  font-family: "GoodspaceRounded";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 120%;
   margin-bottom: 10px;
 }
 
 .header-description {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  max-width: 259px;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  max-width: 16rem;
   margin-bottom: 1rem;
 }
 
 .header-actions {
   display: flex;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 1rem;
 }
 .header-actions .btn {
   display: inline-flex;
@@ -763,14 +752,14 @@ header {
   justify-content: center;
   text-decoration: none;
   font-family: "GoodspaceRounded";
-  font-size: 16px;
+  font-size: 1rem;
 }
 .header-actions .btn.btn-primary {
   color: #000d19;
   background: #ff5e00;
   border: 2px solid #ff5e00;
   border-radius: 15px;
-  padding: 0 8px;
+  padding: 0 0.5rem;
 }
 .header-actions .btn.btn-primary:hover {
   background: none;
@@ -786,51 +775,84 @@ header {
 
 @media (min-width: 768px) {
   .header-topbar {
-    padding: 20px 25px 0 25px;
-    margin-bottom: 70px;
+    padding: 1.25rem 1.55rem 0 1.55rem;
+    margin-bottom: 4.5rem;
   }
   .header-hero {
-    padding-inline: 60px;
-    margin-bottom: 120px;
+    padding-inline: 3.75rem;
+    margin-bottom: 7.5rem;
   }
   .header-pretitle {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .header-title {
-    font-size: 64px;
-    line-height: 96px;
+    font-size: 4rem;
+    line-height: 6rem;
   }
   .header-description {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
-    max-width: 459px;
-    margin-bottom: 50px;
+    max-width: 29rem;
+    margin-bottom: 3rem;
   }
   .header-actions {
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
   .header-actions .btn-primary {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .header-actions .btn-link {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1024px) {
+  .header-nav-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: rgba(0, 13, 25, 0.8);
+    border: none;
+    padding: 1rem 1.5rem;
+  }
+  .header-nav {
+    display: block;
+  }
+  .header-nav-list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  .header-nav-list a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: "GoodspaceRounded";
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
   .header-pretitle {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
   }
   .header-title {
-    font-size: 96px;
-    margin-bottom: 30px;
+    font-size: 6rem;
+    margin-bottom: 1.9rem;
   }
   .header-description {
-    max-width: 719px;
-    margin-bottom: 50px;
+    max-width: 45rem;
+    margin-bottom: 3.1rem;
+  }
+  .menu-toggle {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .menu-toggle img {
+    width: 10px;
+    height: 40px;
   }
 }
 /* ============================================
@@ -913,7 +935,6 @@ header {
    ============================================ */
 @media (min-width: 1025px) {
   .site-footer section {
-    width: 70%;
     grid-template-columns: repeat(4, 1fr);
   }
   .site-footer h3 {
@@ -927,7 +948,7 @@ header {
   .site-footer section {
     margin-inline: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(4px, 4vw, 16px);
+    gap: clamp(16px, 4vw, 32px);
     justify-items: center;
     align-items: start;
   }
