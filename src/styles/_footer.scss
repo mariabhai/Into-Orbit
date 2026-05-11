@@ -109,7 +109,6 @@
 @media (max-width: 1024px) {
   .site-footer {
     section {
-      width: 70%;
       margin-inline: auto;
       grid-template-columns: repeat(2, 1fr);
       gap: clamp(80px, 16vw, 120px);
@@ -117,24 +116,8 @@
       align-items: start;
     }
 
-    nav {
-      width: 100%;
-      text-align: left;
-    }
-
     h3 {
-      text-align: left;
       width: 220px;
-    }
-
-    ul {
-      width: 100%;
-      text-align: left;
-    }
-
-    li,
-    a {
-      text-align: left;
     }
   }
 }
@@ -148,18 +131,9 @@
     padding: clamp(20px, 5vw, 30px) 0;
 
     section {
-      width: 70%;
-      margin-inline: auto;
       grid-template-columns: 1fr;
       gap: clamp(24px, 6vw, 36px);
       padding-inline: clamp(26px, 8vw, 38px);
-    }
-
-    nav,
-    h3,
-    ul,
-    li {
-      text-align: left;
     }
 
     figure {
