@@ -111,7 +111,7 @@
     section {
       margin-inline: auto;
       grid-template-columns: repeat(2, 1fr);
-      gap: clamp(80px, 16vw, 120px);
+      gap: clamp(16px, 4vw, 32px);
       justify-items: center;
       align-items: start;
     }
