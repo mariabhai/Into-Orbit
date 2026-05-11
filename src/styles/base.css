@@ -195,7 +195,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "GoodspaceRounded";
   position: relative;
   overflow: hidden;
-  padding: 0 clamp(15px, 10%, 25px);
 }
 
 .space-map-container {
@@ -256,10 +255,12 @@ h1, h2, h3, h4, h5, h6 {
 .space-map-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: relative;
   z-index: 100;
-  gap: clamp(10px, 5vw, 20px);
+  padding-inline: clamp(10px, 5vw, 24px);
+  padding-bottom: clamp(15px, 5vw, 32px);
 }
 .space-map-title h2 {
   font-size: clamp(1.8rem, 8vw, 4rem);
@@ -267,13 +268,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .space-map-title h3 {
   position: relative;
+  padding-top: 10px;
   font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 400;
   color: #000d19;
   text-decoration-line: underline;
   text-decoration-color: currentColor;
   text-underline-offset: 0.15em;
-  top: clamp(15px, 2vw, 30px);
   transition: text-decoration-color 0.3s ease;
 }
 .space-map-title a {
