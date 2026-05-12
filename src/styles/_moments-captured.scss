@@ -1,14 +1,14 @@
-@use './variables' as *;
+@use './variables' as v;
 
 .moments-captured {
-  padding: 1rem;
+  padding-inline: 1rem;
 }
 
 .moments-captured-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .moments-captured-title {
@@ -20,18 +20,17 @@
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  color: $obyss-blue;
-  border-bottom: 2px solid $obyss-blue;
+  color: v.$obyss-blue;
+  border-bottom: 2px solid v.$obyss-blue;
 
   &:hover {
-    border-color: $space-dust;
+    border-color: v.$space-dust;
   }
 }
 
 .moments-captured-swiper {
   position: relative;
   width: 100%;
-  //height: 100%;
   overflow: hidden;
 }
 
@@ -75,8 +74,8 @@
 
 .swiper-button-prev::before,
 .swiper-button-next::before {
-  font-size: 3rem; // arrows
-  color: $space-dust;
+  font-size: 3rem;
+  color: v.$space-dust;
 }
 
 .swiper-button-prev::before {
@@ -88,6 +87,14 @@
 }
 
 @media (min-width: 768px) {
+  .moments-captured {
+    padding-inline: 1.5rem;
+  }
+
+  .moments-captured-header {
+    margin-bottom: 2rem;
+  }
+
   .moments-captured-title {
     font-size: 4rem;
   }
@@ -106,6 +113,12 @@
 
   .swiper-button-prev::before,
   .swiper-button-next::before {
-    font-size: 5rem; // arrows
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .moments-captured-header {
+    margin-bottom: 2.5rem;
   }
 }
