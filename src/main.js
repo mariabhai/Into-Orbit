@@ -135,30 +135,34 @@ function initDestinations() {
 initDestinations();
 
 function initMomentsCapturedSlider() {
-  const wrapper = document.querySelector('.moments-captured-swiper-wrapper');
   const slides = document.querySelectorAll('.moments-captured-swiper-slide');
-
   const nextButton = document.querySelector('.swiper-button-next');
   const prevButton = document.querySelector('.swiper-button-prev');
 
-  if (!wrapper || !slides.length || !nextButton || !prevButton) {
-    return;
-  }
-
   let currentSlide = 0;
 
-  function updateSlider() {
-    wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }
+  nextButton.addEventListener('click', () => {
+    slides[currentSlide].classList.add('hidden');
 
-  nextButton.addEventListener('click', function () {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSlider();
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+
+    slides[currentSlide].classList.remove('hidden');
   });
 
-  prevButton.addEventListener('click', function () {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateSlider();
+  prevButton.addEventListener('click', () => {
+    slides[currentSlide].classList.add('hidden');
+
+    currentSlide--;
+
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 1;
+    }
+
+    slides[currentSlide].classList.remove('hidden');
   });
 }
 
