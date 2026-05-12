@@ -28,13 +28,16 @@ Into Orbit is a responsive moodboard project for a premium space travel brand. T
 
 ## Screenshots
 
-- ![Into Orbit project GIF](../public/assets/images/gif/into-orbit.gif)
-- ![Live site screenshot 1](../documentation/screenshots/live-site-screenshots/live-site-1.png)
-- ![Live site screenshot 2](../documentation/screenshots/live-site-screenshots/live-site-2.png)
-- ![Live site screenshot 3](../documentation/screenshots/live-site-screenshots/live-site-3.png)
-- ![Live site screenshot 4](../documentation/screenshots/live-site-screenshots/live-site-4.png)
-- ![Live site screenshot 5](../documentation/screenshots/live-site-screenshots/live-site-5.png)
-- ![Live site screenshot 6](../documentation/screenshots/live-site-screenshots/live-site-6.png)
+- GIF and screenshots of the live site, showing the design and interactions in action.
+![Into Orbit project GIF](../public/assets/images/gif/into-orbit.gif)
+
+- Screenshots of the live site, showing the design and interactions in action.
+![Live site screenshot 1](../documentation/screenshots/live-site-screenshots/live-site-1.png)
+![Live site screenshot 2](../documentation/screenshots/live-site-screenshots/live-site-2.png)
+![Live site screenshot 3](../documentation/screenshots/live-site-screenshots/live-site-3.png)
+![Live site screenshot 4](../documentation/screenshots/live-site-screenshots/live-site-4.png)
+![Live site screenshot 5](../documentation/screenshots/live-site-screenshots/live-site-5.png)
+![Live site screenshot 6](../documentation/screenshots/live-site-screenshots/live-site-6.png)
 
 ## Developers
 
