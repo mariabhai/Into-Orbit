@@ -2,6 +2,8 @@
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/) [![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)](https://eslint.org/) ![Status](https://img.shields.io/badge/Status-Active-success)
 
+[🚀 View Live Project](https://medieinstitutet.github.io/fed25d-grafiska-verktyg-moodboard/)
+
 ## About the design
 
 Into Orbit is a concept for a premium space travel company offering exclusive journeys beyond Earth. The brand is built around innovation, exploration, and once-in-a-lifetime experiences, which influenced both the visual style and the overall tone of the design.
