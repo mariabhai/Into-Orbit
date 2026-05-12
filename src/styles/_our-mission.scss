@@ -16,7 +16,7 @@
 }
 
 .our-mission-title {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -71,6 +71,10 @@
 }
 
 @media (min-width: 768px) {
+  .our-mission-title {
+    font-size: 4rem;
+  }
+
   .our-mission-header {
     margin-bottom: 2rem;
   }
