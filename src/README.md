@@ -2,6 +2,8 @@
 
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/) [![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white)](https://eslint.org/) ![Status](https://img.shields.io/badge/Status-Active-success)
 
+[🚀 View Live Project](https://medieinstitutet.github.io/fed25d-grafiska-verktyg-moodboard/)
+
 ## Overview
 
 Into Orbit is a responsive moodboard project for a premium space travel brand. The design aims to feel cinematic, futuristic, and easy to scan while still keeping the interface clean and accessible.
@@ -26,10 +28,13 @@ Into Orbit is a responsive moodboard project for a premium space travel brand. T
 
 ## Screenshots
 
-Add finished UI screenshots here when the project is ready for presentation.
-
 - ![Into Orbit project GIF](../public/assets/images/gif/into-orbit.gif)
-- Add more screenshots as needed from the final build or GitHub Pages site.
+- ![Live site screenshot 1](../documentation/screenshots/live-site-screenshots/live-site-1.png)
+- ![Live site screenshot 2](../documentation/screenshots/live-site-screenshots/live-site-2.png)
+- ![Live site screenshot 3](../documentation/screenshots/live-site-screenshots/live-site-3.png)
+- ![Live site screenshot 4](../documentation/screenshots/live-site-screenshots/live-site-4.png)
+- ![Live site screenshot 5](../documentation/screenshots/live-site-screenshots/live-site-5.png)
+- ![Live site screenshot 6](../documentation/screenshots/live-site-screenshots/live-site-6.png)
 
 ## Developers
 
