@@ -1,19 +1,14 @@
 @use './variables' as v;
 
-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.header {
   overflow: hidden;
-
-  font-family: 'Poppins', Arial, sans-serif;
-  color: v.$white-noise;
-
-  background-color: v.$dark-orbit;
   background-image: url('/assets/images/webp/hero-image-1.webp');
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
+  background-color: v.$dark-orbit;
+  color: v.$white-noise;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 .header-topbar {
@@ -21,11 +16,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 1.5rem 0 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .header-hero {
-  padding-inline: 1.25rem;
   margin-bottom: 2rem;
 }
 
@@ -66,7 +60,7 @@ header {
   font-size: 1rem;
   line-height: 120%;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .header-title {
@@ -74,7 +68,7 @@ header {
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 120%;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .header-description {
@@ -82,7 +76,7 @@ header {
   font-size: 1rem;
   line-height: 1.25rem;
   max-width: 16rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .header-actions {
@@ -126,12 +120,20 @@ header {
 @media (min-width: 768px) {
   .header-topbar {
     padding: 1.25rem 1.55rem 0 1.55rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
   }
 
   .header-hero {
-    padding-inline: 3.75rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
     margin-bottom: 7.5rem;
+  }
+
+  .header-hero-content {
+    grid-column: 1;
+    max-width: 40rem;
+    margin: auto;
   }
 
   .header-pretitle {
@@ -140,7 +142,7 @@ header {
 
   .header-title {
     font-size: 4rem;
-    line-height: 6rem;
+    line-height: 1.1;
   }
 
   .header-description {
@@ -152,7 +154,6 @@ header {
   }
 
   .header-actions {
-    justify-content: center;
     gap: 1.25rem;
 
     .btn-primary {
@@ -167,17 +168,17 @@ header {
 }
 
 @media (min-width: 1024px) {
-  .header-nav-wrapper {
+  .header-nav {
+    display: block;
+  }
+
+  .header-topbar-content {
     display: flex;
     gap: 1.5rem;
     align-items: center;
     background-color: v.$dark-trans-matter;
     border: none;
     padding: 1rem 1.5rem;
-  }
-
-  .header-nav {
-    display: block;
   }
 
   .header-nav-list {
@@ -195,6 +196,21 @@ header {
     font-weight: 400;
   }
 
+  .menu-toggle {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    img {
+      width: 10px;
+      height: 40px;
+    }
+  }
+
+  .header-hero-content {
+    max-width: 90rem;
+  }
+
   .header-pretitle {
     font-size: 2rem;
     font-weight: 400;
@@ -206,18 +222,7 @@ header {
   }
 
   .header-description {
-    max-width: 45rem;
+    max-width: 43rem;
     margin-bottom: 3.1rem;
-  }
-
-  .menu-toggle {
-    border: none;
-    padding: 0;
-    cursor: pointer;
-
-    img {
-      width: 10px;
-      height: 40px;
-    }
   }
 }
