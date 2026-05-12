@@ -27,13 +27,13 @@ We have built an interactive Figma prototype to show important UI states and int
 Please note that the linked prototype currently shows the **desktop version** of the design.
 
 The prototype includes:
+
 - hover states for buttons and links
 - examples of how the swiper sections are intended to work
 - the intended interaction for the space map
 
 The space map is designed as an interactive section where markers and paths react on hover and click, mainly for desktop use.
 
-For the swiper sections, this library may be useful:
-[Swiper.js](https://swiperjs.com/)
+For the swiper sections, this library may be useful: [Swiper.js](https://swiperjs.com/)
 
 [Open the Figma prototype](https://www.figma.com/proto/ZPbQt4fZ07pghM9mvb9MO1/into-orbit?node-id=169-578&t=d6brvQ8UDzwErvFC-1&scaling=scale-down&content-scaling=fixed&page-id=15%3A76&starting-point-node-id=169%3A578&show-proto-sidebar=1)
