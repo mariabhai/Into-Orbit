@@ -10,12 +10,8 @@
   z-index: 2000;
   position: fixed;
   width: 100%;
-  height: 554px;
-  
-  bottom: 0;
-  top: 0;
-
-  transform: translateY(33%);
+  height: 36rem;
+  transform: translateY(-39%);
 }
 
 .cookies-container {
@@ -29,6 +25,7 @@
 
   h2 {
     font-size: 2rem;
+    text-align: center;
   }
 
   p {
@@ -71,6 +68,8 @@
 
 @media (min-width: 768px) {
   .cookies {
+    transform: translateY(-75%);
+
     h2 {
       font-size: 4rem;
     }
@@ -88,7 +87,7 @@
 
 @media (min-width: 1025px) {
   .cookies {
-    transform: translateY(10%);
+    transform: translateY(33%);
 
     h2 {
       font-size: 4rem;
