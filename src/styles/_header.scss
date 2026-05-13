@@ -230,7 +230,8 @@
     align-items: center;
     background-color: v.$dark-trans-matter;
     border: none;
-    padding: 1rem 1.5rem;
+    padding-inline: 1rem;
+    padding-block: 0;
   }
 
   .header-nav-list {
@@ -259,8 +260,10 @@
     }
   }
 
-  .header-hero-content {
-    max-width: 90rem;
+  .header-hero {
+    grid-template-columns: 60% 40%;
+    padding: 0;
+    margin-bottom: 5rem;
   }
 
   .header-pretitle {
@@ -274,7 +277,6 @@
   }
 
   .header-description {
-    max-width: 43rem;
-    margin-bottom: 3.1rem;
+    margin-bottom: 6rem;
   }
 }
