@@ -39,3 +39,9 @@ The space map is designed as an interactive section where markers and paths reac
 For the swiper sections, this library may be useful: [Swiper.js](https://swiperjs.com/)
 
 [Open the Figma prototype](https://www.figma.com/proto/ZPbQt4fZ07pghM9mvb9MO1/into-orbit?node-id=169-578&t=d6brvQ8UDzwErvFC-1&scaling=scale-down&content-scaling=fixed&page-id=15%3A76&starting-point-node-id=169%3A578&show-proto-sidebar=1)
+
+## Development
+
+This repository was developed by **Negative Space**, a team of students at Medieinstitutet studying design and web development.
+
+For detailed technical information, dependencies, and development setup, see [src/README.md](src/README.md).
